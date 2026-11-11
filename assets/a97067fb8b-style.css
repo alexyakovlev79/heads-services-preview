@@ -1,0 +1,188 @@
+.service__category {
+    height: 327px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #002B49;
+    text-align: center;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.service__category img {
+    width: 122px;
+    height: 122px;
+    margin-bottom: 10px;
+}
+.service__category h2 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+}
+.service__category::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 19px;
+    right: 19px;
+    width: 22px;
+    height: 22px;
+    background-image: url("39f10fb248-plus.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.service__category.expanded {
+    /*cursor: unset;*/
+    /*pointer-events: none;*/
+}
+.service__category.expanded h2{
+    color: #FF5100;
+}
+.service__category.expanded::after{
+    background-image: url("e1018d7dbb-expanded.svg");
+}
+.service__details{
+    display: none;
+    margin-bottom: 59px;
+}
+.service__details.expanded{
+    display: flex;
+}
+.service__details .service__details__categories {
+    margin-top: 20px;
+}
+.service__details .service__details__categories ul {
+    font-family: "TT Fors Bold";
+    list-style: none;
+    padding: 0;
+    margin: 0 !important;
+}
+.service__details .service__details__categories ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+.service__details .service__details__categories ul li {
+    user-select: none;
+    color: #002B49;
+    font-weight: bold !important;
+    position: relative;
+    padding-left: 48px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    transition: all ease 0.2s;
+    font-size: 12px;
+    top: 3px;
+    white-space: nowrap;
+}
+.service__details .service__details__categories ul li:hover{
+    background: #002B49;
+    color: #fff;
+}
+.service__details .service__details__categories ul li::before {
+    top: 3px;
+    content: url("bba2ed5806-check.svg");
+    position: absolute;
+    left: 15px;
+    color: #ff5c00;
+}
+.service__categories{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-bottom: 60px;
+    margin-top: 66px;
+}
+.service__details::before{
+    display: block;
+    content: '';
+    width: calc(50% - 32px);
+    min-width: calc(50% - 32px);
+    min-height: 780px;
+    background: #002B49;
+    background-image: url("00ac618a8f-strat.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.service__details__content {
+    padding-left: 32px;
+    flex-grow: 1;
+}
+.service__details--design::before{background-image: url("7c5b436cf0-design.gif");}
+.service__details--name::before{background-image: url("c7b654df22-name.gif");}
+.service__details--style::before{background-image: url("6ae1c75417-style.gif");}
+.service__details__content {
+    font-size: 16px;
+}
+.service__details__content strong{
+    text-transform: uppercase;
+    font-family: "TT Fors Bold";
+    color: #002B49;
+}
+.service__details__content h2{
+    font-size: 30px;
+    color: #FF5100;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.vc_custom_1730301364186{
+    margin-bottom: 0 !important;
+}
+@media screen and (max-width: 1300px) {
+    .service__categories{
+        display: none;
+    }
+    .service__details{
+        max-height: 50px;
+        overflow: hidden;
+        margin-bottom: 21px;
+        display: block;
+    }
+    .service__details.expanded{
+        max-height: unset;
+    }
+    .service__details:before{
+        display: none;
+    }
+    .service__details__content{
+        padding-left: 0;
+    }
+    .service__details__content h2{
+        cursor: pointer;
+        user-select: none;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        background-color: #002C49;
+        margin-bottom: 21px;
+        font-size: 15px;
+        text-align: center;
+        padding-right: 51px;
+        background-image: url("39f10fb248-plus.svg");
+        background-size: 21px auto;
+        background-position: calc(100% - 19px) center;
+        background-repeat: no-repeat;
+        display: flex;
+        line-height: normal !important;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .service__details.expanded h2{
+        color: #FF5100;
+        background-image: url("e1018d7dbb-expanded.svg");
+    }
+}
