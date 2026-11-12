@@ -19,6 +19,9 @@ jobs:
       - name: Check static resources and JavaScript
         run: node scripts/check-preview.mjs
 
+      - name: Verify GEO content, cases and structured data
+        run: node scripts/check-geo.mjs
+
       - name: Install browser test driver
         run: npm install --no-save --no-package-lock --ignore-scripts playwright-core
 
