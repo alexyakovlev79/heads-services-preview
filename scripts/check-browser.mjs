@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Real Chrome/Chromium interactions for the preserved Heads services preview.
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { chromium } from 'playwright-core';
 
 const browser = await chromium.launch({
@@ -94,6 +95,42 @@ try {
   assert.ok(mobilePresentationLinks >= 1, 'Mobile presentation link missing from DOM');
   console.log('PASS: mobile drawer opens with presentation link', JSON.stringify(mobileState));
 
+  // GEO/AEO content and responsive behavior must be present in the rendered page.
+  await page.locator('#mobile-menu .mobile-menu-toggle').click();
+  await page.waitForTimeout(350);
+  assert.equal(await page.locator('#heads-process .heads-geo-timeline > li').count(), 5);
+  assert.equal(await page.locator('#heads-scenarios .heads-geo-card').count(), 3);
+  assert.equal(await page.locator('#heads-cases .heads-geo-case').count(), 4);
+  assert.equal(await page.locator('#heads-faq details').count(), 7);
+  assert.equal(await page.locator('h1').count(), 1);
+  await page.locator('#heads-faq details').first().locator('summary').click();
+  assert.equal(await page.locator('#heads-faq details').first().getAttribute('open'), '');
+  assert.ok((await page.locator('#heads-faq details').first().innerText()).includes('Состав зависит от задачи'));
+  console.log('PASS: GEO content, case cards, semantic headings and interactive FAQs');
+
+  for (const screen of [320, 390, 768, 1440]) {
+    await page.setViewportSize({ width: screen, height: 920 });
+    const bounds = await page.evaluate(() => ({
+      client: document.documentElement.clientWidth,
+      scroll: document.documentElement.scrollWidth
+    }));
+    assert.ok(bounds.scroll <= bounds.client + 1,
+      'Horizontal overflow at ' + screen + 'px: ' + JSON.stringify(bounds));
+  }
+  console.log('PASS: responsive widths 320/390/768/1440 without horizontal overflow');
+
+  fs.mkdirSync('qa-artifacts', { recursive: true });
+  for (const shot of [
+    { width: 1440, name: 'desktop-fullpage.png' },
+    { width: 390, name: 'mobile-fullpage.png' }
+  ]) {
+    await page.setViewportSize({ width: shot.width, height: 1000 });
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.screenshot({ path: 'qa-artifacts/' + shot.name, fullPage: true, animations: 'disabled' });
+  }
+  console.log('PASS: full-page screenshots saved');
+
+  assert.deepEqual(jsErrors, [], 'Browser JavaScript errors');
   console.log('Page JavaScript errors:', JSON.stringify(jsErrors.slice(0, 10)));
   console.log('PASS: all browser interactions');
 } finally {
