@@ -28,10 +28,41 @@ if (mobileMenu && !mobileMenu.querySelector('.preview-presentation-mobile-link')
     mobileMenu.append(item);
 }
 
-// Sidr rebuilds/clones mobile navigation; delegate the click so cloned links work too.
+// Sidr may consume the hidden source menu and build a separate live drawer.
+// Ensure the link exists in whatever mobile menu is actually displayed.
+function ensureMobilePresentationLink() {
+    const menus = document.querySelectorAll(
+        '#mobile-menu-alternative ul.dropdown-menu, .sidr ul.dropdown-menu, .sidr ul'
+    );
+    const seen = new Set();
+    for (const menu of menus) {
+        if (seen.has(menu)) continue;
+        seen.add(menu);
+        if (menu.querySelector('.preview-presentation-mobile-link')) continue;
+        const item = document.createElement('li');
+        item.className = 'menu-item preview-presentation-mobile-link';
+        const link = document.createElement('a');
+        link.href = '#';
+        link.setAttribute('aria-haspopup', 'dialog');
+        link.textContent = 'Скачать презентацию';
+        item.append(link);
+        menu.append(item);
+    }
+}
+ensureMobilePresentationLink();
+window.addEventListener('load', ensureMobilePresentationLink);
+
+// Delegate events to cover both the source menu and Sidr's rebuilt drawer.
 document.addEventListener('click', (event) => {
     const link = event.target.closest?.('.preview-presentation-mobile-link a');
-    if (link) openPresentation({ preventDefault: () => event.preventDefault(), currentTarget: link });
+    if (link) {
+        openPresentation({ preventDefault: () => event.preventDefault(), currentTarget: link });
+        return;
+    }
+    if (event.target.closest?.('#mobile-menu .mobile-menu-toggle')) {
+        setTimeout(ensureMobilePresentationLink, 20);
+        setTimeout(ensureMobilePresentationLink, 250);
+    }
 });
 
 if (presentation) {
