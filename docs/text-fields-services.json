@@ -1,0 +1,1655 @@
+{
+  "version": "2026-11-12",
+  "source": "https://alexyakovlev79.github.io/heads-services-preview/",
+  "sourceBlob": "eb8b661563db83255a81764fbc92b5cbc987f195",
+  "updatedCommit": "06891338fb485143d9941dda5a773688e9215aeb",
+  "usage": "Read current text from Google Sheet column D; apply nonempty changes in E to exact ID targets, preserve links and HTML markup; sync JSON-LD FAQs.",
+  "fields": [
+    {
+      "id": "HEADS-S01-SEO-01",
+      "block": "SEO · Мета",
+      "type": "HTML Title",
+      "value": "Брендинг полного цикла и услуги разработки бренда | Heads",
+      "selector": "title",
+      "notes": "Текст вкладки браузера и поисковой выдачи.",
+      "kind": "seo"
+    },
+    {
+      "id": "HEADS-S01-SEO-02",
+      "block": "SEO · Мета",
+      "type": "Meta Description",
+      "value": "Heads: брендинг полного цикла для FMCG, ритейла и СТМ. Исследования, позиционирование, нейминг, дизайн упаковки и коммуникации. Этапы и кейсы.",
+      "selector": "meta[name=\"description\"]@content",
+      "notes": "Поисковое описание; требуется согласование.",
+      "kind": "seo"
+    },
+    {
+      "id": "HEADS-S01-SEO-03",
+      "block": "SEO · Превью",
+      "type": "OG Title",
+      "value": "Брендинг полного цикла и услуги разработки бренда | Heads",
+      "selector": "meta[property=\"og:title\"]@content",
+      "notes": "Заголовок превью в соцсетях.",
+      "kind": "seo"
+    },
+    {
+      "id": "HEADS-S01-SEO-04",
+      "block": "SEO · Превью",
+      "type": "OG Description",
+      "value": "Heads: брендинг полного цикла для FMCG, ритейла и СТМ. Исследования, позиционирование, нейминг, дизайн упаковки и коммуникации. Этапы и кейсы.",
+      "selector": "meta[property=\"og:description\"]@content",
+      "notes": "Описание превью в соцсетях.",
+      "kind": "seo"
+    },
+    {
+      "id": "HEADS-S01-0001",
+      "section": "00 · Заголовок",
+      "type": "H1 · Заголовок",
+      "current": "Услуги брендинга полного цикла",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0001\"]@text",
+      "notes": "",
+      "tag": "h1",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0002",
+      "section": "01 · Вступление",
+      "type": "Абзац",
+      "current": "Heads · Москва, Россия",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0002\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0003",
+      "section": "01 · Вступление",
+      "type": "H2 · Заголовок",
+      "current": "От исследования рынка до бренда, который работает на полке и в цифровых каналах",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0003\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0004",
+      "section": "01 · Вступление",
+      "type": "Абзац",
+      "current": "Брендинговое агентство Heads разрабатывает потребительские бренды полного цикла: от исследований, стратегии и позиционирования до нейминга, фирменного стиля, дизайна упаковки и коммуникационных материалов.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0004\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0005",
+      "section": "01 · Вступление",
+      "type": "Абзац",
+      "current": "Работаем с запуском новых брендов, обновлением существующих марок и развитием портфелей СТМ. Состав услуг подбираем под задачу производителя, ритейлера или команды маркетинга: можно заказать отдельный этап либо комплексную услугу.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0005\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0006",
+      "section": "01 · Вступление",
+      "type": "Текст ссылки",
+      "current": "Посмотреть этапы работы",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0006\"]@text",
+      "notes": "Ссылка ведет на #heads-process; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0007",
+      "section": "01 · Вступление",
+      "type": "Текст ссылки",
+      "current": "Кейсы полного цикла",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0007\"]@text",
+      "notes": "Ссылка ведет на #heads-cases; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0008",
+      "section": "01 · Вступление",
+      "type": "Текст ссылки",
+      "current": "Обсудить проект",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0008\"]@text",
+      "notes": "Ссылка ведет на #new-clients; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0009",
+      "section": "02 · Переключатели услуг",
+      "type": "H2 · Заголовок",
+      "current": "Стратегия и исследования",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0009\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0010",
+      "section": "02 · Переключатели услуг",
+      "type": "ALT изображения",
+      "current": "Стратегия и Исследования",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0010\"]@alt",
+      "notes": "Альтернативный текст изображения (ALT), визуально не показывается.",
+      "tag": "img",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0011",
+      "section": "02 · Переключатели услуг",
+      "type": "H2 · Заголовок",
+      "current": "Фирменный стиль",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0011\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0012",
+      "section": "02 · Переключатели услуг",
+      "type": "ALT изображения",
+      "current": "Фирменный стиль",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0012\"]@alt",
+      "notes": "Альтернативный текст изображения (ALT), визуально не показывается.",
+      "tag": "img",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0013",
+      "section": "02 · Переключатели услуг",
+      "type": "H2 · Заголовок",
+      "current": "Дизайн упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0013\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0014",
+      "section": "02 · Переключатели услуг",
+      "type": "ALT изображения",
+      "current": "Дизайн упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0014\"]@alt",
+      "notes": "Альтернативный текст изображения (ALT), визуально не показывается.",
+      "tag": "img",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0015",
+      "section": "02 · Переключатели услуг",
+      "type": "H2 · Заголовок",
+      "current": "Нейминг и креатив",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0015\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0016",
+      "section": "02 · Переключатели услуг",
+      "type": "ALT изображения",
+      "current": "Нейминг и креатив",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0016\"]@alt",
+      "notes": "Альтернативный текст изображения (ALT), визуально не показывается.",
+      "tag": "img",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0017",
+      "section": "02 · Стратегия и исследования",
+      "type": "H2 · Заголовок",
+      "current": "Стратегия и исследования",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0017\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0018",
+      "section": "02 · Стратегия и исследования",
+      "type": "Абзац",
+      "current": "Стратегия – это компас, который показывает бренду нужное направление. Она определяет миссию, видение, ценности бренда, а также цели и задачи, которые необходимо достичь. Без стратегии бренд рискует не суметь эффективно использовать ресурсы и потерять свою идентичность.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0018\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0019",
+      "section": "02 · Стратегия и исследования",
+      "type": "Абзац",
+      "current": "Исследования – это бинокль, позволяющий увидеть реальную картину рынка. Они помогают понять потребителей, изучить конкурентов и выбрать маркетинговую стратегию. Без глубокого понимания потребительского поведения, конкурентной среды и трендов бренд рискует потратить ресурсы на неэффективные кампании и упустить ценные возможности.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0019\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0020",
+      "section": "02 · Стратегия и исследования",
+      "type": "Абзац",
+      "current": "Не рискуйте, а эффективно решайте поставленные задачи, заказав у нас:",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0020\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0021",
+      "section": "02 · Стратегия и исследования",
+      "type": "Текст ссылки",
+      "current": "Бренд-аудит",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0021\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/brend-audit/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0022",
+      "section": "02 · Стратегия и исследования",
+      "type": "Текст ссылки",
+      "current": "Анализ рынка",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0022\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/analiz-rynka/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0023",
+      "section": "02 · Стратегия и исследования",
+      "type": "Текст ссылки",
+      "current": "Качественные исследования",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0023\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/kachestvennye-issledovanija/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0024",
+      "section": "02 · Стратегия и исследования",
+      "type": "Текст ссылки",
+      "current": "Количественные исследования",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0024\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/kolichestvennye-issledovanija/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0025",
+      "section": "02 · Стратегия и исследования",
+      "type": "Текст ссылки",
+      "current": "Сегментация потребителей",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0025\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/segmentacija-potrebitelej/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0026",
+      "section": "02 · Стратегия и исследования",
+      "type": "Текст ссылки",
+      "current": "Стратегия и позиционирование",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0026\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/strategija-i-pozicionirovanie/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0027",
+      "section": "02 · Стратегия и исследования",
+      "type": "Текст ссылки",
+      "current": "Формирование портфеля бренда",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0027\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/formirovanie-portfelja-brendov/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0028",
+      "section": "02 · Стратегия и исследования",
+      "type": "Текст ссылки",
+      "current": "Стратегические сессии и воркшопы",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0028\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/strategicheskie-sessii-i-vorkshopy/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0029",
+      "section": "02 · Стратегия и исследования",
+      "type": "Текст ссылки",
+      "current": "Коммуникационная стратегия",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0029\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/kommunikacionnaja-strategija/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0030",
+      "section": "02 · Фирменный стиль",
+      "type": "H2 · Заголовок",
+      "current": "Фирменный стиль",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0030\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0031",
+      "section": "02 · Фирменный стиль",
+      "type": "Абзац",
+      "current": "Фирменный стиль – это визуальный язык, на котором бренд разговаривает со своей аудиторией. Он создает узнаваемый образ, транслирует ключевые идеи, формирует эмоциональную связь с клиентом. Для команды Heads это скрупулезно точный перевод аналитического языка позиционирования на творческий образный язык графики и стиля, чтобы ваш бренд смог захватить сердца нужной аудитории с максимальной эффективностью.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0031\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0032",
+      "section": "02 · Фирменный стиль",
+      "type": "Абзац",
+      "current": "Помогите своему бренду добиться успеха на рынке, заказав у нас:",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0032\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0033",
+      "section": "02 · Фирменный стиль",
+      "type": "Текст ссылки",
+      "current": "Корпоративный брендинг",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0033\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/korporativnyj-brending/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0034",
+      "section": "02 · Фирменный стиль",
+      "type": "Текст ссылки",
+      "current": "Фирменный стиль",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0034\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/firmennyj-stil/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0035",
+      "section": "02 · Фирменный стиль",
+      "type": "Текст ссылки",
+      "current": "Создание логотипа",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0035\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/sozdanie-logotipa/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0036",
+      "section": "02 · Фирменный стиль",
+      "type": "Текст ссылки",
+      "current": "Брендбук",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0036\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/brendbook/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0037",
+      "section": "02 · Фирменный стиль",
+      "type": "Текст ссылки",
+      "current": "Дизайн сайта",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0037\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/dizajn-sajta/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0038",
+      "section": "02 · Фирменный стиль",
+      "type": "Текст ссылки",
+      "current": "Оформление торгового пространства",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0038\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/oformlenie-torgovogo-prostranstva/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0039",
+      "section": "02 · Фирменный стиль",
+      "type": "Текст ссылки",
+      "current": "Авторский надзор",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0039\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/avtorskij-nadzor/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0040",
+      "section": "02 · Нейминг и креатив",
+      "type": "H2 · Заголовок",
+      "current": "Нейминг и креатив",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0040\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0041",
+      "section": "02 · Нейминг и креатив",
+      "type": "Абзац",
+      "current": "Нейминг – это искусство создания имени, которое отражает суть бренда, вызывает нужные эмоции и запоминается надолго. За каждым успешным названием стоит глубокая мысль, стратегический подход и немалая доля креатива. Мы извлекаем из точного, но формального позиционирования эффектную коммуникационную идею, которая делает сообщение яснее и ярче. Настраиваем ее под каждый из сегментов аудитории. И вот бренд уже работает в полную силу: становится индивидуальнее, заметнее, лучше запоминается.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0041\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0042",
+      "section": "02 · Нейминг и креатив",
+      "type": "Абзац",
+      "current": "Оживите свой бренд, заказав у нас:",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0042\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0043",
+      "section": "02 · Нейминг и креатив",
+      "type": "Текст ссылки",
+      "current": "Слоган бренда",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0043\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/slogan-brenda/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0044",
+      "section": "02 · Нейминг и креатив",
+      "type": "Текст ссылки",
+      "current": "Название бренда",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0044\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/nazvanie-brenda/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0045",
+      "section": "02 · Нейминг и креатив",
+      "type": "Текст ссылки",
+      "current": "Креативная концепция",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0045\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/kreativnaja-koncepcija/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0046",
+      "section": "02 · Дизайн упаковки",
+      "type": "H2 · Заголовок",
+      "current": "Дизайн упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0046\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0047",
+      "section": "02 · Дизайн упаковки",
+      "type": "Абзац",
+      "current": "Упаковка – это первое, что видит покупатель. Она формирует первое впечатление, которое может быть решающим. Дизайн упаковки – это искусство привлечь внимание, рассказать историю, вызвать эмоции, подчеркнуть ценность товара. Для Heads дизайн упаковки – задача инженерная, но при этом невыполнимая без творческого вдохновения: просто мы задаем четкие рамки для потока креатива.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0047\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0048",
+      "section": "02 · Дизайн упаковки",
+      "type": "Абзац",
+      "current": "Повысьте продажи, заказав у нас:",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0048\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0049",
+      "section": "02 · Дизайн упаковки",
+      "type": "Текст ссылки",
+      "current": "Дизайн упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0049\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/dizajn-upakovki/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0050",
+      "section": "02 · Дизайн упаковки",
+      "type": "Текст ссылки",
+      "current": "Фудстайлинг",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0050\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/fudstajling/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0051",
+      "section": "02 · Дизайн упаковки",
+      "type": "Текст ссылки",
+      "current": "Форма упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0051\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/razrabotka-formy-upakovki/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0052",
+      "section": "02 · Дизайн упаковки",
+      "type": "Текст ссылки",
+      "current": "Брендбук",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0052\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/brendbook/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0053",
+      "section": "02 · Дизайн упаковки",
+      "type": "Текст ссылки",
+      "current": "Тиражирование",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0053\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/tirazhirovanie/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0054",
+      "section": "02 · Дизайн упаковки",
+      "type": "Текст ссылки",
+      "current": "Подготовка к печати",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0054\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/podgotovka-k-pechati/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0055",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "От задачи к решению",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0055\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0056",
+      "section": "03 · Этапы полного цикла",
+      "type": "H2 · Заголовок",
+      "current": "Как устроена разработка бренда полного цикла",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0056\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0057",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Исследование, стратегия и дизайн решают одну общую бизнес-задачу. Набор этапов и выходных материалов отличается в зависимости от конкретного проекта.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0057\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0058",
+      "section": "03 · Этапы полного цикла",
+      "type": "Подпись этапа",
+      "current": "01 / Аналитика",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0058\"]@text",
+      "notes": "",
+      "tag": "span",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0059",
+      "section": "03 · Этапы полного цикла",
+      "type": "H3 · Заголовок",
+      "current": "Исследования и аудит",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0059\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0060",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Изучаем рынок, категорию, аудиторию и конкурентов; выбираем методы, необходимые для задачи.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0060\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0061",
+      "section": "03 · Этапы полного цикла",
+      "type": "Текст ссылки",
+      "current": "Анализ рынка",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0061\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/analiz-rynka/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0062",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Результат: факты и гипотезы для решения.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0062\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0063",
+      "section": "03 · Этапы полного цикла",
+      "type": "Подпись этапа",
+      "current": "02 / Основа бренда",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0063\"]@text",
+      "notes": "",
+      "tag": "span",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0064",
+      "section": "03 · Этапы полного цикла",
+      "type": "H3 · Заголовок",
+      "current": "Стратегия и позиционирование",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0064\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0065",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Определяем целевую аудиторию, ценность продукта, территорию бренда и принципы отличия.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0065\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0066",
+      "section": "03 · Этапы полного цикла",
+      "type": "Текст ссылки",
+      "current": "Стратегия бренда",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0066\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/strategija-i-pozicionirovanie/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0067",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Результат: платформа и ориентиры для дизайна.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0067\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0068",
+      "section": "03 · Этапы полного цикла",
+      "type": "Подпись этапа",
+      "current": "03 / Идея",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0068\"]@text",
+      "notes": "",
+      "tag": "span",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0069",
+      "section": "03 · Этапы полного цикла",
+      "type": "H3 · Заголовок",
+      "current": "Нейминг и креатив",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0069\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0070",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Разрабатываем название и коммуникационную идею, если они входят в задачи запуска или перезапуска.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0070\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0071",
+      "section": "03 · Этапы полного цикла",
+      "type": "Текст ссылки",
+      "current": "Разработка названия",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0071\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/nazvanie-brenda/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0072",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Результат: согласованная смысловая концепция.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0072\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0073",
+      "section": "03 · Этапы полного цикла",
+      "type": "Подпись этапа",
+      "current": "04 / Визуальная система",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0073\"]@text",
+      "notes": "",
+      "tag": "span",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0074",
+      "section": "03 · Этапы полного цикла",
+      "type": "H3 · Заголовок",
+      "current": "Айдентика и упаковка",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0074\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0075",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Переводим позиционирование в дизайн-систему и мастер-макеты, адаптируем их под линейки и SKU.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0075\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0076",
+      "section": "03 · Этапы полного цикла",
+      "type": "Текст ссылки",
+      "current": "Дизайн упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0076\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/dizajn-upakovki/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0077",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Результат: дизайн и принципы масштабирования.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0077\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0078",
+      "section": "03 · Этапы полного цикла",
+      "type": "Подпись этапа",
+      "current": "05 / Внедрение",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0078\"]@text",
+      "notes": "",
+      "tag": "span",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0079",
+      "section": "03 · Этапы полного цикла",
+      "type": "H3 · Заголовок",
+      "current": "Коммуникации и запуск",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0079\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0080",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Готовим правила применения фирменного стиля, носители, материалы для каналов продаж и печати.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0080\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0081",
+      "section": "03 · Этапы полного цикла",
+      "type": "Текст ссылки",
+      "current": "Коммуникационная стратегия",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0081\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/services/kommunikacionnaja-strategija/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0082",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Результат: комплект для использования бренда.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0082\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0083",
+      "section": "03 · Этапы полного цикла",
+      "type": "Абзац",
+      "current": "Для проектов с несколькими брендами отдельно прорабатываем архитектуру портфеля и продуктовых линеек. Для сложной упаковки также предусматриваем подготовку макетов к печати.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0083\"]@text",
+      "notes": "Внутри 2 ссылка(и): архитектуру портфеля и продуктовых линеек → https://wellhead.ru/services/formirovanie-portfelja-brendov/ | подготовку макетов к печати → https://wellhead.ru/services/podgotovka-k-pechati/. URL сохраняем.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0084",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "Задачи маркетинга и бизнеса",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0084\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0085",
+      "section": "04 · Сценарии заказчиков",
+      "type": "H2 · Заголовок",
+      "current": "С какой задачей стоит обратиться в Heads",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0085\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0086",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "Подбор агентства начинается с задачи: создать новую марку, обновить знакомый бренд или выстроить ассортимент. Для каждого сценария требуется свой набор исследований, решений и материалов.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0086\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0087",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "01 · Новый бренд",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0087\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0088",
+      "section": "04 · Сценарии заказчиков",
+      "type": "H3 · Заголовок",
+      "current": "Запуск продукта или бренда с нуля",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0088\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0089",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "Нужно найти позиционирование, сформировать имя, упаковку и систему коммуникаций. Определяем конкурентный контекст и создаем основу, которую можно развивать вместе с ассортиментом.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0089\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0090",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "Примеры: KIX и Pet Pride.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0090\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0091",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "02 · Ребрендинг",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0091\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0092",
+      "section": "04 · Сценарии заказчиков",
+      "type": "H3 · Заголовок",
+      "current": "Обновление существующей марки",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0092\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0093",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "У бренда уже есть узнаваемые элементы и аудитория. Изучаем, что важно сохранить, затем обновляем образ, структуру линеек и правила использования дизайна.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0093\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0094",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "Примеры: Hartens и «Вернель» (разные задачи и объем работ).",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0094\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0095",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "03 · Портфель / СТМ",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0095\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0096",
+      "section": "04 · Сценарии заказчиков",
+      "type": "H3 · Заголовок",
+      "current": "Развитие нескольких категорий и SKU",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0096\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0097",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "Нужна архитектура брендов и упаковка, которая сохраняет узнаваемость при расширении ассортимента: мастер-дизайн, дифференциация линеек, правила адаптации.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0097\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0098",
+      "section": "04 · Сценарии заказчиков",
+      "type": "Абзац",
+      "current": "Примеры: KIX, Pet Pride и Hartens.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0098\"]@text",
+      "notes": "Сохранить смысловое жирное выделение.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0099",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Наш бесценный опыт",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0099\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0100",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "H2 · Заголовок",
+      "current": "Кейсы, в которых видна связь стратегии, дизайна и внедрения",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0100\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0101",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "В нашем портфолио есть проекты разного типа: создание новых брендов, обновление узнаваемых марок и разработка дизайн-систем для больших продуктовых линеек. Вот несколько примеров нашей работы.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0101\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0102",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Новый бренд · FMCG / СТМ",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0102\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0103",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "H3 · Заголовок",
+      "current": "KIX",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0103\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0104",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Для марки товаров личной гигиены и бытовой химии мы разработали позиционирование, название, дизайн-систему упаковки, брендбук и коммуникационные материалы. Мы адаптировали визуальную систему под разные SKU.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0104\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0105",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Текст ссылки",
+      "current": "Посмотреть кейс KIX",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0105\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/projects/kix/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0106",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Новый бренд · товары для животных / СТМ",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0106\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0107",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "H3 · Заголовок",
+      "current": "Pet Pride",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0107\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0108",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Мы разработали позиционирование и название бренда, дизайн упаковки, руководство по применению фирменного стиля и коммуникационную платформу, включая материалы для цифровых каналов и карточек товаров.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0108\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0109",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Текст ссылки",
+      "current": "Посмотреть кейс Pet Pride",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0109\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/projects/pet-pride/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0110",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Обновление бренда · техника",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0110\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0111",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "H3 · Заголовок",
+      "current": "Hartens",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0111\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0112",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Название бренда сохранилось. Мы сформулировали позиционирование и легенду, обновили визуальную систему и разработали правила адаптации упаковки к разным категориям продукции.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0112\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0113",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Текст ссылки",
+      "current": "Посмотреть кейс Hartens",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0113\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/projects/hartens/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0114",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Редизайн · FMCG non-food",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0114\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0115",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "H3 · Заголовок",
+      "current": "«Вернель»",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0115\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0116",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Мы обновили дизайн упаковки известной марки, разработали единую визуальную систему для нескольких продуктовых линеек, адаптировали ее под разные форматы и объемы, подготовили подробный брендбук.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0116\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0117",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Текст ссылки",
+      "current": "Посмотреть кейс «Вернель»",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0117\"]@text",
+      "notes": "Ссылка ведет на https://wellhead.ru/projects/redizajn-brenda-vernel/; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0118",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "H3 · Заголовок",
+      "current": "Как формируется объем проекта и смета",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0118\"]@text",
+      "notes": "",
+      "tag": "h3",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0119",
+      "section": "05 · Кейсы и наш опыт",
+      "type": "Абзац",
+      "current": "Комплекс «стратегия + дизайн» рассчитывается под задачу, а не как механическая сумма отдельных услуг. На стоимость влияют исследования, продуктовые категории, количество SKU, носителей, участников и согласований. Стартовые цены по доступным услугам можно посмотреть в прайсе Heads; точный состав работ фиксируем после обсуждения брифа.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0119\"]@text",
+      "notes": "Внутри 1 ссылка(и): прайсе Heads → https://wellhead.ru/prices/. URL сохраняем.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0120",
+      "section": "06 · FAQ",
+      "type": "Абзац",
+      "current": "Ответы на вопросы заказчиков",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0120\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0121",
+      "section": "06 · FAQ",
+      "type": "H2 · Заголовок",
+      "current": "Частые вопросы о брендинге под ключ",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0121\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0122",
+      "section": "06 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Что входит в брендинг полного цикла?",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0122\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "summary",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0123",
+      "section": "06 · FAQ",
+      "type": "Абзац",
+      "current": "Состав зависит от задачи. В проект могут входить исследования рынка и аудитории, стратегия и позиционирование, нейминг, фирменный стиль, дизайн упаковки, брендбук и коммуникационные материалы. До начала работы определяем этапы и итоговые материалы каждого этапа.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0123\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0124",
+      "section": "06 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Можно ли заказать только дизайн упаковки или фирменный стиль?",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0124\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "summary",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0125",
+      "section": "06 · FAQ",
+      "type": "Абзац",
+      "current": "Да. Heads выполняет отдельные услуги, в том числе дизайн упаковки, фирменный стиль, исследования и нейминг. Если у бренда уже есть стратегия и позиционирование, можно использовать их как основу для дизайн-проекта.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0125\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0126",
+      "section": "06 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Сколько стоит разработка бренда под ключ?",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0126\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "summary",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0127",
+      "section": "06 · FAQ",
+      "type": "Абзац",
+      "current": "Единой цены на полный цикл нет: смета зависит от состава работ, объема исследований, числа продуктовых категорий и SKU, числа носителей и этапов согласования. Стартовые цены на отдельные услуги указаны в прайсе как «от»; стоимость комплексного проекта рассчитываем под бриф.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0127\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0128",
+      "section": "06 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Как связаны стратегия бренда и дизайн упаковки?",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0128\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "summary",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0129",
+      "section": "06 · FAQ",
+      "type": "Абзац",
+      "current": "Стратегия определяет аудиторию, позиционирование, обещание бренда и принципы отличия от конкурентов. Эти решения затем переводятся в визуальную систему, структуру упаковки и коммуникации. При готовой стратегии можно начинать с дизайна, а при ее отсутствии уточнить необходимые исследования.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0129\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0130",
+      "section": "06 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Работает ли Heads с собственными торговыми марками и большими линейками?",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0130\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "summary",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0131",
+      "section": "06 · FAQ",
+      "type": "Абзац",
+      "current": "Да. В опубликованных кейсах KIX и Pet Pride показаны создание СТМ и дизайн-системы для разных категорий. В проекте Hartens показана адаптация существующего бренда на разные товарные группы. Количество SKU и необходимые форматы определяются брифом.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0131\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0132",
+      "section": "06 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Сколько времени занимает брендинг полного цикла?",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0132\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "summary",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0133",
+      "section": "06 · FAQ",
+      "type": "Абзац",
+      "current": "Срок зависит от числа этапов, глубины исследований, объема ассортимента, наличия исходных материалов и согласований. Календарь проекта и контрольные точки определяются после обсуждения задачи. Универсального срока для всех брендов нет.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0133\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0134",
+      "section": "06 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Что предоставить агентству для начала работы?",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0134\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "summary",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0135",
+      "section": "06 · FAQ",
+      "type": "Абзац",
+      "current": "Опишите задачу, продуктовые категории, аудиторию, желаемые результаты и ограничения. Если есть бриф, исследования, существующий брендбук или примеры упаковки, их можно приложить к заявке. Даже без готового брифа можно начать с описания проекта и обсудить дальнейшие шаги.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0135\"]@text",
+      "notes": "FAQ: после правок синхронизировать JSON-LD.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0136",
+      "section": "07 · Финальный призыв",
+      "type": "H2 · Заголовок",
+      "current": "Давайте обсудим задачу?",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0136\"]@text",
+      "notes": "",
+      "tag": "h2",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0137",
+      "section": "07 · Финальный призыв",
+      "type": "Абзац",
+      "current": "Расскажите, что запускаете или обновляете, какие категории и носители нужны. Мы уточним вводные, этапы и состав предложения.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0137\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0138",
+      "section": "07 · Финальный призыв",
+      "type": "Текст ссылки",
+      "current": "Обсудить проект",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0138\"]@text",
+      "notes": "Ссылка ведет на #new-clients; адрес сохраняем.",
+      "tag": "a",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0139",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "Обсудить проект",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0139\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0140",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "Вы можете написать нам на почту или заполнить форму ниже.",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0140\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0141",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "Написать на почту",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0141\"]@text",
+      "notes": "Внутри 1 ссылка(и): Написать на почту → mailto:head@wellhead.ru. URL сохраняем.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0142",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "скачать бриф",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0142\"]@text",
+      "notes": "Внутри 1 ссылка(и): скачать бриф → assets/9b42eba4a6-heads_brief.docx. URL сохраняем.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0143",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "Тема",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0143\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0144",
+      "section": "08 · Форма заявки",
+      "type": "Подсказка поля",
+      "current": "Назовите ваш проект*",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0144\"]@placeholder",
+      "notes": "Изменяется атрибут placeholder; имя/тип поля не меняем.",
+      "tag": "input",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0145",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "Какие услуги вы бы хотели у нас заказать",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0145\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0146",
+      "section": "08 · Форма заявки",
+      "type": "Подсказка поля",
+      "current": "Сообщение",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0146\"]@placeholder",
+      "notes": "Изменяется атрибут placeholder; имя/тип поля не меняем.",
+      "tag": "textarea",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0147",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "максимум 10 мб",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0147\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0148",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "Контакты",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0148\"]@text",
+      "notes": "",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0149",
+      "section": "08 · Форма заявки",
+      "type": "Подсказка поля",
+      "current": "Имя и фамилия*",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0149\"]@placeholder",
+      "notes": "Изменяется атрибут placeholder; имя/тип поля не меняем.",
+      "tag": "input",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0150",
+      "section": "08 · Форма заявки",
+      "type": "Подсказка поля",
+      "current": "Должность",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0150\"]@placeholder",
+      "notes": "Изменяется атрибут placeholder; имя/тип поля не меняем.",
+      "tag": "input",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0151",
+      "section": "08 · Форма заявки",
+      "type": "Подсказка поля",
+      "current": "Компания*",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0151\"]@placeholder",
+      "notes": "Изменяется атрибут placeholder; имя/тип поля не меняем.",
+      "tag": "input",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0152",
+      "section": "08 · Форма заявки",
+      "type": "Подсказка поля",
+      "current": "Телефон*",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0152\"]@placeholder",
+      "notes": "Изменяется атрибут placeholder; имя/тип поля не меняем.",
+      "tag": "input",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0153",
+      "section": "08 · Форма заявки",
+      "type": "Подсказка поля",
+      "current": "Эл. почта*",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0153\"]@placeholder",
+      "notes": "Изменяется атрибут placeholder; имя/тип поля не меняем.",
+      "tag": "input",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0154",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "Я даю согласие на обработку моих персональных данных и соглашаюсь с политикой обработки персональных данных компании",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0154\"]@text",
+      "notes": "Внутри 2 ссылка(и): согласие на обработку моих персональных данных → https://wellhead.ru/soglashenie/ | политикой обработки персональных данных → https://wellhead.ru/privacy-policy/. URL сохраняем.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0155",
+      "section": "08 · Форма заявки",
+      "type": "Кнопка формы",
+      "current": "Отправить",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0155\"]@value",
+      "notes": "Изменяется атрибут value; имя/тип поля не меняем.",
+      "tag": "input",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0156",
+      "section": "08 · Форма заявки",
+      "type": "Абзац",
+      "current": "Форма успешно отправлена",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0156\"]@text",
+      "notes": "Системный текст формы.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0157",
+      "section": "09 · Окно презентации",
+      "type": "Абзац",
+      "current": "Скачать презентацию",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0157\"]@text",
+      "notes": "Всплывающее окно презентации, может повторяться на других страницах.",
+      "tag": "p",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0158",
+      "section": "09 · Окно презентации",
+      "type": "Подпись формы",
+      "current": "Email",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0158\"]@text",
+      "notes": "Всплывающее окно презентации, может повторяться на других страницах.",
+      "tag": "label",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0159",
+      "section": "09 · Окно презентации",
+      "type": "Подсказка поля",
+      "current": "Введите свой Email",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0159\"]@placeholder",
+      "notes": "Изменяется атрибут placeholder; имя/тип поля не меняем. Всплывающее окно презентации, может повторяться на других страницах.",
+      "tag": "input",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0160",
+      "section": "09 · Окно презентации",
+      "type": "Подпись формы",
+      "current": "Я даю согласие на обработку моих персональных данных и соглашаюсь с политикой обработки персональных данных компании",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0160\"]@text",
+      "notes": "Внутри 2 ссылка(и): согласие на обработку моих персональных данных → https://wellhead.ru/soglashenie/ | политикой обработки персональных данных → https://wellhead.ru/privacy-policy/. URL сохраняем. Всплывающее окно презентации, может повторяться на других страницах.",
+      "tag": "label",
+      "kind": "page"
+    },
+    {
+      "id": "HEADS-S01-0161",
+      "section": "09 · Окно презентации",
+      "type": "Текст кнопки",
+      "current": "Скачать презентацию",
+      "selector": "[data-heads-text-id=\"HEADS-S01-0161\"]@text",
+      "notes": "Всплывающее окно презентации, может повторяться на других страницах.",
+      "tag": "button",
+      "kind": "page"
+    }
+  ]
+}
