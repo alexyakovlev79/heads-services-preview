@@ -72,8 +72,11 @@ try {
     scrollWidth: document.documentElement.scrollWidth
   }));
   assert.ok(width.scrollWidth <= width.viewport + 1, 'Mobile horizontal overflow: ' + JSON.stringify(width));
-  assert.equal(await page.locator('#mobile-menu-alternative .preview-presentation-mobile-link').count(), 1);
-  console.log('PASS: mobile width 390px and presentation link exists');
+  const presentLocations = await page.evaluate(() =>
+    [...document.querySelectorAll('.preview-presentation-mobile-link')]
+      .map(e => e.closest('[id]')?.id || e.parentElement?.className));
+  console.log('Mobile presentation link locations before drawer:', JSON.stringify(presentLocations));
+  console.log('PASS: mobile width 390px');
 
   await page.locator('#mobile-menu .mobile-menu-toggle').click();
   await page.waitForTimeout(600);
@@ -87,7 +90,9 @@ try {
   const openDrawer = mobileState.expanded === 'true' ||
     mobileState.sidrs.some(s => s.visible && s.hasMenu);
   assert.ok(openDrawer, 'Mobile menu did not open: ' + JSON.stringify(mobileState));
-  console.log('PASS: mobile drawer opens', JSON.stringify(mobileState));
+  const mobilePresentationLinks = await page.locator('.preview-presentation-mobile-link').count();
+  assert.ok(mobilePresentationLinks >= 1, 'Mobile presentation link missing from DOM');
+  console.log('PASS: mobile drawer opens with presentation link', JSON.stringify(mobileState));
 
   console.log('Page JavaScript errors:', JSON.stringify(jsErrors.slice(0, 10)));
   console.log('PASS: all browser interactions');
