@@ -67,7 +67,7 @@ if (window.jQuery && typeof jQuery.fn.mask === 'function') {
 } else {
     // Native fallback: the demo form must work even if the mask plugin fails to load.
     phone.addEventListener('input', () => {
-        let digits = phone.value.replace(/\\D/g, '');
+        let digits = phone.value.replace(/\D/g, '');
         if (digits.startsWith('8')) digits = '7' + digits.slice(1);
         if (!digits.startsWith('7')) digits = '7' + digits;
         digits = digits.slice(0, 11);
