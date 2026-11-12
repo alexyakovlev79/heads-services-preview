@@ -24,10 +24,15 @@ if (mobileMenu && !mobileMenu.querySelector('.preview-presentation-mobile-link')
     const link = document.createElement('a');
     link.href = '#';
     link.textContent = 'Скачать презентацию';
-    link.addEventListener('click', openPresentation);
     item.append(link);
     mobileMenu.append(item);
 }
+
+// Sidr rebuilds/clones mobile navigation; delegate the click so cloned links work too.
+document.addEventListener('click', (event) => {
+    const link = event.target.closest?.('.preview-presentation-mobile-link a');
+    if (link) openPresentation({ preventDefault: () => event.preventDefault(), currentTarget: link });
+});
 
 if (presentation) {
     presentation.querySelector('.dialog-close-button')?.addEventListener('click', () => presentation.close());
