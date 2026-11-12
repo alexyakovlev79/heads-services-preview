@@ -13,6 +13,7 @@
     width: min(640px, calc(100vw - 24px));
 }
 .preview-presentation .dialog-close-button {
+    display: block;
     position: absolute;
     z-index: 1;
     top: 14px;
