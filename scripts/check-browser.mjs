@@ -96,9 +96,10 @@ try {
   console.log('PASS: mobile drawer opens with presentation link', JSON.stringify(mobileState));
 
   // GEO/AEO content and responsive behavior must be present in the rendered page.
-  // Sidr's overlay intercepts clicks while the drawer is open; close via that overlay.
-  await page.locator('.wpex-sidr-overlay').click({ position: { x: 20, y: 20 } });
-  await page.waitForTimeout(350);
+  // Isolate the GEO content test from the open mobile drawer.
+  // Sidr overlays the page while its drawer is visible, so start a fresh visit.
+  await page.reload({ waitUntil: 'load' });
+  await page.waitForTimeout(250);
   assert.equal(await page.locator('#heads-process .heads-geo-timeline > li').count(), 5);
   assert.equal(await page.locator('#heads-scenarios .heads-geo-card').count(), 3);
   assert.equal(await page.locator('#heads-cases .heads-geo-case').count(), 4);
