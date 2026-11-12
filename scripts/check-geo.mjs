@@ -54,7 +54,7 @@ assert.equal((html.match(/<h1\b/g)||[]).length,1,'Only one H1');
 assert.equal((geo.match(/class="heads-geo-step-no"/g)||[]).length,5,'Five full-cycle stages');
 assert.equal((geo.match(/class="heads-geo-card-tag"/g)||[]).length,7,'Three scenarios and four cases');
 assert.equal((geo.match(/class="heads-geo-case"/g)||[]).length,4,'Four proof cases');
-assert.equal((geo.match(/<details><summary>/g)||[]).length,7,'Seven FAQs');
+assert.equal((geo.match(/<details><summary\\b[^>]*>/g)||[]).length,7,'Seven FAQs');
 assert.ok(geo.includes('href="#new-clients"'),'Preserve CTA to contact form');
 assert.ok(geo.includes('href="https://wellhead.ru/prices/"'),'Link to active pricing');
 assert.ok(html.includes('href="geo-enhancements.css"'),'Scoped GEO stylesheet present');
@@ -91,8 +91,8 @@ assert.equal(only('OfferCatalog')[0].itemListElement.length,4,'Four service cate
 assert.equal(only('Service')[0].provider['@id'],'https://wellhead.ru/#organization','Service connected to Heads');
 for(const q of only('FAQPage')[0].mainEntity){
  assert.equal(q['@type'],'Question');
- assert.ok(geo.includes('<summary>'+q.name+'</summary>'),'Structured question absent in HTML: '+q.name);
- assert.ok(geo.includes('<p>'+q.acceptedAnswer.text+'</p>'),'Structured answer absent in HTML: '+q.name);
+ assert.ok([...geo.matchAll(/<summary\\b[^>]*>([\\s\\S]*?)<\\/summary>/g)].some(m=>m[1]===q.name),'Structured question absent in HTML: '+q.name);
+ assert.ok([...geo.matchAll(/<div class="heads-geo-answer"><p\\b[^>]*>([\\s\\S]*?)<\\/p>/g)].some(m=>m[1]===q.acceptedAnswer.text),'Structured answer absent in HTML: '+q.name);
 }
 const title=html.match(/<title>([^<]*)<\/title>/)?.[1]||'';
 const desc=html.match(/<meta name="description" content="([^"]*)">/)?.[1]||'';
@@ -101,5 +101,8 @@ assert.ok(desc.length>=110 && desc.length<=180,'Description length: '+desc.lengt
 assert.ok(html.includes('<meta name="robots" content="noindex, nofollow, noarchive">'),'Preview must be noindex');
 assert.equal((html.match(/data-preview-form="/g)||[]).length,2,'Original demo forms unchanged');
 
+const boundIds=[...html.matchAll(/data-heads-text-id="(HEADS-S01-\\d{4})"/g)].map(x=>x[1]);
+assert.equal(boundIds.length,161,'Expected 161 stable editorial field IDs');
+assert.equal(new Set(boundIds).size,boundIds.length,'Duplicate editable ID');
 console.log('PASS GEO/AEO: 1 H1, 5 stages, 3 scenarios, 4 verified cases, 7 FAQs, structured Service/FAQ/catalog, internal links and CTA.');
 console.log('META lengths:',JSON.stringify({title:title.length,description:desc.length}));
