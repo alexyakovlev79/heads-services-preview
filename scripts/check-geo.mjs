@@ -10,6 +10,46 @@ const finish=html.indexOf('<form method="post" class="wpcf7-form init"',start);
 assert.ok(start>0 && finish>start,'GEO sections must precede the project form');
 const geo=html.slice(start,finish);
 for(const word of banned)assert.ok(!geo.toLowerCase().includes(word.toLowerCase()),'Excluded project in GEO block: '+word);
+
+ 
+// Mandatory publication rules: the client-facing site addresses visitors with
+// the respectful Russian "вы". Internal editing instructions belong in docs,
+// never in visible page copy, FAQ answers or promotional case descriptions.
+const visible=html.slice(html.indexOf('<body'),html.indexOf('</body>'))
+  .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ')
+  .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ')
+  .replace(/<!--[\s\S]*?-->/g,' ')
+  .replace(/<[^>]+>/g,' ')
+  .replace(/\s+/g,' ');
+const informal=[
+  'ты','тебе','тебя','тобой','твой','твоя','твое','твои','твоего','твою','твоих',
+  'опиши','расскажи','сделай','напиши','посмотри','нажми','выбери','запусти',
+  'переходи','закажи','узнай','скачай','заполни','запускаешь','обновляешь'
+];
+for(const word of informal){
+  const re=new RegExp('(^|[^\\p{L}])'+word+'(?=$|[^\\p{L}])','iu');
+  assert.ok(!re.test(visible),'Informal visitor address is forbidden: '+word);
+}
+const leaks=[
+  /кейс не выдается/iu,
+  /не приписываем/iu,
+  /по согласованию с заказчиком не упоминать/iu,
+  /не включаем кейс/iu,
+  /внутренние договоренности/iu,
+  /запрещено публиковать/iu
+];
+for(const re of leaks)assert.ok(!re.test(visible),'Internal editorial note appeared on client page: '+re);
+assert.ok(geo.includes('Heads · Москва, Россия'), 'Public branding must use Heads only');
+assert.ok(geo.includes('Давайте обсудим задачу?'), 'Public contact heading changed');
+assert.ok(geo.includes('Расскажите, что запускаете или обновляете'), 'Formal CTA address expected');
+assert.ok(geo.includes('Опишите задачу, продуктовые категории'), 'Formal FAQ address expected');
+assert.ok(geo.includes('Наш бесценный опыт'), 'Cases eyebrow changed');
+const cardContents=[...geo.matchAll(/<article class="heads-geo-case">([\s\S]*?)<\/article>/g)].map(x=>x[1]);
+assert.equal(cardContents.length,4,'Expected 4 proof case cards');
+for(const [i,card] of cardContents.entries()){
+  assert.ok(/(^|[^\p{L}])мы(?=$|[^\p{L}])/iu.test(card),'Case '+(i+1)+' must use the agency voice');
+}
+
 assert.equal((html.match(/<h1\b/g)||[]).length,1,'Only one H1');
 assert.equal((geo.match(/class="heads-geo-step-no"/g)||[]).length,5,'Five full-cycle stages');
 assert.equal((geo.match(/class="heads-geo-card-tag"/g)||[]).length,7,'Three scenarios and four cases');
