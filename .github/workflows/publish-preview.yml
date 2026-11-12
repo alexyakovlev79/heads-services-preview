@@ -43,3 +43,26 @@ jobs:
       - name: Publish preview
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify live customer-facing page
+        shell: bash
+        env:
+          LIVE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          url="${LIVE_URL}?sha=${GITHUB_SHA}"
+          ok=0
+          for attempt in $(seq 1 15); do
+            if curl --fail --location --silent --show-error --max-time 20 "${url}" -o /tmp/heads-live.html               && grep -Fq 'Heads · Москва, Россия' /tmp/heads-live.html               && grep -Fq 'Давайте обсудим задачу?' /tmp/heads-live.html               && grep -Fq 'Наш бесценный опыт' /tmp/heads-live.html               && grep -Fq 'Опишите задачу, продуктовые категории' /tmp/heads-live.html; then
+              ok=1
+              break
+            fi
+            sleep 4
+          done
+          test "${ok}" -eq 1 || { echo "ERROR: new content is not visible at ${LIVE_URL}"; exit 1; }
+          if grep -Fq 'Кейс не выдается за создание новой стратегии бренда' /tmp/heads-live.html; then
+            echo "ERROR: internal editorial note leaked into the published page"
+            exit 1
+          fi
+          curl --fail --location --silent --show-error --max-time 20 "${LIVE_URL}geo-enhancements.css" -o /tmp/heads-live.css
+          test -s /tmp/heads-live.css
+          echo "PASS: published GEO page and stylesheet verified: ${LIVE_URL}"
