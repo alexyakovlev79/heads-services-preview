@@ -19,6 +19,22 @@ jobs:
       - name: Check static resources and JavaScript
         run: node scripts/check-preview.mjs
 
+      - name: Install browser test driver
+        run: npm install --no-save --no-package-lock --ignore-scripts playwright-core
+
+      - name: Test interactions in Chrome
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/heads-browser-server.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" || true' EXIT
+          for i in $(seq 1 10); do
+            if curl -fsS -o /dev/null http://127.0.0.1:8000/; then break; fi
+            sleep 1
+          done
+          node scripts/check-browser.mjs
+
       - name: Capture optional browser screenshots
         shell: bash
         run: |
