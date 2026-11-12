@@ -37,7 +37,7 @@ for (const form of document.querySelectorAll('[data-preview-form]')) {
 
 const projectForm = document.querySelector('[data-preview-form="project"]');
 const phone = projectForm.querySelector('[type="tel"]');
-jQuery(phone).mask('\\+7 (000) 000-00-00', {clearIfNotMatch: true});
+jQuery(phone).mask('+7 (000) 000-00-00', {clearIfNotMatch: true});
 phone.pattern = '\\+7 \\(\\d{3}\\) \\d{3}-\\d{2}-\\d{2}';
 
 const consent = projectForm.querySelector('[type="checkbox"]');
