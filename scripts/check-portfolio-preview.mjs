@@ -58,5 +58,24 @@ assert.deepEqual(headings, [
     'Зачем нужна такая сложная система?', 'Стоимость формирования портфеля брендов',
     'Часто задаваемые вопросы'
 ]);
+const fieldMap = JSON.parse(fs.readFileSync(path.join(root, 'docs/s03-portfolio/text-fields.json'), 'utf8'));
+const htmlIds = new Map();
+for (const [, id] of html.matchAll(/\bdata-heads-text-id="(HEADS-S03-(?:SEO-)?\d+)"/g)) {
+    htmlIds.set(id, (htmlIds.get(id) || 0) + 1);
+}
+assert.equal(htmlIds.size, fieldMap.fields.length);
+assert.equal(new Set(fieldMap.fields.map(field => field.id)).size, fieldMap.fields.length);
+for (const field of fieldMap.fields) {
+    assert.equal(htmlIds.get(field.id), field.targets, 'Text binding: ' + field.id);
+    assert.ok(field.selector.startsWith('[data-heads-text-id="' + field.id + '"]'), field.id);
+}
+const schema = JSON.parse(html.match(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1]);
+const faq = schema['@graph'].find(node => node['@type'] === 'FAQPage');
+assert.equal(fieldMap.fields.filter(field => field.sync).length, 2 * faq.mainEntity.length);
+for (const field of fieldMap.fields.filter(field => field.sync)) {
+    const [, index, property] = field.sync.match(/^FAQPage\.mainEntity\[(\d+)\]\.(.+)$/);
+    const current = property.split('.').reduce((object, key) => object[key], faq.mainEntity[index]);
+    assert.equal(current.replace(/\s+/gu, ' ').trim(), field.current, 'FAQ text and JSON-LD: ' + field.id);
+}
 new vm.Script(fs.readFileSync(path.join(page, 'preview.js'), 'utf8'));
 console.log('PASS: S03 static layout, form isolation and asset checksums');
