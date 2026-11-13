@@ -1079,12 +1079,13 @@
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/strategy_02.gif",
       "path": "assets/e342b72df7-strategy_02.gif",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "fbccd755498be9a90450790a5b3573d1d45981675d8a8254892ba4c9a21a07bb",
       "source_size": 8006126,
       "content_type": "image/gif",
       "sha256": "fbccd755498be9a90450790a5b3573d1d45981675d8a8254892ba4c9a21a07bb",
-      "size": 8006126
+      "size": 8006126,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/e342b72df7-strategy_02.gif"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/bez-imeni-1.png",
