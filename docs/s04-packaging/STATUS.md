@@ -12,10 +12,11 @@
 | 1. Исходный HTML и эталоны | IN_PROGRESS | Сохранён очищенный HTML в source-original.html. В Work подтверждены шесть этапов и пять FAQ. |
 | 2. Ресурсы | SAVED | 11 исходных изображений и GIF сохранены [пакетами](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43386822299); 230 URL используют проверенные общие файлы. |
 | 3–4. Вёрстка и интерфейс | SAVED | Исходная вёрстка обеих ширин, локальные ресурсы и изолированные демоформы. |
-| 5. QA | TODO | |
+| 5. QA | IN_PROGRESS | Независимый Chrome на 320, 390, 768 и 1440 px. |
 | 6. Pages | TODO | |
 | 7. Лист Аллы | TODO | Подтверждён четвёртый лист. |
 
 Предыдущий коммит: [27a75e1](https://github.com/alexyakovlev79/heads-services-preview/commit/27a75e1e8984baf90ca0b26470db766c10c9dafe).
 Подтверждённый предыдущий SHA: [8f69cef](https://github.com/alexyakovlev79/heads-services-preview/commit/8f69cef9261e72b5d5ed6df7844cd93a1afb0c3c).
-Следующий шаг — запустить независимую проверку Chrome и снять эталоны оригинала.
+Предыдущая рабочая копия: [02df16f](https://github.com/alexyakovlev79/heads-services-preview/commit/02df16fd74d6c8b7188762ea7fa43b3322ac4e5d).
+Следующий шаг — сверить Chrome и полноразмерные снимки оригинала и копии.

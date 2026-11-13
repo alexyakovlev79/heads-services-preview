@@ -1,0 +1,46 @@
+name: Heads packaging preview QA
+
+on:
+  push:
+    branches: [main, work/heads-s03-packaging-copy]
+    paths:
+      - 'dizajn-upakovki/**'
+      - 'docs/s03-packaging/assets-manifest.json'
+      - 'docs/s03-packaging/text-fields.json'
+      - 'scripts/check-packaging-*.mjs'
+      - '.github/workflows/packaging-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  packaging:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check S04 assets and form isolation
+        run: node scripts/check-packaging-preview.mjs
+      - name: Install browser test driver
+        run: npm install --no-save --no-package-lock --ignore-scripts playwright-core
+      - name: Check four viewport widths and compare with the original
+        env:
+          S04_CAPTURE_ORIGINAL: '1'
+        run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 &
+          server_pid=$!
+          trap 'kill "$server_pid" || true' EXIT
+          for i in $(seq 1 10); do
+            if curl -fsS -o /dev/null http://127.0.0.1:8000/; then break; fi
+            sleep 1
+          done
+          node scripts/check-packaging-browser.mjs
+      - name: Upload full-page screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: heads-s03-screenshots
+          path: qa-artifacts/packaging/
+          if-no-files-found: ignore
+          retention-days: 30
