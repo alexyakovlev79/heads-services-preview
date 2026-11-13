@@ -39,6 +39,9 @@ jobs:
           mkdir -p dist/formirovanie-portfelja-brendov
           cp -a formirovanie-portfelja-brendov/{index.html,preview.css,preview.js,geo-s03.css,assets} dist/formirovanie-portfelja-brendov/
           test -s dist/formirovanie-portfelja-brendov/index.html
+          mkdir -p dist/dizajn-upakovki
+          cp -a dizajn-upakovki/{index.html,preview.css,preview.js,assets} dist/dizajn-upakovki/
+          test -s dist/dizajn-upakovki/index.html
           touch dist/.nojekyll
           test -s dist/index.html
           test -s dist/geo-enhancements.css
@@ -99,6 +102,18 @@ jobs:
           exit 1
       - name: Install portfolio browser test driver
         run: npm install --no-save --no-package-lock --ignore-scripts playwright-core
+      - name: Verify the published packaging preview in Chrome
+        env:
+          S04_PREVIEW_BASE: ${{ steps.deployment.outputs.page_url }}
+        run: node scripts/check-packaging-browser.mjs
+      - name: Upload published packaging screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: heads-s04-published-screenshots
+          path: qa-artifacts/packaging/
+          if-no-files-found: ignore
+          retention-days: 30
       - name: Verify the published portfolio preview in Chrome
         env:
           S03_PREVIEW_BASE: ${{ steps.deployment.outputs.page_url }}
