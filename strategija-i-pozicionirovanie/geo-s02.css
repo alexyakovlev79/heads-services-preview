@@ -1,0 +1,34 @@
+/* Секция S02. Все правила ограничены .heads-s02-geo, штатные блоки WordPress не меняем. */
+.heads-s02-geo{--s02-navy:#002b49;--s02-orange:#ff5100;--s02-line:#dce6ec;color:var(--s02-navy);font-family:"TT Fors Regular","TT Fors",Arial,sans-serif;margin:44px auto 76px;line-height:1.6;max-width:100%;min-width:0}
+.heads-s02-geo *{box-sizing:border-box}
+.heads-s02-geo h2,.heads-s02-geo h3,.heads-s02-geo p{margin-top:0}
+.heads-s02-geo h2{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-size:clamp(26px,3vw,38px);line-height:1.18;font-weight:700;color:var(--s02-navy);margin:0 0 18px}
+.heads-s02-geo h3{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-size:clamp(18px,1.8vw,21px);line-height:1.3;font-weight:700;color:var(--s02-navy);margin:0 0 11px}
+.heads-s02-geo p{font-size:16px;line-height:1.65;color:var(--s02-navy);margin:0 0 17px}
+.heads-s02-geo a{color:var(--s02-navy);text-decoration-color:var(--s02-orange);text-underline-offset:3px}
+.heads-s02-geo a:focus-visible{outline:3px solid var(--s02-orange);outline-offset:4px}
+.heads-s02-geo .heads-s02-label{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-weight:700;font-size:12px;line-height:1.4;letter-spacing:.06em;text-transform:uppercase;color:var(--s02-orange);margin:0 0 14px}
+.heads-s02-geo .heads-s02-lead{font-size:18px;line-height:1.6;max-width:900px;margin-bottom:25px}
+.heads-s02-geo .heads-s02-cases-intro{max-width:880px}
+.heads-s02-geo .heads-s02-block{padding:0 0 48px;margin:0 0 51px;border-bottom:1px solid var(--s02-line)}
+.heads-s02-geo .heads-s02-block:last-of-type{margin-bottom:0;border-bottom:none;padding-bottom:0}
+.heads-s02-geo .heads-s02-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch;margin-top:25px}
+.heads-s02-geo .heads-s02-card{min-width:0;border:1px solid var(--s02-line);border-top:4px solid var(--s02-orange);padding:24px 21px 22px;background:#fff;display:flex;flex-direction:column;justify-content:flex-start}
+.heads-s02-geo .heads-s02-card p{font-size:15px;line-height:1.62;margin-bottom:0}
+.heads-s02-geo .heads-s02-work{background:#f4f7f9;padding:32px 34px;border-radius:6px}
+.heads-s02-geo .heads-s02-deliverables{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;margin:22px 0 20px}
+.heads-s02-geo .heads-s02-deliverables>div{min-width:0}
+.heads-s02-geo .heads-s02-deliverables p{font-size:15px;margin-bottom:0}
+.heads-s02-geo .heads-s02-bridge{font-size:16px;margin:22px 0 0}
+.heads-s02-geo .heads-s02-bridge a{font-weight:700}
+.heads-s02-geo .heads-s02-projects .heads-s02-card{border:1px solid var(--s02-line);border-top:4px solid var(--s02-orange);padding-bottom:22px}
+.heads-s02-geo .heads-s02-projects .heads-s02-card a{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-weight:700;font-size:14px;margin-top:auto;padding-top:17px;display:inline-block}
+.heads-s02-geo .heads-s02-projects .heads-s02-card p{flex:1}
+.heads-s02-geo .heads-s02-end{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:32px;padding:24px 27px;background:var(--s02-navy);border-radius:5px}
+.heads-s02-geo .heads-s02-end p{color:#fff;margin:0;max-width:650px;font-size:16px}
+.heads-s02-geo .heads-s02-end a{display:inline-flex;min-height:44px;padding:10px 21px;align-items:center;justify-content:center;background:var(--s02-orange);font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-size:14px;font-weight:700;text-decoration:none;color:#fff;white-space:nowrap;border-radius:3px}
+.heads-s02-geo .heads-s02-end a:hover{background:#d84200;color:#fff}
+.heads-s02-geo-slot{height:0;overflow:hidden}
+@media(max-width:900px){.heads-s02-geo .heads-s02-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.heads-s02-geo .heads-s02-grid .heads-s02-card:last-child{grid-column:1/-1}}
+@media(max-width:767px){.heads-s02-geo{margin:30px 0 52px}.heads-s02-geo .heads-s02-block{padding-bottom:34px;margin-bottom:38px}.heads-s02-geo .heads-s02-grid,.heads-s02-geo .heads-s02-deliverables{grid-template-columns:1fr}.heads-s02-geo .heads-s02-grid .heads-s02-card:last-child{grid-column:auto}.heads-s02-geo .heads-s02-card{padding:21px 18px}.heads-s02-geo .heads-s02-work{padding:24px 18px}.heads-s02-geo .heads-s02-end{flex-direction:column;align-items:flex-start;padding:23px 19px}.heads-s02-geo .heads-s02-end a{width:100%;white-space:normal}}
+@media(max-width:390px){.heads-s02-geo h2{font-size:26px}.heads-s02-geo .heads-s02-lead{font-size:16px}.heads-s02-geo p{font-size:15px}}
