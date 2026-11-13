@@ -53,3 +53,38 @@
     display: block;
     overflow-wrap: anywhere;
 }
+
+/* Preserve the responsive type sizes from the original page's WPBakery settings. */
+[data-wpex-rcss*='"d":"30px"'] {
+    font-size: 30px !important;
+}
+[data-wpex-rcss*='"d":"21px"'] {
+    font-size: 21px !important;
+}
+[data-wpex-rcss*='"d":"14px"'] {
+    font-size: 14px !important;
+}
+@media (max-width: 1024px) {
+    [data-wpex-rcss*='"d":"30px"'] {
+        font-size: 25px !important;
+    }
+}
+@media (max-width: 959px) {
+    [data-wpex-rcss*='"d":"30px"'] {
+        font-size: 21px !important;
+    }
+}
+@media (max-width: 767px) {
+    [data-wpex-rcss*='"pl":"19px"'] {
+        font-size: 19px !important;
+    }
+    [data-wpex-rcss*='"pl":"16px"'] {
+        font-size: 16px !important;
+    }
+    [data-wpex-rcss*='"pl":"12px"'] {
+        font-size: 12px !important;
+    }
+    [data-wpex-rcss*='"pl":"10px"'] {
+        font-size: 10px !important;
+    }
+}

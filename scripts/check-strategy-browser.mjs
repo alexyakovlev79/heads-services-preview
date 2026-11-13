@@ -39,6 +39,16 @@ async function checkWidth(width) {
     try {
         assert.equal((await page.goto(url, {waitUntil:'domcontentloaded',timeout:45000})).status(),200);
         await page.locator('#single-blocks').waitFor({state:'visible'});
+        const typography = await page.locator('#single-blocks [data-wpex-rcss]:visible').evaluateAll(elements =>
+            elements.map(element => {
+                const sizes = JSON.parse(element.dataset.wpexRcss)['font-size'];
+                const size = [[479, 'pp'], [767, 'pl'], [959, 'tp'], [1024, 'tl']]
+                    .find(([limit, key]) => window.innerWidth <= limit && sizes[key]);
+                return [getComputedStyle(element).fontSize, size ? sizes[size[1]] : sizes.d];
+            })
+        );
+        assert.ok(typography.length > 0);
+        for (const [actual, expected] of typography) assert.equal(actual, expected, width + ': original font size');
         const text = (await page.locator('#single-blocks').innerText()).replace(/\s+/g, ' ');
         const headings = [
             'Суть и позиционирование бренда', 'Стратегия продвижения бренда',
