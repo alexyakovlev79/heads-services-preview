@@ -39,7 +39,7 @@
       "kind": "image",
       "size": 10071984,
       "sha256": "b25d4ab03b56efd9882801b2a612a56c2f2343fe6eb1a432114fb79e0682297e",
-      "status": "pending"
+      "status": "downloaded"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/package_design_02.gif",
@@ -47,7 +47,7 @@
       "kind": "image",
       "size": 7557311,
       "sha256": "b3c777a0fd02e6aa7aa64993955434f721acdd2ee6abddd092e604ce01a29e2c",
-      "status": "pending"
+      "status": "downloaded"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/package_design_04.gif",
@@ -55,7 +55,7 @@
       "kind": "image",
       "size": 8258756,
       "sha256": "6267eefe93ba101ce0a9f79d02bdf8204ec701d44e0225e859789d68b09d0aa9",
-      "status": "pending"
+      "status": "downloaded"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/photo_2024-11-25_12-31-51.jpg",
@@ -63,7 +63,7 @@
       "kind": "image",
       "size": 15756,
       "sha256": "326aedecd73622a763b298e3546c1ee5484bad9f87654db5e1959eec7d4a6964",
-      "status": "pending"
+      "status": "downloaded"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/photo_2024-11-25_12-31-54.jpg",
