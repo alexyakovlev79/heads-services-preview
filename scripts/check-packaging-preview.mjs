@@ -63,7 +63,7 @@ const geoHeadings = [
     'Когда нужен новый дизайн упаковки',
     'Как сделать упаковку узнаваемой на десятках SKU',
     'Что получает заказчик по итогам проекта',
-    'Пять проектов, пять разных задач упаковки'
+    'Дизайн упаковки в 5 проектах Heads'
 ];
 for (const h of geoHeadings) {
     assert.equal(headings.filter(v => v === h).length, 2, 'one desktop and one mobile GEO H2: ' + h);
