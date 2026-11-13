@@ -15,18 +15,18 @@ const browser = await chromium.launch({
 await fs.mkdir(output, {recursive:true});
 
 async function loadVisibleMedia(page) {
-    await page.evaluate(async () => {
-        const images = [...document.images].filter(image => image.getBoundingClientRect().width > 0);
-        for (const image of images) image.loading = 'eager';
-        await Promise.race([
-            Promise.allSettled([document.fonts.ready, ...images.map(image => image.decode())]),
-            new Promise(resolve => setTimeout(resolve, 15000))
-        ]);
+    await page.evaluate(() => {
+        for (const image of document.images) image.loading = 'eager';
     });
+    await page.waitForFunction(() =>
+        document.fonts.status === 'loaded' &&
+        [...document.images].every(image => image.getBoundingClientRect().width === 0 ||
+            (image.complete && image.naturalWidth > 0)),
+        undefined, {timeout:25000}
+    );
 }
 
 async function screenshots(page, name) {
-    await loadVisibleMedia(page);
     await page.screenshot({ path: output + '/' + name + '.png', fullPage:true, timeout:25000 });
 }
 
@@ -176,6 +176,7 @@ async function captureOriginal(width) {
         await page.locator('#single-blocks').waitFor({state:'visible',timeout:15000});
         const necessary = page.getByRole('button', {name:'Только необходимые', exact:true});
         if (await necessary.isVisible()) await necessary.click({timeout:5000}).catch(() => {});
+        await loadVisibleMedia(page).catch(() => {});
         await screenshots(page,'original-'+width);
     } finally {
         await page.close();
