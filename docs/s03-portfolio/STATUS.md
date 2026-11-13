@@ -10,12 +10,13 @@
 | 1. Исходник | SAVED | Полный публичный HTML в source-original.html. Убраны служебные значения WordPress и антиспам. |
 | 2. Ресурсы | SAVED | 34 новых файлов, 203 ссылок на проверенные общие ресурсы, 0 ожидают сохранения. |
 | 3–4. Вёрстка и интерфейс | SAVED | Исходные варианты десктопа и мобильной страницы, локальные ресурсы, изолированные демоформы. |
-| 5. Проверки | IN_PROGRESS | [Chrome на 320, 390, 768 и 1440 px](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43379758351), [полноразмерные эталоны и копии](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43379758351/artifacts/14016495962). |
-| 6. Публикация | TODO | |
+| 5. Проверки | VERIFIED | [Chrome на 320, 390, 768 и 1440 px](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43379758351), [полноразмерные эталоны и копии](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43379758351/artifacts/14016495962). |
+| 6. Публикация | IN_PROGRESS | Сборка Pages включает S03 и запускает её проверки на публичном адресе. |
 | 7. Таблица | TODO | Подтверждён существующий третий лист. |
 
 Последний подтверждённый предыдущий коммит: [998a620](https://github.com/alexyakovlev79/heads-services-preview/commit/998a62012865663505db580f0f3ef81af9c9fdc7).
 Статическая проверка прошла. [Первый браузерный прогон](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43378750739) остановился на размере отложенных схем. Проверка теперь дожидается декодирования обеих схем и проверяет, что на каждой ширине отображается ровно один экземпляр.
 Подтверждённый SHA браузерной проверки: [9fadce9](https://github.com/alexyakovlev79/heads-services-preview/commit/9fadce967000fef09464cc177de72b55d19319a9). Снимки 1440 и 390 px показывают совпадение основных секций. Исправлена найденная разница в форме: исходные стили файлового поля и кнопки применяются и к отдельной мобильной форме.
-Следующий шаг — дождаться повторной проверки формы и подключить S03 к Pages.
+Проверка формы и схем повторно прошла на [fb1f833](https://github.com/alexyakovlev79/heads-services-preview/commit/fb1f833132d4a9fb1fef9269432469aa41910ef9) в [GitHub Actions](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43380094390).
+Следующий шаг — опубликовать проверенную ветку в существующем Pages и сверить публичный адрес.
 
