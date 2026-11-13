@@ -15,8 +15,9 @@ const browser = await chromium.launch({
 await fs.mkdir(output, {recursive:true});
 
 async function loadVisibleMedia(page) {
-    await page.evaluate(() => {
+    await page.evaluate(async () => {
         for (const image of document.images) image.loading = 'eager';
+        await document.fonts.ready;
     });
     await page.waitForFunction(() =>
         document.fonts.status === 'loaded' &&
@@ -27,6 +28,14 @@ async function loadVisibleMedia(page) {
 }
 
 async function screenshots(page, name) {
+    await page.evaluate(async () => {
+        const images = [...document.images].filter(image => image.getBoundingClientRect().width > 0);
+        await Promise.race([
+            Promise.allSettled(images.map(image => image.decode())),
+            new Promise(resolve => setTimeout(resolve, 10000))
+        ]);
+        await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    });
     await page.screenshot({ path: output + '/' + name + '.png', fullPage:true, timeout:25000 });
 }
 
