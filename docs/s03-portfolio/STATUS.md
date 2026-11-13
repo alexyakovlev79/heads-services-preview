@@ -2,7 +2,7 @@
 
 Исходник: https://wellhead.ru/services/formirovanie-portfelja-brendov/
 Рабочая ветка: `work/heads-s03-portfolio-copy`.
-Основание: [31ae9a7](https://github.com/alexyakovlev79/heads-services-preview/commit/31ae9a74c069309300a54df9ca9d0a92f332194d). Фиксация 2026-11-13 09:21 МСК. [История](https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s03-portfolio-copy/docs/s03-portfolio/STATUS.md).
+Основание: [31ae9a7](https://github.com/alexyakovlev79/heads-services-preview/commit/31ae9a74c069309300a54df9ca9d0a92f332194d). Начальная фиксация 2026-11-13 09:21 МСК. [История](https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s03-portfolio-copy/docs/s03-portfolio/STATUS.md).
 
 | Этап | Статус | Подтверждение |
 |---|---|---|
@@ -10,11 +10,12 @@
 | 1. Исходник | SAVED | Полный публичный HTML в source-original.html. Убраны служебные значения WordPress и антиспам. |
 | 2. Ресурсы | SAVED | 34 новых файлов, 203 ссылок на проверенные общие ресурсы, 0 ожидают сохранения. |
 | 3–4. Вёрстка и интерфейс | SAVED | Исходные варианты десктопа и мобильной страницы, локальные ресурсы, изолированные демоформы. |
-| 5. Проверки | IN_PROGRESS | Независимый workflow на 320, 390, 768 и 1440 px. |
+| 5. Проверки | IN_PROGRESS | [Chrome на 320, 390, 768 и 1440 px](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43379758351), [полноразмерные эталоны и копии](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43379758351/artifacts/14016495962). |
 | 6. Публикация | TODO | |
 | 7. Таблица | TODO | Подтверждён существующий третий лист. |
 
 Последний подтверждённый предыдущий коммит: [998a620](https://github.com/alexyakovlev79/heads-services-preview/commit/998a62012865663505db580f0f3ef81af9c9fdc7).
 Статическая проверка прошла. [Первый браузерный прогон](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43378750739) остановился на размере отложенных схем. Проверка теперь дожидается декодирования обеих схем и проверяет, что на каждой ширине отображается ровно один экземпляр.
-Следующий шаг — прочитать результат повторного браузерного прогона и сверить снимки с оригиналом.
+Подтверждённый SHA браузерной проверки: [9fadce9](https://github.com/alexyakovlev79/heads-services-preview/commit/9fadce967000fef09464cc177de72b55d19319a9). Снимки 1440 и 390 px показывают совпадение основных секций. Исправлена найденная разница в форме: исходные стили файлового поля и кнопки применяются и к отдельной мобильной форме.
+Следующий шаг — дождаться повторной проверки формы и подключить S03 к Pages.
 

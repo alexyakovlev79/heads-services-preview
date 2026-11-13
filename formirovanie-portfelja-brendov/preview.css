@@ -49,6 +49,9 @@
 .preview-presentation > .elementor-location-popup {
     display: block;
 }
+.preview-attachment:empty {
+    display: none;
+}
 .preview-attachment {
     display: block;
     overflow-wrap: anywhere;

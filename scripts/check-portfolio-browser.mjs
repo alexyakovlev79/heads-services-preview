@@ -105,6 +105,14 @@ async function checkWidth(width) {
         await form.locator('[name=your-name]').fill('Тестовый контакт');
         await form.locator('[name=company]').fill('QA');
         await form.locator('[type=email]').fill('qa@example.com');
+        const fileStyle = await form.locator('[type=file]').evaluate(input => ({
+            opacity: getComputedStyle(input).opacity,
+            position: getComputedStyle(input).position,
+            caption: getComputedStyle(input.parentElement, '::before').content
+        }));
+        assert.equal(fileStyle.opacity, '0', width + ': original file control');
+        assert.equal(fileStyle.position, 'absolute');
+        assert.match(fileStyle.caption, /Прикрепить бриф/);
         await form.locator('[type=file]').setInputFiles({name:'brief.txt',mimeType:'text/plain',buffer:Buffer.from('test')});
         assert.equal(await form.locator('.preview-attachment').innerText(), 'brief.txt');
         await form.locator('[type=checkbox]').check();

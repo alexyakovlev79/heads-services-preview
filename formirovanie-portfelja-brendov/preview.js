@@ -103,7 +103,7 @@ for (const form of document.querySelectorAll('[data-preview-form]')) {
     if (attachment) {
         const filename = document.createElement('span');
         filename.className = 'preview-attachment';
-        attachment.closest('.wpcf7-form-control-wrap').after(filename);
+        attachment.closest('.fileBlock').append(filename);
         attachment.addEventListener('change', () => {
             const file = attachment.files[0];
             filename.textContent = file?.name || '';
