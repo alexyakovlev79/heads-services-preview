@@ -71,7 +71,7 @@
       "kind": "image",
       "size": 12094,
       "sha256": "72abf4dd24a57980f6a6f31d4a43ba8973eaed2597a52f9a9ab797a9ec46d5f6",
-      "status": "pending"
+      "status": "downloaded"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/photo_2024-11-25_12-31-57.jpg",
@@ -79,7 +79,7 @@
       "kind": "image",
       "size": 13924,
       "sha256": "d6c3168296012141757c9aa6e8939ada5c847867cbef78d0d63f8537c843d698",
-      "status": "pending"
+      "status": "downloaded"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2025/04/gif_package_design_01.gif",
@@ -87,7 +87,7 @@
       "kind": "image",
       "size": 7541145,
       "sha256": "056ae549eb417b7af2172507e5814b48c4df78b307fc1840d92141804e744368",
-      "status": "pending"
+      "status": "downloaded"
     }
   ]
 }
