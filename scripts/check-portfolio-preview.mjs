@@ -52,12 +52,23 @@ assert.equal([...html.matchAll(/<h1\b/g)].length, 1);
 const headings = [...html.matchAll(/<h2\b[^>]*>[\s\S]*?<\/h2>/g)].map(([heading]) =>
     heading.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
 );
-assert.deepEqual(headings, [
+const originalHeadings = [
     'Формирование портфеля брендов', 'Этапы создания и развития портфеля брендов',
     'Как формируется портфель брендов компании', 'Что такое архитектура бренда',
     'Зачем нужна такая сложная система?', 'Стоимость формирования портфеля брендов',
     'Часто задаваемые вопросы'
-]);
+];
+// GEO sections supplement the page; the original headings and their sequence must survive unchanged.
+assert.deepEqual(headings.filter(h => originalHeadings.includes(h)), originalHeadings);
+const newHeadings = [
+    'Когда пора пересмотреть портфель брендов',
+    'Что получает команда после разработки архитектуры',
+    'Когда достаточно линейки, а когда нужен отдельный бренд',
+    'Как мы готовим бренды к развитию ассортимента'
+];
+for (const heading of newHeadings) {
+    assert.equal(headings.filter(h => h === heading).length, 2, 'One desktop and one mobile GEO heading: ' + heading);
+}
 const fieldMap = JSON.parse(fs.readFileSync(path.join(root, 'docs/s03-portfolio/text-fields.json'), 'utf8'));
 const htmlIds = new Map();
 for (const [, id] of html.matchAll(/\bdata-heads-text-id="(HEADS-S03-(?:SEO-)?\d+)"/g)) {

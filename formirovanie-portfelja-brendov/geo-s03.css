@@ -1,0 +1,39 @@
+/* HEADS S03 GEO. Only added sections: inherited WordPress content remains untouched. */
+.heads-s03-geo{--heads-s03-navy:#002b49;--heads-s03-orange:#ff5100;--heads-s03-border:#dce6ec;display:block;box-sizing:border-box;width:100%;min-width:0;max-width:1200px;margin:44px auto 62px;color:var(--heads-s03-navy);font-family:"TT Fors Regular","TT Fors",Arial,sans-serif;line-height:1.6}
+.heads-s03-geo *{box-sizing:border-box;min-width:0}
+.heads-s03-geo h2,.heads-s03-geo h3,.heads-s03-geo p{padding:0;margin-top:0;color:var(--heads-s03-navy)}
+.heads-s03-geo h2{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-weight:700;font-size:clamp(26px,3vw,36px);line-height:1.2;margin-bottom:17px;letter-spacing:-.02em}
+.heads-s03-geo h3{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-weight:700;font-size:clamp(18px,2vw,21px);line-height:1.3;margin-bottom:11px}
+.heads-s03-geo p{font-size:16px;line-height:1.65;margin-bottom:16px}
+.heads-s03-geo .heads-s03-geo-kicker{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.055em;font-size:12px;color:var(--heads-s03-orange);margin-bottom:12px}
+.heads-s03-geo .heads-s03-geo-lead{max-width:880px;font-size:18px;line-height:1.58;margin-bottom:26px}
+.heads-s03-geo .heads-s03-geo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;align-items:stretch}
+.heads-s03-geo .heads-s03-geo-card{display:flex;flex-direction:column;min-height:100%;padding:24px 21px 23px;border:1px solid var(--heads-s03-border);border-top:4px solid var(--heads-s03-orange);background:#fff}
+.heads-s03-geo .heads-s03-geo-card p{font-size:15px;line-height:1.6;margin-bottom:0}
+.heads-s03-geo .heads-s03-geo-card .heads-s03-geo-tag{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-size:12px;line-height:1.4;color:#587487;margin-bottom:13px}
+.heads-s03-geo .heads-s03-geo-conclusion{margin:24px 0 0;max-width:940px;padding:0 0 0 19px;border-left:3px solid var(--heads-s03-orange);font-size:16px;line-height:1.65}
+.heads-s03-geo a{color:var(--heads-s03-navy);text-decoration-color:var(--heads-s03-orange);text-underline-offset:3px}
+.heads-s03-geo a:focus-visible{outline:3px solid var(--heads-s03-orange);outline-offset:3px}
+.heads-s03-geo .heads-s03-geo-case-link{margin-top:auto;padding-top:17px;font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-size:14px;font-weight:700;line-height:1.5}
+.heads-s03-geo .heads-s03-geo-cta{display:flex;gap:26px;align-items:center;justify-content:space-between;margin-top:28px;padding:23px 27px;background:var(--heads-s03-navy)}
+.heads-s03-geo .heads-s03-geo-cta p{color:white;margin:0;max-width:690px}
+.heads-s03-geo .heads-s03-geo-cta a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 20px;background:var(--heads-s03-orange);color:white;text-decoration:none;font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-weight:700;font-size:14px;white-space:nowrap}
+.heads-s03-geo .heads-s03-geo-cta a:hover{background:#df4300;color:#fff}
+.heads-s03-geo-mobile{display:none!important}
+.heads-s03-geo-desktop{display:block!important}
+@media(max-width:900px){.heads-s03-geo .heads-s03-geo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.heads-s03-geo .heads-s03-geo-card:last-child{grid-column:1/-1}}
+@media(max-width:767px){
+  .heads-s03-geo-desktop{display:none!important}
+  .heads-s03-geo-mobile{display:block!important}
+  .heads-s03-geo{margin:30px auto 44px;max-width:100%}
+  .heads-s03-geo h2{font-size:26px;margin-bottom:14px}
+  .heads-s03-geo h3{font-size:19px}
+  .heads-s03-geo .heads-s03-geo-lead{font-size:16px;margin-bottom:19px}
+  .heads-s03-geo .heads-s03-geo-grid{grid-template-columns:minmax(0,1fr);gap:13px}
+  .heads-s03-geo .heads-s03-geo-card{padding:20px 18px 21px}
+  .heads-s03-geo .heads-s03-geo-card:last-child{grid-column:auto}
+  .heads-s03-geo .heads-s03-geo-conclusion{margin-top:21px;padding-left:16px}
+  .heads-s03-geo .heads-s03-geo-cta{flex-direction:column;align-items:stretch;gap:19px;padding:22px 19px}
+  .heads-s03-geo .heads-s03-geo-cta a{width:100%;white-space:normal;text-align:center}
+}
+@media(max-width:390px){.heads-s03-geo h2{font-size:25px}.heads-s03-geo p{font-size:15px}.heads-s03-geo .heads-s03-geo-card p{font-size:15px}}
