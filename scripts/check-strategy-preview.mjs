@@ -48,13 +48,37 @@ assert.equal([...html.matchAll(/data-preview-form="project"/g)].length, 2);
 assert.equal([...html.matchAll(/data-preview-form="presentation"/g)].length, 1);
 assert.equal([...html.matchAll(/\bdata-vc-accordion(?=[=\s>])/g)].length, 6);
 assert.equal([...html.matchAll(/<h1\b/g)].length, 1);
-const headings = [...html.matchAll(/<h2\b[^>]*>[\s\S]*?<\/h2>/g)].map(([heading]) =>
-    heading.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
-);
+const headings = [...html.matchAll(/<h2\b([^>]*)>([\s\S]*?)<\/h2>/g)]
+    .filter(([,attrs]) => /\bvcex-module\b/.test(attrs))
+    .map(([heading]) => heading.replace(/<[^>]+>/g, '').replace(/\s+/g,' ').trim());
 assert.deepEqual(headings, [
     'Суть и позиционирование бренда', 'Стратегия продвижения бренда',
     'Этапы разработки стратегии и позиционирования бренда', 'Критерии оценки позиционирования бренда',
     'Стоимость разработки позиционирования и стратегии бренда', 'Часто задаваемые вопросы'
 ]);
 new vm.Script(fs.readFileSync(path.join(page, 'preview.js'), 'utf8'));
-console.log('PASS: S02 static layout, form isolation and asset checksums');
+new vm.Script(fs.readFileSync(path.join(page, 'geo-s02.js'), 'utf8'));
+const fromGeo=html.indexOf('<section id="heads-s02-geo"');
+const toGeo=html.indexOf('<div class="vc_row wpb_row vc_row-fluid vc_custom_1730794397650 hidden-phone">',fromGeo);
+assert.ok(fromGeo>0 && toGeo>fromGeo,'S02 GEO section must exist before original content');
+const geo=html.slice(fromGeo,toGeo);
+assert.ok(html.includes('href="geo-s02.css"'),'Missing scoped stylesheet');
+assert.ok(html.includes('src="geo-s02.js"'),'Missing responsive script');
+assert.equal((geo.match(/class="heads-s02-card"/g)||[]).length,6,'3 situations and 3 case cards');
+for(const section of ['heads-s02-when','heads-s02-deliverables','heads-s02-projects'])
+    assert.ok(geo.includes('id="'+section+'"'),'Missing section '+section);
+for(const project of ['kix','kroha-lab','hartens'])
+    assert.equal(geo.split('href="https://wellhead.ru/projects/'+project+'/"').length-1,1,'Missing case '+project);
+for(const forbidden of ['Фрутанго','Smart Cooking','Кейс не выдается','не приписываем','нельзя использовать'])
+    assert.ok(!geo.toLowerCase().includes(forbidden.toLowerCase()),'Public editorial leak '+forbidden);
+assert.ok(!/(?:^|[^\p{L}])(?:ты|тебе|тебя|твой|опиши|расскажи|закажи)(?=$|[^\p{L}])/iu.test(geo),
+    'Informal address forbidden in Russian site copy');
+assert.equal((html.match(/<h1\b/g)||[]).length,1,'One H1');
+const markup=html.match(/<script type="application\/ld\+json" class="yoast-schema-graph">([\s\S]*?)<\/script>/);
+assert.ok(markup,'Missing schema');
+const schema=JSON.parse(markup[1]);
+const graph=schema['@graph']||[];
+for(const type of ['WebPage','Service','FAQPage','Organization'])
+    assert.equal(graph.filter(node=>node['@type']===type).length,1,'JSON-LD duplicate '+type);
+assert.match(graph.find(n=>n['@type']==='Service').description,/бренд-платформы/);
+console.log('PASS: S02 original page, GEO content, 3 verified cases, responsive JS, schema, forms and resources');
