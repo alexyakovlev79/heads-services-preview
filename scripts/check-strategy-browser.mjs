@@ -50,7 +50,7 @@ async function checkWidth(width) {
         assert.equal(geoInsideMobile,mobileOriginal,width+': GEO block misplaced on mobile/desktop');
         assert.equal(await geo.locator('[data-heads-s02-cta]').getAttribute('href'),
             mobileOriginal?'#discussthetask2':'#discussthetask');
-        const geoText = (await geo.innerText()).replace(/\s+/g,' ');
+        const geoText = (await geo.textContent()).replace(/\s+/g,' ');
         for (const phrase of ['Когда стоит заняться позиционированием','Что получает команда заказчика',
             'KIX','«Кроха Lab»','Hartens','7 вариантов позиционирования'])
             assert.ok(geoText.includes(phrase),width+': missing GEO fact '+phrase);
