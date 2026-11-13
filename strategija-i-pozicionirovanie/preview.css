@@ -1,0 +1,55 @@
+.preview-presentation {
+    border: 0;
+    padding: 0;
+    max-width: calc(100% - 24px);
+    max-height: calc(100% - 24px);
+    overflow: auto;
+}
+.preview-presentation::backdrop {
+    background: rgb(0 0 0 / 80%);
+}
+.preview-presentation .dialog-widget-content {
+    position: relative;
+    width: min(640px, calc(100vw - 24px));
+}
+.preview-presentation .dialog-close-button {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 14px;
+    right: 16px;
+    line-height: 1;
+    font-size: 26px;
+    background: transparent;
+    color: #002b49;
+    padding: 4px;
+}
+.preview-presentation .preview-presentation-content {
+    display: block;
+}
+[data-preview-result][hidden] {
+    display: none !important;
+}
+[data-preview-result] {
+    margin-top: 12px;
+}
+.preview-presentation:not([open]) {
+    display: none;
+}
+.preview-presentation[open] {
+    display: block;
+    position: fixed;
+    margin: auto;
+    width: min(640px, calc(100vw - 24px));
+    height: auto;
+    inset: 0;
+    align-items: initial;
+    justify-content: initial;
+}
+.preview-presentation > .elementor-location-popup {
+    display: block;
+}
+.preview-attachment {
+    display: block;
+    overflow-wrap: anywhere;
+}

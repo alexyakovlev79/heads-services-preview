@@ -2,7 +2,7 @@ name: Heads services preview QA
 
 on:
   push:
-    branches: [main]
+    branches: [main, work/heads-s02-strategy-copy]
   workflow_dispatch:
 
 permissions:
@@ -22,6 +22,9 @@ jobs:
       - name: Verify GEO content, cases and structured data
         run: node scripts/check-geo.mjs
 
+      - name: Check strategy preview resources and isolation
+        run: node scripts/check-strategy-preview.mjs
+
       - name: Install browser test driver
         run: npm install --no-save --no-package-lock --ignore-scripts playwright-core
 
@@ -37,6 +40,7 @@ jobs:
             sleep 1
           done
           node scripts/check-browser.mjs
+          S02_CAPTURE_ORIGINAL=1 node scripts/check-strategy-browser.mjs
 
       - name: Capture optional browser screenshots
         shell: bash
