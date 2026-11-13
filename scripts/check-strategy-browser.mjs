@@ -45,7 +45,7 @@ async function checkWidth(width) {
         assert.ok(await geo.isVisible(), width+': GEO copy not visible');
         assert.equal(await geo.locator('.heads-s02-card').count(),6);
         assert.equal(await geo.locator('article a[href^="https://wellhead.ru/projects/"]').count(),3);
-        const mobileOriginal = await page.locator('.vc_row.visible-phone').isVisible();
+        const mobileOriginal = await page.locator('.vc_row.visible-phone').first().isVisible();
         const geoInsideMobile = await geo.evaluate(el => Boolean(el.closest('.visible-phone')));
         assert.equal(geoInsideMobile,mobileOriginal,width+': GEO block misplaced on mobile/desktop');
         assert.equal(await geo.locator('[data-heads-s02-cta]').getAttribute('href'),
