@@ -102,6 +102,18 @@ jobs:
           exit 1
       - name: Install portfolio browser test driver
         run: npm install --no-save --no-package-lock --ignore-scripts playwright-core
+      - name: Verify the published packaging preview in Chrome
+        env:
+          S04_PREVIEW_BASE: ${{ steps.deployment.outputs.page_url }}
+        run: node scripts/check-packaging-browser.mjs
+      - name: Upload published packaging screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: heads-s04-published-screenshots
+          path: qa-artifacts/packaging/
+          if-no-files-found: ignore
+          retention-days: 30
       - name: Verify the published portfolio preview in Chrome
         env:
           S03_PREVIEW_BASE: ${{ steps.deployment.outputs.page_url }}
@@ -119,17 +131,5 @@ jobs:
           path: |
             qa-artifacts/portfolio/
             qa-artifacts/portfolio-geo/
-          if-no-files-found: ignore
-          retention-days: 30
-      - name: Verify the published packaging preview in Chrome
-        env:
-          S04_PREVIEW_BASE: ${{ steps.deployment.outputs.page_url }}
-        run: node scripts/check-packaging-browser.mjs
-      - name: Upload published packaging screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: heads-s04-published-screenshots
-          path: qa-artifacts/packaging/
           if-no-files-found: ignore
           retention-days: 30
