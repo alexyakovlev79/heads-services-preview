@@ -1,0 +1,82 @@
+/*
+Theme Name: Total Child Theme
+Theme URI: https://your-site.com
+Description: Your site description. Go to Appearance > Editor to modify this file.
+Author: Your Name
+Author URI: https://your-site.com
+Template: Total
+Version: 1.0
+*/
+
+@font-face {
+    font-family: 'TT Fors Regular';
+    src: url("../../assets/225deaa4c0-tt_fors_regular-webfont.eot");
+    src: url("../../assets/225deaa4c0-tt_fors_regular-webfont.eot#iefix") format('embedded-opentype'),
+         url("../../assets/977acf67a1-tt_fors_regular-webfont.woff2") format('woff2'),
+         url("95b2b840f1-tt_fors_regular-webfont.woff") format('woff'),
+         url("3b175718fa-tt_fors_regular-webfont.ttf") format('truetype'),
+         url("19cc57b202-tt_fors_regular-webfont.svg#tt_forsregular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Fors Medium';
+    src: url("../../assets/14ae4569f5-tt_fors_medium-webfont.eot");
+    src: url("../../assets/14ae4569f5-tt_fors_medium-webfont.eot#iefix") format('embedded-opentype'),
+         url("../../assets/4fa4149100-tt_fors_medium-webfont.woff2") format('woff2'),
+         url("5f92ba8d11-tt_fors_medium-webfont.woff") format('woff'),
+         url("acd37d33e2-tt_fors_medium-webfont.ttf") format('truetype'),
+         url("e66cd45967-tt_fors_medium-webfont.svg#tt_forsmedium") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Fors Bold';
+    src: url("../../assets/1cdab22cfa-tt_fors_bold-webfont.eot");
+    src: url("../../assets/1cdab22cfa-tt_fors_bold-webfont.eot#iefix") format('embedded-opentype'),
+         url("../../assets/20c2719e1c-tt_fors_bold-webfont.woff2") format('woff2'),
+         url("a07e4161ad-tt_fors_bold-webfont.woff") format('woff'),
+         url("483c0c6374-tt_fors_bold-webfont.ttf") format('truetype'),
+         url("1f94ce96f9-tt_fors_bold-webfont.svg#tt_forsbold") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Fors Extrabold';
+    src: url("../../assets/39f95bb196-tt_fors_extrabold-webfont.eot");
+    src: url("../../assets/39f95bb196-tt_fors_extrabold-webfont.eot#iefix") format('embedded-opentype'),
+         url("../../assets/962b922df6-tt_fors_extrabold-webfont.woff2") format('woff2'),
+         url("020944452c-tt_fors_extrabold-webfont.woff") format('woff'),
+         url("63b2b3d21c-tt_fors_extrabold-webfont.ttf") format('truetype'),
+         url("5a58c1e831-tt_fors_extrabold-webfont.svg#tt_forsextrabold") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.briefBlock{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.wpcf7 .page-header-title.heading-typography{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+    .briefBlock{
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+    .wpcf7 .orangeButton.outerBtn.big a{
+        height: 30px;
+        padding: 3px 13px !important;
+    }
+    .wpcf7 .orangeButton.newhover.outerBtn.big a{
+        padding: 3px 29px !important;
+    }
+    .wpcf7 .page-header-title.heading-typography{
+        font-size: 24px;
+    }
+}

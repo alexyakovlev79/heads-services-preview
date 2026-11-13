@@ -50,12 +50,13 @@
       "source": "https://wellhead.ru/wp-content/plugins/cookie-ma/public/css/banner.css?ver=3.3.2",
       "path": "assets/aad5d1fae5-banner.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "829a8043aec19c919a79f07918afa3c66eb5f70d94b751c3d77a532efaafb22f",
       "source_size": 13316,
       "content_type": "text/css",
       "sha256": "829a8043aec19c919a79f07918afa3c66eb5f70d94b751c3d77a532efaafb22f",
-      "size": 13316
+      "size": 13316,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/aad5d1fae5-banner.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/Total/style.css?ver=4.9.9.2",
@@ -72,12 +73,13 @@
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/style.css?ver=4.9.9.2",
       "path": "assets/471cb67d65-style.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "504614067876186efa0a91a1a2cf0be45ae2a0d611cdb971f1dab7123d2ec42d",
       "source_size": 2847,
       "content_type": "text/css",
       "sha256": "a01070066ad881fdbeb3992e7a5a14ee8799d442334c3e551edaf3b70a74f6c1",
-      "size": 3119
+      "size": 3119,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/471cb67d65-style.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/Total/assets/css/wpex-visual-composer.css?ver=4.9.9.2",
@@ -105,100 +107,109 @@
       "source": "https://wellhead.ru/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.1.0",
       "path": "assets/9ed25deedc-widget-image.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "fb8690e594b2f9b841585895d811e8cb839667a1a63963d1a1cdea11e2aa2abb",
       "source_size": 214,
       "content_type": "text/css",
       "sha256": "fb8690e594b2f9b841585895d811e8cb839667a1a63963d1a1cdea11e2aa2abb",
-      "size": 214
+      "size": 214,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/9ed25deedc-widget-image.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.1.0",
       "path": "assets/834468cde2-widget-icon-list.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "1b34d4c7324321e36db5d35f05bb011238a1326f89058a4399d028d1f6c47dd5",
       "source_size": 10255,
       "content_type": "text/css",
       "sha256": "1b34d4c7324321e36db5d35f05bb011238a1326f89058a4399d028d1f6c47dd5",
-      "size": 10255
+      "size": 10255,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/834468cde2-widget-icon-list.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=4.1.0",
       "path": "assets/ff03881ed3-widget-social-icons.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "91079644ee1e76145b30c207470b56866770b0564f0fbf1373ab8b11d94f8c9f",
       "source_size": 5110,
       "content_type": "text/css",
       "sha256": "91079644ee1e76145b30c207470b56866770b0564f0fbf1373ab8b11d94f8c9f",
-      "size": 5110
+      "size": 5110,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/ff03881ed3-widget-social-icons.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=4.1.0",
       "path": "assets/cb2306155e-apple-webkit.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "cf502b45ef8bcae37a65822f78546f6cc7db74faf8f48850bf8a860262817fe6",
       "source_size": 6713,
       "content_type": "text/css",
       "sha256": "cf502b45ef8bcae37a65822f78546f6cc7db74faf8f48850bf8a860262817fe6",
-      "size": 6713
+      "size": 6713,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/cb2306155e-apple-webkit.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.1.0",
       "path": "assets/f047732dc6-widget-heading.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "f68e889145cb0e47b7b190b2fdf087a9213a264ad33951512880c9f8bb6d0cd8",
       "source_size": 560,
       "content_type": "text/css",
       "sha256": "f68e889145cb0e47b7b190b2fdf087a9213a264ad33951512880c9f8bb6d0cd8",
-      "size": 560
+      "size": 560,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/f047732dc6-widget-heading.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=4.0.4",
       "path": "assets/1853000d44-widget-form.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "cbf01bcbfcd0b605f0ce33b9d3a5ab560f642113048ce9632914249a68bef219",
       "source_size": 6798,
       "content_type": "text/css",
       "sha256": "cbf01bcbfcd0b605f0ce33b9d3a5ab560f642113048ce9632914249a68bef219",
-      "size": 6798
+      "size": 6798,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/1853000d44-widget-form.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=4.1.0",
       "path": "assets/9ac29cede3-fadeIn.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "d9c370831c74b1850d70f5b1c99453d6cda21e5099428a3f21c43bd96c3acb5d",
       "source_size": 77,
       "content_type": "text/css",
       "sha256": "d9c370831c74b1850d70f5b1c99453d6cda21e5099428a3f21c43bd96c3acb5d",
-      "size": 77
+      "size": 77,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/9ac29cede3-fadeIn.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=4.0.4",
       "path": "assets/b632f5ed0f-popup.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "3e86e49c78cd2befb9c7e7b27ee263298290728f7489b17077f00c25e37a5838",
       "source_size": 995,
       "content_type": "text/css",
       "sha256": "3e86e49c78cd2befb9c7e7b27ee263298290728f7489b17077f00c25e37a5838",
-      "size": 995
+      "size": 995,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/b632f5ed0f-popup.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/elementor/css/post-13077.css?ver=1793896029",
       "path": "assets/cd98d6263f-post-13077.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "37bc9a961be488b3bdbce877d7961bb18c804e1fefbe96fd2e3346396e5649b7",
       "source_size": 1223,
       "content_type": "text/css",
       "sha256": "37bc9a961be488b3bdbce877d7961bb18c804e1fefbe96fd2e3346396e5649b7",
-      "size": 1223
+      "size": 1223,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/cd98d6263f-post-13077.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/elementor/css/post-15130.css?ver=1793896029",
@@ -215,12 +226,13 @@
       "source": "https://wellhead.ru/wp-content/uploads/elementor/css/post-14570.css?ver=1793896029",
       "path": "assets/d2f0708144-post-14570.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "99185cde92a60f67b142bf3aacfac3cc9306be744f9f24fff430a2dd7595e3b7",
       "source_size": 8259,
       "content_type": "text/css",
       "sha256": "99185cde92a60f67b142bf3aacfac3cc9306be744f9f24fff430a2dd7595e3b7",
-      "size": 8259
+      "size": 8259,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/d2f0708144-post-14570.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2025/02/tt-fors-light-1.ttf",
@@ -1082,12 +1094,13 @@
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/5345.png",
       "path": "assets/7ab01cfb96-5345.png",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "db5e05296db42ce9f01402ff7f7f625df5fa34197f491f7a60a3227aa9a8a780",
       "source_size": 2812,
       "content_type": "image/png",
       "sha256": "db5e05296db42ce9f01402ff7f7f625df5fa34197f491f7a60a3227aa9a8a780",
-      "size": 2812
+      "size": 2812,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/7ab01cfb96-5345.png"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/img_4_2.gif",
@@ -1257,12 +1270,13 @@
       "source": "https://wellhead.ru/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.2.4",
       "path": "assets/d22e6b6d4a-wc-blocks.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "45173f1550e57be245f3ed3b0f6fde7962e27901d5a04adf9342e546500bed49",
       "source_size": 14006,
       "content_type": "text/css",
       "sha256": "45173f1550e57be245f3ed3b0f6fde7962e27901d5a04adf9342e546500bed49",
-      "size": 14006
+      "size": 14006,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/d22e6b6d4a-wc-blocks.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/js_composer/assets/css/js_composer_tta.min.css?ver=8.6.1",
@@ -1279,12 +1293,13 @@
       "source": "https://wellhead.ru/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.2",
       "path": "assets/8621b9e9db-styles.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "4048fd0e6c44412465449ba4f5c7272349ee1574401cec755d6b8d9c0ccc28dd",
       "source_size": 2947,
       "content_type": "text/css",
       "sha256": "4048fd0e6c44412465449ba4f5c7272349ee1574401cec755d6b8d9c0ccc28dd",
-      "size": 2947
+      "size": 2947,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/8621b9e9db-styles.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/js/typed.umd.js?ver=1.0.0",

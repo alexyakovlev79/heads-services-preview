@@ -1,0 +1,495 @@
+/* ============================================================
+   Cookie MA — Banner styles
+   ============================================================ */
+
+/* Variables */
+:root {
+    --ccp-bg:          #ffffff;
+    --ccp-text:        #1a1a2e;
+    --ccp-border:      #e0e0e0;
+    --ccp-primary:     #4f46e5;
+    --ccp-primary-h:   #4338ca;
+    --ccp-secondary:   #f4f4f5;
+    --ccp-secondary-h: #e4e4e7;
+    --ccp-radius:      10px;
+    --ccp-shadow:      0 4px 24px rgba(0,0,0,.12);
+    --ccp-z:           999999;
+    --ccp-toggle-on:   #4f46e5;
+    --ccp-toggle-off:  #d1d5db;
+}
+
+/* ---- Banner wrapper ---- */
+.ccp-banner {
+    position:   fixed;
+    left:       0;
+    right:      0;
+    z-index:    var(--ccp-z);
+    background: var(--ccp-bg);
+    border-top: 1px solid var(--ccp-border);
+    box-shadow: var(--ccp-shadow);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size:  14px;
+    line-height: 1.5;
+    color:      var(--ccp-text);
+    animation:  ccp-slide-in .3s ease;
+}
+
+.ccp-banner.ccp-bottom { bottom: 0; }
+.ccp-banner.ccp-top    { top:    0; border-top: none; border-bottom: 1px solid var(--ccp-border); }
+
+@keyframes ccp-slide-in {
+    from { transform: translateY(100%); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+}
+.ccp-banner.ccp-top {
+    animation-name: ccp-slide-in-top;
+}
+@keyframes ccp-slide-in-top {
+    from { transform: translateY(-100%); opacity: 0; }
+    to   { transform: translateY(0);     opacity: 1; }
+}
+
+/* ---- Inner layout ---- */
+.ccp-banner__inner {
+    max-width:  1200px;
+    margin:     0 auto;
+    padding:    16px 24px;
+    display:    flex;
+    align-items: center;
+    gap:        24px;
+    flex-wrap:  wrap;
+}
+
+.ccp-banner__text  { flex: 1 1 300px; }
+.ccp-banner__title { display: block; font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.ccp-banner__text p { margin: 0; }
+.ccp-banner__text a { color: var(--ccp-primary); }
+/* Privacy-policy link always sits on its own line, never wrapping awkwardly
+   out of the paragraph above it. */
+.ccp-banner__policy { margin: 8px 0 0 !important; display: block; }
+.ccp-banner__policy a { white-space: nowrap; }
+
+.ccp-banner__actions {
+    display:    flex;
+    gap:        8px;
+    flex-wrap:  wrap;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* ---- Buttons ---- */
+.ccp-btn {
+    cursor:      pointer;
+    border:      none;
+    border-radius: 6px;
+    padding:     8px 16px;
+    font-size:   14px;
+    font-weight: 600;
+    line-height: 1;
+    transition:  background .15s, color .15s, box-shadow .15s;
+    white-space: nowrap;
+}
+.ccp-btn--primary {
+    background: var(--ccp-primary);
+    color:      #fff;
+}
+.ccp-btn--primary:hover { background: var(--ccp-primary-h); }
+
+.ccp-btn--secondary {
+    background: var(--ccp-secondary);
+    color:      var(--ccp-text);
+}
+/* No hover state — keep the base colours so a theme's button:hover rule
+   (which was turning the label white and unreadable) cannot take over. */
+.ccp-btn--secondary:hover {
+    background: var(--ccp-secondary);
+    color:      var(--ccp-text);
+}
+
+.ccp-btn--ghost {
+    background: transparent;
+    border:     1px solid var(--ccp-border);
+    color:      var(--ccp-text);
+}
+.ccp-btn--ghost:hover { background: var(--ccp-secondary); color: var(--ccp-text); }
+
+.ccp-btn--link {
+    display:         inline-flex;
+    align-items:     center;
+    justify-content: center;
+    gap:             6px;
+    background:       transparent;
+    color:           var(--ccp-primary);
+    padding:         8px 4px;
+    text-decoration: underline;
+}
+.ccp-btn--link:hover { background: var(--ccp-secondary); }
+.ccp-btn__gear { display: none; width: 18px; height: 18px; flex-shrink: 0; }
+
+.ccp-btn--sm { padding: 6px 12px; font-size: 13px; }
+
+/* ---- Settings panel ---- */
+.ccp-settings-panel {
+    border-top: 1px solid var(--ccp-border);
+}
+.ccp-settings-panel__inner {
+    max-width: 1200px;
+    margin:    0 auto;
+    padding:   16px 24px 24px;
+}
+.ccp-settings-panel h3 {
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* ---- Categories ---- */
+.ccp-categories {
+    list-style: none;
+    margin:     0 0 16px;
+    padding:    0;
+    display:    flex;
+    flex-direction: column;
+    gap:        12px;
+}
+.ccp-category__label {
+    display:     flex;
+    align-items: flex-start;
+    gap:         12px;
+    cursor:      default;
+}
+.ccp-category__name {
+    font-weight: 600;
+    display:     block;
+    margin-bottom: 2px;
+}
+.ccp-category__desc { font-size: 13px; color: #6b7280; }
+.ccp-category__label > span:first-child { flex: 1; }
+
+/* ---- Toggle ---- */
+.ccp-toggle {
+    position:     relative;
+    display:      inline-flex;
+    align-items:  center;
+    flex-shrink:  0;
+    margin-top:   2px;
+}
+.ccp-toggle__input {
+    position: absolute;
+    opacity:  0;
+    width:    0;
+    height:   0;
+}
+.ccp-toggle__slider {
+    display:        block;
+    width:          44px;
+    height:         24px;
+    background:     var(--ccp-toggle-off);
+    border-radius:  24px;
+    cursor:         pointer;
+    transition:     background .2s;
+    position:       relative;
+}
+.ccp-toggle__slider::after {
+    content:     '';
+    position:    absolute;
+    width:       18px;
+    height:      18px;
+    background:  #fff;
+    border-radius: 50%;
+    top:         3px;
+    left:        3px;
+    transition:  transform .2s;
+    box-shadow:  0 1px 3px rgba(0,0,0,.2);
+}
+.ccp-toggle__input:checked + .ccp-toggle__slider { background: var(--ccp-toggle-on); }
+.ccp-toggle__input:checked + .ccp-toggle__slider::after { transform: translateX(20px); }
+.ccp-toggle__input:disabled + .ccp-toggle__slider { opacity: .5; cursor: not-allowed; }
+
+.ccp-settings-panel__footer { margin-top: 16px; }
+
+/* ---- iFrame placeholder ---- */
+.ccp-iframe-placeholder {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    background:      #f8f9fa;
+    border:          2px dashed var(--ccp-border);
+    border-radius:   var(--ccp-radius);
+    min-height:      120px;
+    max-width:       100%;
+}
+.ccp-iframe-placeholder iframe { display: none; }
+.ccp-iframe-placeholder__inner {
+    text-align: center;
+    padding:    24px;
+}
+.ccp-iframe-placeholder__inner p {
+    margin:      0 0 12px;
+    color:       #6b7280;
+    font-size:   14px;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 640px) {
+    /* Stack vertically and let the banner hug its content: no stretched
+       text block, no empty gap between the copy and the buttons. */
+    .ccp-banner__inner {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+    .ccp-banner__text    { flex: 0 0 auto; }
+    .ccp-banner__text p  { margin: 6px 0 0; }
+
+    /* All action buttons stay on one row, no wrapping. The two text buttons
+       share the available width; "Settings" collapses to a gear icon. */
+    #ccp-banner .ccp-banner__actions {
+        display:         flex;
+        flex-wrap:       nowrap;
+        align-items:     stretch;
+        justify-content: stretch;
+        gap:             6px;
+    }
+    #ccp-banner .ccp-btn {
+        flex:        1 1 0;
+        min-width:   0;
+        white-space: normal;
+        text-align:  center;
+        padding:     8px 6px;
+        font-size:   13px;
+        line-height: 1.2;
+    }
+    #ccp-banner .ccp-btn--link {
+        flex:        0 0 auto;
+        margin-left: 0;
+        padding:     8px;
+        min-width:   38px;
+    }
+    #ccp-banner .ccp-btn--link .ccp-btn__txt  { display: none; }
+    #ccp-banner .ccp-btn--link .ccp-btn__gear { display: block; }
+
+    .ccp-settings-panel__inner { padding: 12px 16px 20px; }
+    /* Keep the banner from taking over the whole viewport on tall phones. */
+    .ccp-banner { max-height: 85vh; overflow-y: auto; }
+}
+
+/* ---- GPC Toast ---- */
+.ccp-gpc-toast {
+    position:   fixed;
+    bottom:     80px;
+    left:       50%;
+    transform:  translateX(-50%);
+    background: #374fd4;
+    color:      #fff;
+    padding:    12px 20px;
+    border-radius: 8px;
+    font-size:  13px;
+    display:    flex;
+    gap:        12px;
+    align-items: center;
+    z-index:    var(--ccp-z);
+    box-shadow: 0 4px 16px rgba(0,0,0,.25);
+    max-width:  480px;
+    animation:  ccp-slide-in .3s ease;
+}
+.ccp-gpc-toast__close {
+    background: transparent;
+    border:     none;
+    color:      rgba(255,255,255,.8);
+    font-size:  20px;
+    cursor:     pointer;
+    padding:    0;
+    line-height: 1;
+    flex-shrink: 0;
+}
+.ccp-gpc-toast__close:hover { color: #fff; }
+
+/* ---- Floating reopen icon ---- */
+/* The [hidden] HTML attribute must always win over display rules below. */
+.ccp-reopen[hidden],
+.ccp-banner[hidden] { display: none !important; }
+
+.ccp-reopen {
+    position:        fixed;
+    bottom:          20px;
+    width:           44px;
+    height:          44px;
+    border-radius:   50%;
+    background:      var(--ccp-primary);
+    color:           #fff;
+    border:          none;
+    cursor:          pointer;
+    z-index:         var(--ccp-z);
+    box-shadow:      0 4px 14px rgba(0,0,0,.18);
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    transition:      transform .15s, background .15s, box-shadow .15s;
+    opacity:         0.85;
+}
+.ccp-reopen--left  { left:  20px; }
+.ccp-reopen--right { right: 20px; }
+.ccp-reopen:hover {
+    background: var(--ccp-primary-h);
+    transform:  scale(1.08);
+    opacity:    1;
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+.ccp-reopen:focus-visible {
+    outline:        2px solid var(--ccp-primary);
+    outline-offset: 3px;
+}
+@media (max-width: 640px) {
+    .ccp-reopen { width: 38px; height: 38px; bottom: 12px; }
+    .ccp-reopen--left  { left:  12px; }
+    .ccp-reopen--right { right: 12px; }
+}
+
+/* ---- Withdraw button in settings panel ---- */
+.ccp-settings-panel__footer {
+    display:     flex;
+    gap:         8px;
+    flex-wrap:   wrap;
+    align-items: center;
+}
+.ccp-settings-panel__footer .ccp-btn--ghost {
+    margin-right: auto;
+}
+
+/* ---- Footer link via shortcode ---- */
+a.ccp-settings-link { cursor: pointer; }
+
+/* ---- Category details (cookies & trackers from scan) ---- */
+.ccp-category__details {
+    margin-top: 8px;
+    padding-left: 0;
+    font-size: 13px;
+}
+.ccp-category__details summary {
+    cursor: pointer;
+    color: var(--ccp-primary);
+    font-weight: 500;
+    user-select: none;
+    list-style: none;
+    display: inline-block;
+}
+.ccp-category__details summary::-webkit-details-marker { display: none; }
+.ccp-category__details summary::before {
+    content: '▶';
+    display: inline-block;
+    font-size: 9px;
+    margin-right: 6px;
+    transition: transform .15s;
+}
+.ccp-category__details[open] summary::before { transform: rotate(90deg); }
+.ccp-category__details summary:hover { text-decoration: underline; }
+
+.ccp-category__group { margin-top: 10px; }
+.ccp-category__group > strong {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 4px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.ccp-category__list {
+    list-style: disc;
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-size: 13px;
+}
+
+.ccp-category__cookies {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.ccp-category__cookies th,
+.ccp-category__cookies td {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.ccp-category__cookies th {
+    font-weight: 600;
+    color: #6b7280;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.ccp-category__cookies code {
+    background: #f4f4f5;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+/* ============================================================
+   Cookie icon (banner header)
+   ============================================================ */
+.ccp-cookie-icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fef3e2;
+    color: #d97706;
+    margin-right: 10px;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+.ccp-banner__title {
+    display: flex;
+    align-items: center;
+}
+
+/* ============================================================
+   Minimal theme
+   ============================================================ */
+.ccp-banner.ccp-theme-minimal {
+    max-width: 420px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    padding: 22px 24px;
+}
+.ccp-banner.ccp-theme-minimal .ccp-banner__inner {
+    display: block;
+}
+.ccp-banner.ccp-theme-minimal .ccp-banner__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.ccp-banner.ccp-theme-minimal .ccp-banner__text p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #6b7280;
+    margin: 0 0 16px;
+}
+.ccp-banner.ccp-theme-minimal .ccp-banner__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.ccp-banner.ccp-theme-minimal .ccp-btn--primary {
+    background: #16a34a;
+    border-radius: 8px;
+    padding: 9px 20px;
+}
+.ccp-banner.ccp-theme-minimal .ccp-btn--secondary {
+    border-radius: 8px;
+    padding: 9px 20px;
+}
+.ccp-banner.ccp-theme-minimal .ccp-btn--link {
+    margin-left: auto;
+    color: var(--ccp-primary);
+}
