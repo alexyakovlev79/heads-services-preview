@@ -52,11 +52,22 @@ assert.equal([...html.matchAll(/<h1\b/g)].length, 1);
 const headings = [...html.matchAll(/<h2\b[^>]*>[\s\S]*?<\/h2>/g)].map(([heading]) =>
     heading.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
 );
-assert.deepEqual(headings, [
+const originalHeadings = [
     'Зачем это нужно для вашего бренда:', 'Ключевые преимущества:', 'Что такое дизайн упаковки',
     'Критерии эффективного дизайна упаковки товара', 'Этапы разработки дизайна упаковки',
     'Стоимость разработки дизайна упаковки', 'Часто задаваемые вопросы'
-]);
+];
+// GEO sections add context without removing, renaming or rearranging the original headings.
+assert.deepEqual(headings.filter(h => originalHeadings.includes(h)), originalHeadings);
+const geoHeadings = [
+    'Когда нужен новый дизайн упаковки',
+    'Как сделать упаковку узнаваемой на десятках SKU',
+    'Что получает заказчик по итогам проекта',
+    'Пять проектов, пять разных задач упаковки'
+];
+for (const h of geoHeadings) {
+    assert.equal(headings.filter(v => v === h).length, 2, 'one desktop and one mobile GEO H2: ' + h);
+}
 const fields = JSON.parse(fs.readFileSync(path.join(root, 'docs/s04-packaging/text-fields.json'), 'utf8')).fields;
 const targets = new Map();
 for (const [, id] of html.matchAll(/\bdata-heads-text-id="(HEADS-S04-(?:SEO-)?\d+)"/g)) {

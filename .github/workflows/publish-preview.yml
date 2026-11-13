@@ -40,7 +40,7 @@ jobs:
           cp -a formirovanie-portfelja-brendov/{index.html,preview.css,preview.js,geo-s03.css,assets} dist/formirovanie-portfelja-brendov/
           test -s dist/formirovanie-portfelja-brendov/index.html
           mkdir -p dist/dizajn-upakovki
-          cp -a dizajn-upakovki/{index.html,preview.css,preview.js,assets} dist/dizajn-upakovki/
+          cp -a dizajn-upakovki/{index.html,preview.css,preview.js,geo-s04.css,assets} dist/dizajn-upakovki/
           test -s dist/dizajn-upakovki/index.html
           touch dist/.nojekyll
           test -s dist/index.html
@@ -106,12 +106,18 @@ jobs:
         env:
           S04_PREVIEW_BASE: ${{ steps.deployment.outputs.page_url }}
         run: node scripts/check-packaging-browser.mjs
+      - name: Verify published S04 GEO sections in Chrome
+        env:
+          S04_PREVIEW_BASE: ${{ steps.deployment.outputs.page_url }}
+        run: node scripts/check-packaging-geo-browser.mjs
       - name: Upload published packaging screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: heads-s04-published-screenshots
-          path: qa-artifacts/packaging/
+          path: |
+            qa-artifacts/packaging/
+            qa-artifacts/packaging-geo/
           if-no-files-found: ignore
           retention-days: 30
       - name: Verify the published portfolio preview in Chrome

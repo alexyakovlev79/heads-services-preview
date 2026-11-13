@@ -1,0 +1,48 @@
+name: Heads S04 GEO QA
+
+on:
+  push:
+    branches:
+      - main
+      - work/heads-s04-geo
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  geo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out pages
+        uses: actions/checkout@v4
+      - name: Verify original S04 and GEO fields
+        run: |
+          node scripts/check-packaging-preview.mjs
+          node scripts/check-packaging-geo.mjs
+      - name: Install browser test driver
+        run: npm install --no-save --no-package-lock --ignore-scripts playwright-core
+      - name: Check responsive interface and take screenshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/heads-s04-geo.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" || true' EXIT
+          for i in $(seq 1 12); do
+            if curl -fsS -o /dev/null http://127.0.0.1:8000/dizajn-upakovki/; then break; fi
+            sleep 1
+          done
+          node scripts/check-packaging-geo-browser.mjs
+      - name: Store S04 GEO full-page screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: heads-s04-geo-screenshots
+          path: qa-artifacts/packaging-geo/
+          if-no-files-found: ignore
+          retention-days: 30
