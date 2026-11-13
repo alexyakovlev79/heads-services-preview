@@ -1,0 +1,65 @@
+/* S04 GEO. Only the added page sections are styled. Original WordPress blocks are untouched. */
+.heads-s04-geo{--s04-ink:#002b49;--s04-orange:#ff5100;--s04-label:#a83809;--s04-border:#dce5ea;box-sizing:border-box;position:relative;max-width:1160px;width:100%;min-width:0;margin:43px auto 62px;color:var(--s04-ink);font-family:"TT Fors Regular","TT Fors",Arial,sans-serif;line-height:1.6;isolation:isolate}
+.heads-s04-geo *, .heads-s04-geo *:before,.heads-s04-geo *:after{box-sizing:border-box}
+.heads-s04-geo *{min-width:0}
+#single-blocks .heads-s04-geo h2,#single-blocks .heads-s04-geo h3,#single-blocks .heads-s04-geo p{padding:0;margin-top:0;text-transform:none}
+#single-blocks .heads-s04-geo h2{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;color:var(--s04-orange);font-weight:700;font-size:clamp(26px,3.05vw,37px);line-height:1.16;letter-spacing:-.018em;margin:0 0 18px;max-width:980px}
+#single-blocks .heads-s04-geo h3{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;color:var(--s04-ink);font-weight:700;font-size:clamp(18px,1.85vw,21px);line-height:1.32;margin:0 0 10px}
+#single-blocks .heads-s04-geo p{color:var(--s04-ink);font-size:16px;line-height:1.65;margin:0 0 17px}
+#single-blocks .heads-s04-geo .heads-s04-geo-kicker{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;color:var(--s04-label);font-size:12px;line-height:1.4;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:0 0 13px}
+#single-blocks .heads-s04-geo .heads-s04-geo-lead{font-size:18px;line-height:1.6;max-width:900px;margin-bottom:25px}
+.heads-s04-geo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;align-items:stretch}
+.heads-s04-geo-card{position:relative;min-width:0;min-height:100%;display:flex;flex-direction:column;background:#fff;border:1px solid var(--s04-border);border-top:4px solid var(--s04-orange);padding:24px 23px 23px;transition:box-shadow .16s ease,border-color .16s ease}
+.heads-s04-geo-card:hover{box-shadow:0 9px 25px rgba(0,43,73,.07);border-color:#bbced8}
+#single-blocks .heads-s04-geo-card p{font-size:15px;line-height:1.62;margin:0}
+#single-blocks .heads-s04-geo-card .heads-s04-geo-case-tag{font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;color:#5a6875;font-size:12px;line-height:1.4;letter-spacing:.01em;margin-bottom:12px}
+.heads-s04-geo a{color:var(--s04-ink);text-decoration-color:var(--s04-orange);text-underline-offset:3px}
+.heads-s04-geo a:focus-visible{outline:3px solid var(--s04-orange);outline-offset:4px}
+#single-blocks .heads-s04-geo .heads-s04-geo-ending{border-left:3px solid var(--s04-orange);margin:24px 0 0;padding-left:18px;max-width:900px}
+.heads-s04-geo-system{padding:30px 32px 34px;background:#f4f7f9}
+.heads-s04-geo-system .heads-s04-geo-grid{counter-reset:sku-step}
+.heads-s04-geo-system .heads-s04-geo-card{counter-increment:sku-step;padding-top:22px}
+.heads-s04-geo-system .heads-s04-geo-card:before{content:"0" counter(sku-step);font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:.03em;color:var(--s04-orange);display:block;margin-bottom:18px}
+.heads-s04-geo-deliverables .heads-s04-geo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.heads-s04-geo-deliverables .heads-s04-geo-card{padding:24px 24px 23px}
+.heads-s04-geo-cases .heads-s04-geo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.heads-s04-geo-cases .heads-s04-geo-card{border-top:3px solid var(--s04-orange);padding:24px 25px;min-height:0}
+.heads-s04-geo-cases .heads-s04-geo-card:nth-child(5){grid-column:1/-1}
+.heads-s04-geo-cases .heads-s04-geo-card .heads-s04-geo-case-link{display:inline-block;align-self:flex-start;margin-top:auto;padding-top:15px;font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-weight:700;font-size:14px;text-decoration:underline;text-decoration-color:var(--s04-orange)}
+#single-blocks .heads-s04-geo .heads-s04-geo-industry{border-top:1px solid var(--s04-border);margin-top:30px;padding-top:24px}
+#single-blocks .heads-s04-geo .heads-s04-geo-industry h3{font-size:20px}
+#single-blocks .heads-s04-geo .heads-s04-geo-industry p{font-size:15px;margin:0 0 12px}
+.heads-s04-geo-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:20px}
+.heads-s04-geo-links a{position:relative;display:inline-flex;align-items:center;min-height:42px;max-width:100%;padding:9px 14px;border:1px solid var(--s04-border);background:#fff;color:var(--s04-ink);font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-weight:700;font-size:14px;text-decoration:none;line-height:1.4;overflow-wrap:anywhere}
+.heads-s04-geo-links a:after{content:"↗";color:var(--s04-orange);padding-left:9px;font-size:16px}
+.heads-s04-geo-links a:hover{border-color:var(--s04-orange);background:#fff8f4}
+.heads-s04-geo-cta{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:29px;padding:23px 26px;background:var(--s04-ink)}
+#single-blocks .heads-s04-geo .heads-s04-geo-cta p{color:white;margin:0;max-width:740px;font-size:16px}
+.heads-s04-geo-cta>a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 19px;color:white;background:var(--s04-orange);text-decoration:none;white-space:nowrap;font-size:14px;font-family:"TT Fors Bold","TT Fors",Arial,sans-serif;font-weight:700}
+.heads-s04-geo-cta>a:hover{background:#d64500;color:#fff}
+.heads-s04-geo-desktop.hidden-phone{display:block!important}
+.heads-s04-geo-mobile.visible-phone{display:none!important}
+@media(max-width:960px){.heads-s04-geo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.heads-s04-geo-situations .heads-s04-geo-card:last-child,.heads-s04-geo-system .heads-s04-geo-card:last-child{grid-column:1/-1}}
+@media(max-width:767px){
+ .heads-s04-geo-desktop.hidden-phone{display:none!important}
+ .heads-s04-geo-mobile.visible-phone{display:block!important}
+ .heads-s04-geo{margin:28px 0 43px;max-width:100%}
+ #single-blocks .heads-s04-geo h2{font-size:26px;line-height:1.22;margin-bottom:15px}
+ #single-blocks .heads-s04-geo h3{font-size:19px}
+ #single-blocks .heads-s04-geo .heads-s04-geo-lead{font-size:16px;margin-bottom:18px}
+ .heads-s04-geo-grid,.heads-s04-geo-deliverables .heads-s04-geo-grid,.heads-s04-geo-cases .heads-s04-geo-grid{grid-template-columns:minmax(0,1fr);gap:13px}
+ .heads-s04-geo-grid .heads-s04-geo-card:last-child,.heads-s04-geo-cases .heads-s04-geo-card:nth-child(5){grid-column:auto}
+ .heads-s04-geo-card,.heads-s04-geo-deliverables .heads-s04-geo-card,.heads-s04-geo-cases .heads-s04-geo-card{padding:20px 18px 21px}
+ .heads-s04-geo-system{padding:24px 17px 26px;margin-left:0;margin-right:0}
+ #single-blocks .heads-s04-geo .heads-s04-geo-ending{margin-top:18px;padding-left:14px}
+ .heads-s04-geo-links{gap:8px}
+ .heads-s04-geo-links a{font-size:13px;min-height:40px}
+ .heads-s04-geo-cta{flex-direction:column;align-items:stretch;gap:17px;padding:22px 18px}
+ .heads-s04-geo-cta>a{width:100%;white-space:normal;text-align:center}
+}
+@media(max-width:390px){
+ #single-blocks .heads-s04-geo h2{font-size:25px}
+ #single-blocks .heads-s04-geo p{font-size:15px}
+ #single-blocks .heads-s04-geo .heads-s04-geo-lead{font-size:15px}
+ .heads-s04-geo-links a{width:100%}
+}
