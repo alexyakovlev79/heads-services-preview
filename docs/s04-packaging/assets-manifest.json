@@ -1,1 +1,93 @@
-{"source":"https://wellhead.ru/services/dizajn-upakovki/","assets":[]}
+{
+  "source": "https://wellhead.ru/services/dizajn-upakovki/",
+  "assets": [
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/image_2024-11-21_17-19-04.png",
+      "path": "assets/4364d57998-image_2024-11-21_17-19-04.png",
+      "kind": "image",
+      "size": 435568,
+      "sha256": "ce3eea2101c033bbef7bf609715d2b577a9eff9a0777c393b26baaf631e6d6fa",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/image_2024-11-21_17-19-12.png",
+      "path": "assets/00eaaa7a9b-image_2024-11-21_17-19-12.png",
+      "kind": "image",
+      "size": 228416,
+      "sha256": "9e0123fdf3797ae869dc28d824ae3e3c809112450be1e4b0d7cf7ef90e4a3e30",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/image_2024-11-21_17-19-19.png",
+      "path": "assets/2628adb50f-image_2024-11-21_17-19-19.png",
+      "kind": "image",
+      "size": 558215,
+      "sha256": "2ed9f6db6045c5ddcfdfbc3b86ed729468366f3bfb152b46f51ccd111bdc9de2",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/image_2024-11-21_17-19-30.png",
+      "path": "assets/334b9b5f39-image_2024-11-21_17-19-30.png",
+      "kind": "image",
+      "size": 54227,
+      "sha256": "cbbd45ecb3e20fa65be95d33873178abbf6f67ac19f5d5f4aad889bea29bc016",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/package_design_01.gif",
+      "path": "assets/0e7556122d-package_design_01.gif",
+      "kind": "image",
+      "size": 10071984,
+      "sha256": "b25d4ab03b56efd9882801b2a612a56c2f2343fe6eb1a432114fb79e0682297e",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/package_design_02.gif",
+      "path": "assets/5e2584bb95-package_design_02.gif",
+      "kind": "image",
+      "size": 7557311,
+      "sha256": "b3c777a0fd02e6aa7aa64993955434f721acdd2ee6abddd092e604ce01a29e2c",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/package_design_04.gif",
+      "path": "assets/4a927481b5-package_design_04.gif",
+      "kind": "image",
+      "size": 8258756,
+      "sha256": "6267eefe93ba101ce0a9f79d02bdf8204ec701d44e0225e859789d68b09d0aa9",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/photo_2024-11-25_12-31-51.jpg",
+      "path": "assets/54bc3bd071-photo_2024-11-25_12-31-51.jpg",
+      "kind": "image",
+      "size": 15756,
+      "sha256": "326aedecd73622a763b298e3546c1ee5484bad9f87654db5e1959eec7d4a6964",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/photo_2024-11-25_12-31-54.jpg",
+      "path": "assets/ed0535a19e-photo_2024-11-25_12-31-54.jpg",
+      "kind": "image",
+      "size": 12094,
+      "sha256": "72abf4dd24a57980f6a6f31d4a43ba8973eaed2597a52f9a9ab797a9ec46d5f6",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2024/11/photo_2024-11-25_12-31-57.jpg",
+      "path": "assets/8ba644a5e3-photo_2024-11-25_12-31-57.jpg",
+      "kind": "image",
+      "size": 13924,
+      "sha256": "d6c3168296012141757c9aa6e8939ada5c847867cbef78d0d63f8537c843d698",
+      "status": "pending"
+    },
+    {
+      "source": "https://wellhead.ru/wp-content/uploads/2025/04/gif_package_design_01.gif",
+      "path": "assets/a370c727ba-gif_package_design_01.gif",
+      "kind": "image",
+      "size": 7541145,
+      "sha256": "056ae549eb417b7af2172507e5814b48c4df78b307fc1840d92141804e744368",
+      "status": "pending"
+    }
+  ]
+}

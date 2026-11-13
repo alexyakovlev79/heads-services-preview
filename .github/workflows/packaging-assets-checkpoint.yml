@@ -1,0 +1,63 @@
+name: Save original Heads packaging media
+
+on:
+  push:
+    branches: [work/heads-s04-packaging-copy]
+    paths: ['.github/workflows/packaging-assets-checkpoint.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  media:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Save checksummed files in small commits
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python - <<'PY'
+          import concurrent.futures
+          import hashlib
+          import json
+          from pathlib import Path
+          import subprocess
+          from urllib.parse import urlsplit
+
+          manifest = Path('docs/s04-packaging/assets-manifest.json')
+          status = Path('docs/s04-packaging/STATUS.md')
+          data = json.loads(manifest.read_text())
+          pending = [asset for asset in data['assets'] if asset['status'] == 'pending']
+
+          def copy(asset):
+              source = asset['source']
+              assert urlsplit(source).netloc == 'wellhead.ru'
+              assert urlsplit(source).scheme == 'https'
+              assert urlsplit(source).path.startswith('/wp-content/uploads/')
+              target = Path('dizajn-upakovki') / asset['path']
+              assert target.parent == Path('dizajn-upakovki/assets')
+              target.parent.mkdir(parents=True, exist_ok=True)
+              subprocess.run(['curl', '-fsSL', '--retry', '2', '--max-time', '25', source, '-o', str(target)], check=True)
+              content = target.read_bytes()
+              assert len(content) == asset['size'], source
+              assert hashlib.sha256(content).hexdigest() == asset['sha256'], source
+              asset['status'] = 'downloaded'
+              return target
+
+          for start in range(0, len(pending), 4):
+              with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+                  paths = list(pool.map(copy, pending[start:start + 4]))
+              manifest.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+              done = sum(asset['status'] == 'downloaded' for asset in data['assets'])
+              text = status.read_text()
+              lines = [line for line in text.splitlines() if not line.startswith(('Графика S04:', 'Следующий шаг'))]
+              lines.extend([f'Графика S04: сохранено {done} из {len(pending)} исходных файлов.', 'Следующий шаг — привязать графику к копии и проверить общие ресурсы.'])
+              status.write_text('\n'.join(lines) + '\n')
+              subprocess.run(['git', 'add', str(manifest), str(status), *map(str, paths)], check=True)
+              subprocess.run(['git', 'commit', '-m', f'S04 02: save original media {start+1}–{done}'], check=True)
+              subprocess.run(['git', 'push', 'origin', 'HEAD:work/heads-s04-packaging-copy'], check=True)
+          PY
