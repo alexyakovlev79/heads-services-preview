@@ -1074,12 +1074,13 @@
       "source": "https://wellhead.ru/wp-content/uploads/2025/03/gif_brand_portfolio_01.gif",
       "path": "assets/c28b08811e-gif_brand_portfolio_01.gif",
       "kind": "image",
-      "status": "pending",
+      "status": "downloaded",
       "source_sha256": "70f4a5c68056870fb9b8dec3507b483cfc26912a1b075628eddce7886dc15ab0",
       "source_size": 6659220,
       "content_type": "image/gif",
       "sha256": "70f4a5c68056870fb9b8dec3507b483cfc26912a1b075628eddce7886dc15ab0",
-      "size": 6659220
+      "size": 6659220,
+      "commit": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s03-portfolio-copy/formirovanie-portfelja-brendov/assets/c28b08811e-gif_brand_portfolio_01.gif"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/12/image_2024-12-02_12-59-24-1.png",
@@ -1160,12 +1161,13 @@
       "source": "https://wellhead.ru/wp-content/uploads/2024/12/brand_portfolio_01-1.gif",
       "path": "assets/5763165c25-brand_portfolio_01-1.gif",
       "kind": "image",
-      "status": "pending",
+      "status": "downloaded",
       "source_sha256": "cc33d5949a63c488b9a71bb1e10ad2498fbd256acf6329c38d34966ab4224db0",
       "source_size": 2537646,
       "content_type": "image/gif",
       "sha256": "cc33d5949a63c488b9a71bb1e10ad2498fbd256acf6329c38d34966ab4224db0",
-      "size": 2537646
+      "size": 2537646,
+      "commit": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s03-portfolio-copy/formirovanie-portfelja-brendov/assets/5763165c25-brand_portfolio_01-1.gif"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/12/image_2024-12-02_13-00-04-1.png",
