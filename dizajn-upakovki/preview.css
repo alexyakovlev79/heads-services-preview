@@ -93,7 +93,8 @@
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-    .packaging-benefit-title {
-        overflow-wrap: anywhere;
+    .packaging-benefit-title[data-wpex-rcss] {
+        font-size: 15px !important;
+        overflow-wrap: normal;
     }
 }

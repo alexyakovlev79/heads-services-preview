@@ -62,7 +62,9 @@ async function checkWidth(width) {
                 const sizes = JSON.parse(element.dataset.wpexRcss)['font-size'];
                 const size = [[479, 'pp'], [767, 'pl'], [959, 'tp'], [1024, 'tl']]
                     .find(([limit, key]) => window.innerWidth <= limit && sizes[key]);
-                return [getComputedStyle(element).fontSize, size ? sizes[size[1]] : sizes.d];
+                const compactBenefit = window.innerWidth >= 768 && window.innerWidth <= 959 &&
+                    element.classList.contains('packaging-benefit-title');
+                return [getComputedStyle(element).fontSize, compactBenefit ? '15px' : size ? sizes[size[1]] : sizes.d];
             })
         );
         assert.ok(typography.length > 0);
@@ -103,6 +105,13 @@ async function checkWidth(width) {
         assert.equal(await desktopHero.count(), 1);
         assert.ok(await desktopHero.isHidden(), width + ': original hidden desktop hero column');
         assert.equal(await page.locator('[data-preview-form="project"]:visible').count(), 1);
+        if (width === 768) {
+            const captions = await page.locator('.packaging-benefit-title:visible').evaluateAll(items =>
+                items.map(item => [item.scrollWidth, item.clientWidth])
+            );
+            assert.equal(captions.length, 3);
+            for (const [content, column] of captions) assert.ok(content <= column + 1, 'Tablet benefit caption overflow');
+        }
         await screenshots(page,'preview-'+width);
         const faq = page.locator('[data-vc-accordion]:visible');
         assert.equal(await faq.count(), 5);
