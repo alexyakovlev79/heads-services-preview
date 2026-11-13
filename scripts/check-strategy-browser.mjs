@@ -39,7 +39,7 @@ async function checkWidth(width) {
     try {
         assert.equal((await page.goto(url, {waitUntil:'domcontentloaded',timeout:45000})).status(),200);
         await page.locator('#single-blocks').waitFor({state:'visible'});
-        const text = await page.locator('#single-blocks').innerText();
+        const text = (await page.locator('#single-blocks').innerText()).replace(/\s+/g, ' ');
         const headings = [
             'Суть и позиционирование бренда', 'Стратегия продвижения бренда',
             'Этапы разработки стратегии', 'Критерии оценки позиционирования бренда',

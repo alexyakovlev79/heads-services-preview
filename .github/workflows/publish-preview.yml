@@ -33,6 +33,9 @@ jobs:
           mkdir -p dist/assets
           cp index.html preview.js preview.css geo-enhancements.css dist/
           cp -a assets/. dist/assets/
+          mkdir -p dist/strategija-i-pozicionirovanie
+          cp -a strategija-i-pozicionirovanie/{index.html,preview.css,preview.js,assets} dist/strategija-i-pozicionirovanie/
+          test -s dist/strategija-i-pozicionirovanie/index.html
           touch dist/.nojekyll
           test -s dist/index.html
           test -s dist/geo-enhancements.css
@@ -66,3 +69,22 @@ jobs:
           curl --fail --location --silent --show-error --max-time 20 "${LIVE_URL}geo-enhancements.css" -o /tmp/heads-live.css
           test -s /tmp/heads-live.css
           echo "PASS: published GEO page and stylesheet verified: ${LIVE_URL}"
+      - name: Verify live strategy preview
+        shell: bash
+        env:
+          LIVE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          url="${LIVE_URL}strategija-i-pozicionirovanie/"
+          for attempt in $(seq 1 15); do
+            if curl -fsSL --max-time 20 "${url}?sha=${GITHUB_SHA}" -o /tmp/heads-strategy.html \
+              && grep -Fq 'Стратегия и позиционирование' /tmp/heads-strategy.html \
+              && grep -Fq 'data-preview-form="project"' /tmp/heads-strategy.html \
+              && curl -fsSL --max-time 20 "${url}preview.css" -o /tmp/heads-strategy.css \
+              && test -s /tmp/heads-strategy.css; then
+              exit 0
+            fi
+            sleep 4
+          done
+          echo "ERROR: strategy preview is unavailable at ${url}"
+          exit 1
