@@ -1,23 +1,20 @@
 # HEADS S03 / STATUS
 
-Исходник: https://wellhead.ru/services/formirovanie-portfelja-brendov/
-Рабочая ветка: `work/heads-s03-portfolio-copy`.
-Основание: [31ae9a7](https://github.com/alexyakovlev79/heads-services-preview/commit/31ae9a74c069309300a54df9ca9d0a92f332194d). Начальная фиксация 2026-11-13 09:21 МСК. [История](https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s03-portfolio-copy/docs/s03-portfolio/STATUS.md).
+Исходник: [Формирование портфеля брендов](https://wellhead.ru/services/formirovanie-portfelja-brendov/).
+Предпросмотр: [GitHub Pages](https://alexyakovlev79.github.io/heads-services-preview/formirovanie-portfelja-brendov/).
+Проверенный опубликованный SHA: [5a817d431a6a19d2f3205c04636b6ea2394f7e5e](https://github.com/alexyakovlev79/heads-services-preview/commit/5a817d431a6a19d2f3205c04636b6ea2394f7e5e).
+Проверка подтверждена 13.11.2026 в 09:46 МСК. [История рабочей ветки](https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s03-portfolio-copy/docs/s03-portfolio/STATUS.md).
 
 | Этап | Статус | Подтверждение |
 |---|---|---|
-| 0. Сверка | VERIFIED | S01 и S02 в main. Оригинал S03 открыт в Chrome: 8 разделов после H1, 3 вопроса FAQ, CTA, проектная форма, окно презентации и схемы двух видов архитектуры. Порядок 1, 3, 2, 4 в исходных колонках сохранён. |
-| 1. Исходник | SAVED | Полный публичный HTML в source-original.html. Убраны служебные значения WordPress и антиспам. |
-| 2. Ресурсы | SAVED | 34 новых файлов, 203 ссылок на проверенные общие ресурсы, 0 ожидают сохранения. |
-| 3–4. Вёрстка и интерфейс | SAVED | Исходные варианты десктопа и мобильной страницы, локальные ресурсы, изолированные демоформы. |
-| 5. Проверки | VERIFIED | [Chrome на 320, 390, 768 и 1440 px](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43379758351), [полноразмерные эталоны и копии](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43379758351/artifacts/14016495962). |
-| 6. Публикация | VERIFIED | [Первый успешный Pages](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43380266717), включая браузерные проверки публичной S03. |
-| 7. Таблица | IN_PROGRESS | Сохранена карта text-fields.json с ID и связями FAQ с JSON-LD. Подтверждён существующий третий лист. |
+| 0. Исходная страница | VERIFIED | Десктопная и мобильная разметка, оригинальные тексты, три вопроса FAQ, две схемы архитектуры, форма проекта и окно презентации. Порядок 1, 3, 2, 4 в исходных десктопных колонках сохранён. |
+| 1. HTML и эталон | VERIFIED | Полный обезличенный HTML в source-original.html. [Полноразмерные эталоны и снимки копии](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43379758351/artifacts/14016495962). |
+| 2. Ресурсы | VERIFIED | 237 локализованных URL: 34 новых файла и 203 ссылки на 197 проверенных общих файлов. Ещё три внешних URL отмечены в assets-manifest.json. |
+| 3–4. Вёрстка и интерфейс | VERIFIED | Схемы, анимации, шрифты, FAQ, мобильное меню, окно презентации и две демоформы. В деморежиме данные и вложения не отправляются. Стили мобильного поля загрузки и кнопки восстановлены по оригиналу. |
+| 5. QA | VERIFIED | [S03 Chrome: 320, 390, 768 и 1440 px](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43380762771). [Регрессия S01/S02](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43380762603). |
+| 6. Публикация | VERIFIED | [GitHub Pages и Chrome на публичном адресе](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43380762538). [Полноразмерные снимки публичной страницы](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43380762538/artifacts/14015904632). Все три публичные страницы ответили HTTP 200. |
+| 7. Таблица Аллы | VERIFIED | [Третий лист](https://docs.google.com/spreadsheets/d/148dBU1gL_J9i9e8cYgVAYiVV8Hz8avNrKDxSfmMg1tY/edit#gid=43543170), строки 5–101. Сверены все 97 полей, включая 4 SEO-поля, с text-fields.json и опубликованным HTML. Столбцы E и F пусты. В карте зафиксированы 159 привязок в HTML и шесть свойств FAQPage. |
 
-Последний подтверждённый предыдущий коммит: [998a620](https://github.com/alexyakovlev79/heads-services-preview/commit/998a62012865663505db580f0f3ef81af9c9fdc7).
-Статическая проверка прошла. [Первый браузерный прогон](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43378750739) остановился на размере отложенных схем. Проверка теперь дожидается декодирования обеих схем и проверяет, что на каждой ширине отображается ровно один экземпляр.
-Подтверждённый SHA браузерной проверки: [9fadce9](https://github.com/alexyakovlev79/heads-services-preview/commit/9fadce967000fef09464cc177de72b55d19319a9). Снимки 1440 и 390 px показывают совпадение основных секций. Исправлена найденная разница в форме: исходные стили файлового поля и кнопки применяются и к отдельной мобильной форме.
-Проверка формы и схем повторно прошла на [fb1f833](https://github.com/alexyakovlev79/heads-services-preview/commit/fb1f833132d4a9fb1fef9269432469aa41910ef9) в [GitHub Actions](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43380094390).
-Публичная версия без привязки ID проверена на [02519fd](https://github.com/alexyakovlev79/heads-services-preview/commit/02519fde288400839f2d1e5faaa3cda276e1d6ba).
-Следующий шаг — опубликовать привязки ID и заполнить существующий третий лист таблицы Аллы.
+В предпросмотре отключены исходные счётчики и связанное окно согласия на cookie. Ссылка на PDF презентации ведёт на прежний адрес, доступность PDF не проверялась. Тексты внутри мобильной инфографики редактируются в исходных макетах, соответствующие ALT и примечания внесены в таблицу.
 
+Следующий шаг при согласовании — читать изменения в столбце E третьего листа и применять их по text-fields.json. Перед будущим переносом на wellhead.ru удалить служебные атрибуты по правилам docs/HANDOFF.md.
