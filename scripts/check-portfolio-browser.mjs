@@ -7,6 +7,7 @@ const url = new URL('formirovanie-portfelja-brendov/', root).href;
 const original = 'https://wellhead.ru/services/formirovanie-portfelja-brendov/';
 const output = process.env.S03_ARTIFACTS || 'qa-artifacts/portfolio';
 const browser = await chromium.launch({
+    timeout: 30000,
     executablePath: process.env.CHROME_BIN || '/usr/bin/google-chrome',
     headless: true,
     args: ['--no-sandbox', '--disable-dev-shm-usage']
@@ -26,6 +27,7 @@ async function screenshots(page, name) {
 async function checkWidth(width) {
     const context = await browser.newContext({ viewport:{width,height:900}, reducedMotion:'reduce' });
     const page = await context.newPage();
+    page.setDefaultTimeout(12000);
     const mutations = [];
     const errors = [];
     const bad = [];
@@ -63,8 +65,20 @@ async function checkWidth(width) {
             offset = next + heading.length;
         }
         assert.equal(await page.locator('#single-blocks').count(), 1);
-        assert.equal(await page.locator('img[alt="Image 2024 12 02 12 59 33"]:visible').count(), 1);
-        assert.equal(await page.locator('img[alt="Image 2024 12 02 12 59 39"]:visible').count(), 1);
+        for (const name of ['12-59-33', '12-59-39']) {
+            const diagrams = page.locator('img[src*="' + name + '"]');
+            assert.equal(await diagrams.count(), 2, width + ': responsive diagram markup');
+            const loaded = await diagrams.evaluateAll(async images => {
+                for (const image of images) image.loading = 'eager';
+                await Promise.allSettled(images.map(image => image.decode()));
+                return images.map(image => ({
+                    rendered: image.getBoundingClientRect().width > 0,
+                    naturalWidth: image.naturalWidth
+                }));
+            });
+            assert.equal(loaded.filter(image => image.rendered && image.naturalWidth > 0).length,
+                1, width + ': visible diagram ' + name + ' ' + JSON.stringify(loaded));
+        }
         assert.equal(await page.locator('[data-preview-form="project"]:visible').count(), 1);
         if (width === 390 || width === 1440) await screenshots(page,'preview-'+width);
         const faq = page.locator('[data-vc-accordion]:visible');
