@@ -24,9 +24,7 @@ jobs:
         run: node scripts/check-packaging-preview.mjs
       - name: Install browser test driver
         run: npm install --no-save --no-package-lock --ignore-scripts playwright-core
-      - name: Check four viewport widths and compare with the original
-        env:
-          S04_CAPTURE_ORIGINAL: '1'
+      - name: Check four viewport widths and capture the preview
         run: |
           python3 -m http.server 8000 --bind 127.0.0.1 &
           server_pid=$!

@@ -14,7 +14,7 @@ const browser = await chromium.launch({
 });
 await fs.mkdir(output, {recursive:true});
 
-async function screenshots(page, name) {
+async function loadVisibleMedia(page) {
     await page.evaluate(async () => {
         const images = [...document.images].filter(image => image.getBoundingClientRect().width > 0);
         for (const image of images) image.loading = 'eager';
@@ -23,6 +23,10 @@ async function screenshots(page, name) {
             new Promise(resolve => setTimeout(resolve, 15000))
         ]);
     });
+}
+
+async function screenshots(page, name) {
+    await loadVisibleMedia(page);
     await page.screenshot({ path: output + '/' + name + '.png', fullPage:true, timeout:25000 });
 }
 
@@ -71,13 +75,11 @@ async function checkWidth(width) {
             offset = next + heading.length;
         }
         assert.equal(await page.locator('#single-blocks').count(), 1);
-        const animated = page.locator('#single-blocks img[src$=".gif"]');
-        const visibleAnimations = await animated.evaluateAll(async images => {
-            for (const image of images) image.loading = 'eager';
-            await Promise.allSettled(images.map(image => image.decode()));
-            return images.filter(image => image.getBoundingClientRect().width > 0 && image.naturalWidth > 0)
-                .map(image => new URL(image.src).pathname);
-        });
+        await loadVisibleMedia(page);
+        const visibleAnimations = await page.locator('#single-blocks img[src$=".gif"]').evaluateAll(images =>
+            images.filter(image => image.getBoundingClientRect().width > 0 && image.naturalWidth > 0)
+                .map(image => new URL(image.src).pathname)
+        );
         assert.equal(visibleAnimations.length, width < 768 ? 4 : 3,
             width + ': original visible GIFs: ' + visibleAnimations.join(', '));
         assert.equal(visibleAnimations.some(src => /-package_design_01\.gif$/.test(src)), width < 768,
@@ -148,11 +150,7 @@ async function checkWidth(width) {
         assert.ok(await popup.isHidden());
         const drawer = page.locator('.sidr-close:visible');
         if (await drawer.count()) await drawer.first().click();
-        await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});
-        await page.evaluate(async () => {
-            await document.fonts.ready;
-            await Promise.allSettled([...document.images].filter(img => img.getClientRects().length).map(img => { img.loading = 'eager'; return img.decode(); }));
-        });
+        await loadVisibleMedia(page);
         const layout = await page.evaluate(() => ({
             overflow: document.documentElement.scrollWidth - window.innerWidth,
             broken: [...document.images].filter(img => img.getClientRects().length && !img.naturalWidth)
@@ -185,12 +183,18 @@ async function captureOriginal(width) {
 }
 
 try {
-    const references = process.env.S04_CAPTURE_ORIGINAL === '1'
-        ? Promise.allSettled([320,390,768,1440].map(captureOriginal)) : Promise.resolve([]);
-    const results = await Promise.allSettled([320,390,768,1440].map(checkWidth));
-    for (const result of results) if (result.status === 'rejected') console.error(result.reason);
-    const referenceResults = await references;
-    for (const result of referenceResults) if (result.status === 'rejected') console.warn('Original screenshot:',result.reason.message);
+    const widths = [320,390,768,1440];
+    const results = [];
+    for (const width of widths) {
+        const [result] = await Promise.allSettled([checkWidth(width)]);
+        results.push(result);
+        if (result.status === 'rejected') console.error(width + 'px:', result.reason);
+    }
+    if (process.env.S04_CAPTURE_ORIGINAL === '1') {
+        for (const width of widths) {
+            await captureOriginal(width).catch(error => console.warn('Original screenshot:', error.message));
+        }
+    }
     assert.ok(results.every(result => result.status === 'fulfilled'), 'S04 browser QA failed');
 } finally {
     await browser.close();
