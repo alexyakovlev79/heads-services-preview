@@ -83,8 +83,14 @@ jobs:
             if curl -fsSL --max-time 20 "${url}?sha=${GITHUB_SHA}" -o /tmp/heads-strategy.html \
               && grep -Fq 'Стратегия и позиционирование' /tmp/heads-strategy.html \
               && grep -Fq 'data-preview-form="project"' /tmp/heads-strategy.html \
+              && grep -Fq 'Когда стоит заняться позиционированием' /tmp/heads-strategy.html \
+              && grep -Fq '7 вариантов позиционирования' /tmp/heads-strategy.html \
               && curl -fsSL --max-time 20 "${url}preview.css" -o /tmp/heads-strategy.css \
-              && test -s /tmp/heads-strategy.css; then
+              && curl -fsSL --max-time 20 "${url}geo-s02.css" -o /tmp/heads-geo-s02.css \
+              && curl -fsSL --max-time 20 "${url}geo-s02.js" -o /tmp/heads-geo-s02.js \
+              && test -s /tmp/heads-strategy.css \
+              && test -s /tmp/heads-geo-s02.css \
+              && test -s /tmp/heads-geo-s02.js; then
               exit 0
             fi
             sleep 4
