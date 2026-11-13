@@ -57,5 +57,29 @@ assert.deepEqual(headings, [
     'Критерии эффективного дизайна упаковки товара', 'Этапы разработки дизайна упаковки',
     'Стоимость разработки дизайна упаковки', 'Часто задаваемые вопросы'
 ]);
+const fields = JSON.parse(fs.readFileSync(path.join(root, 'docs/s04-packaging/text-fields.json'), 'utf8')).fields;
+const targets = new Map();
+for (const [, id] of html.matchAll(/\bdata-heads-text-id="(HEADS-S04-(?:SEO-)?\d+)"/g)) {
+    targets.set(id, (targets.get(id) || 0) + 1);
+}
+assert.equal(targets.size, fields.length);
+assert.equal(new Set(fields.map(field => field.id)).size, fields.length);
+assert.equal(fields.filter(field => field.kind === 'seo').length, 4);
+for (const field of fields) {
+    assert.equal(targets.get(field.id), field.targets, 'Text binding: ' + field.id);
+    assert.ok(field.selector.startsWith('[data-heads-text-id="' + field.id + '"]'), field.id);
+}
+const schema = JSON.parse(html.match(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1]);
+const faq = schema['@graph'].find(node => node['@type'] === 'FAQPage');
+assert.equal(faq.mainEntity.length, 5);
+for (const [index, entity] of faq.mainEntity.entries()) {
+    const prefix = 'FAQPage.mainEntity[' + index + '].';
+    const question = fields.filter(field => field.sync === prefix + 'name');
+    const answer = fields.filter(field => field.sync === prefix + 'acceptedAnswer.text');
+    assert.equal(question.length, 1);
+    assert.equal(question[0].current, entity.name);
+    assert.ok(answer.length);
+    assert.equal(answer.map(field => field.current).join(' '), entity.acceptedAnswer.text.replace(/\s+/gu, ' ').trim());
+}
 new vm.Script(fs.readFileSync(path.join(page, 'preview.js'), 'utf8'));
 console.log('PASS: S04 static layout, form isolation and asset checksums');

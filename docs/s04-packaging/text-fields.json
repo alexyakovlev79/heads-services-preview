@@ -1,0 +1,1098 @@
+{
+  "source": "https://wellhead.ru/services/dizajn-upakovki/",
+  "preview": "https://alexyakovlev79.github.io/heads-services-preview/dizajn-upakovki/",
+  "sheetId": 1571455214,
+  "usage": "Изменения по каждому ID применять ко всем связанным элементам, сохраняя разметку, ссылки и оригинальные переносы. Для FAQ обновлять также свойство sync в существующем JSON-LD. Перед переносом на wellhead.ru удалить data-heads-text-id.",
+  "fields": [
+    {
+      "id": "HEADS-S04-SEO-01",
+      "section": "SEO · Мета",
+      "type": "HTML Title",
+      "current": "Дизайн упаковки, заказать разработку дизайна упаковки товара в Москве — Брендинговое агентство Heads",
+      "selector": "[data-heads-text-id=\"HEADS-S04-SEO-01\"]@text",
+      "notes": "",
+      "kind": "seo",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-SEO-02",
+      "section": "SEO · Мета",
+      "type": "Meta Description",
+      "current": "Разработка дизайна упаковки и этикетки, заказать услугу в брендинговом агентстве Heads. 🔶 Создаём эффективные решения для брендов. ✅ Индивидуальный подход. ⚡ Прозрачность на всех этапах.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-SEO-02\"]@content",
+      "notes": "",
+      "kind": "seo",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-SEO-03",
+      "section": "SEO · Мета",
+      "type": "OG Title",
+      "current": "Дизайн упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S04-SEO-03\"]@content",
+      "notes": "",
+      "kind": "seo",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-SEO-04",
+      "section": "SEO · Мета",
+      "type": "OG Description",
+      "current": "Разработка дизайна упаковки и этикетки, заказать услугу в брендинговом агентстве Heads. 🔶 Создаём эффективные решения для брендов. ✅ Индивидуальный подход. ⚡ Прозрачность на всех этапах.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-SEO-04\"]@content",
+      "notes": "",
+      "kind": "seo",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0001",
+      "section": "00 · Навигация",
+      "type": "Текст ссылки",
+      "current": "Брендинговое агентство Heads",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0001\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0002",
+      "section": "00 · Навигация",
+      "type": "Текст ссылки",
+      "current": "Услуги",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0002\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0003",
+      "section": "00 · Навигация",
+      "type": "Текущая страница",
+      "current": "Дизайн упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0003\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0004",
+      "section": "01 · Первый экран",
+      "type": "H1 · Заголовок",
+      "current": "Разработка дизайна упаковки и этикетки",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0004\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0005",
+      "section": "01 · Первый экран",
+      "type": "Подзаголовок",
+      "current": "Упаковка — это сложная система образов, сообщений, функциональных особенностей.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0005\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0006",
+      "section": "01 · Первый экран",
+      "type": "Текст ссылки",
+      "current": "ОБСУДИТЬ ЗАДАЧУ",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0006\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0007",
+      "section": "01 · Первый экран",
+      "type": "ALT изображения",
+      "current": "Gif Package Design 01",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0007\"]@alt",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0008",
+      "section": "02 · Введение",
+      "type": "Абзац",
+      "current": "Для нашего брендингового агентства каждый проект по дизайну упаковки можно сравнить с запуском космического корабля: столько нюансов нужно учесть, столько деталей проверить, столько вложить «полезной нагрузки», отсеяв все второстепенное и сохранив главное.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0008\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0009",
+      "section": "02 · Введение",
+      "type": "Абзац",
+      "current": "Можно сказать, что создание дизайна упаковки — задача инженерная, но при этом невыполнимая без творческого вдохновения: просто мы задаем четкие рамки для потока креатива.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0009\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0010",
+      "section": "02 · Введение",
+      "type": "Абзац",
+      "current": "И, конечно, соблюсти тончайший баланс между категорийностью и уникальностью. Ведь так или иначе, нам необходимо создать узнаваемое индивидуальное лицо продукта.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0010\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0011",
+      "section": "03 · Задачи упаковки",
+      "type": "H2 · Заголовок",
+      "current": "Зачем это нужно для вашего бренда:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0011\"]@text",
+      "notes": "Вариантов в HTML: 2. Варианты написания: зачем это нужно для вашего бренда:",
+      "kind": "page",
+      "targets": 2,
+      "variants": [
+        "зачем это нужно для вашего бренда:"
+      ]
+    },
+    {
+      "id": "HEADS-S04-0012",
+      "section": "03 · Задачи упаковки",
+      "type": "Абзац",
+      "current": "Чтобы не затеряться среди других товаров повседневного спроса, важно создавать яркие и эффективные категорийные решения:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0012\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0013",
+      "section": "03 · Задачи упаковки",
+      "type": "Пункт списка",
+      "current": "Эффектный дизайн упаковки способен «зацепить» взгляд покупателя среди множества других товаров;",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0013\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0014",
+      "section": "03 · Задачи упаковки",
+      "type": "Пункт списка",
+      "current": "Привлекательная упаковка – это важный фактор, который побуждает покупателей к покупке;",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0014\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0015",
+      "section": "03 · Задачи упаковки",
+      "type": "Пункт списка",
+      "current": "Запоминающаяся упаковка способствует узнаваемости вашего бренда и формированию положительного имиджа;",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0015\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0016",
+      "section": "03 · Задачи упаковки",
+      "type": "Пункт списка",
+      "current": "Информативная упаковка с четко обозначенной информацией о продукте облегчает выбор для потребителя.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0016\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0017",
+      "section": "03 · Задачи упаковки",
+      "type": "ALT изображения",
+      "current": "Package Design 02",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0017\"]@alt",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0018",
+      "section": "04 · Преимущества",
+      "type": "H2 · Заголовок",
+      "current": "Ключевые преимущества:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0018\"]@text",
+      "notes": "Вариантов в HTML: 2. Варианты написания: ключевые преимущества:",
+      "kind": "page",
+      "targets": 2,
+      "variants": [
+        "ключевые преимущества:"
+      ]
+    },
+    {
+      "id": "HEADS-S04-0019",
+      "section": "04 · Преимущества",
+      "type": "ALT изображения",
+      "current": "Image 2024 11 21 17 19 04",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0019\"]@alt",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0020",
+      "section": "04 · Преимущества",
+      "type": "ALT изображения",
+      "current": "Image 2024 11 21 17 19 12",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0020\"]@alt",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0021",
+      "section": "04 · Преимущества",
+      "type": "ALT изображения",
+      "current": "Image 2024 11 21 17 19 19",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0021\"]@alt",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0022",
+      "section": "04 · Преимущества",
+      "type": "ALT изображения",
+      "current": "5345",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0022\"]@alt",
+      "notes": "Вариантов в HTML: 3.",
+      "kind": "page",
+      "targets": 3
+    },
+    {
+      "id": "HEADS-S04-0023",
+      "section": "04 · Преимущества",
+      "type": "Подзаголовок",
+      "current": "Привлечение внимания потребителей на полке",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0023\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0024",
+      "section": "04 · Преимущества",
+      "type": "Подзаголовок",
+      "current": "дистанцирование от конкурентов",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0024\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0025",
+      "section": "04 · Преимущества",
+      "type": "Подзаголовок",
+      "current": "Повышение запоминаемости бренда",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0025\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0026",
+      "section": "05 · Что такое дизайн упаковки",
+      "type": "H2 · Заголовок",
+      "current": "Что такое дизайн упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0026\"]@text",
+      "notes": "Вариантов в HTML: 2. Варианты написания: что такое дизайн упаковки",
+      "kind": "page",
+      "targets": 2,
+      "variants": [
+        "что такое дизайн упаковки"
+      ]
+    },
+    {
+      "id": "HEADS-S04-0027",
+      "section": "05 · Что такое дизайн упаковки",
+      "type": "Абзац",
+      "current": "Дизайн упаковки – это комплексный подход к созданию внешнего вида продукта, который включает в себя:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0027\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0028",
+      "section": "05 · Что такое дизайн упаковки",
+      "type": "Пункт списка",
+      "current": "Создание уникального визуального образа, который отражает ценности бренда и привлекает внимание потребителей.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0028\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0029",
+      "section": "05 · Что такое дизайн упаковки",
+      "type": "Пункт списка",
+      "current": "Проработку каждого элемента упаковки: форма, материал, цвет, типографика, графические элементы, визуализация продукта (продуктовая зона), маркетинговые клеймы.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0029\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0030",
+      "section": "05 · Что такое дизайн упаковки",
+      "type": "Пункт списка",
+      "current": "Взаимосвязь с позиционированием и маркетингом: дизайн упаковки должен соответствовать стратегическим целям компании.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0030\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0031",
+      "section": "05 · Что такое дизайн упаковки",
+      "type": "Пункт списка",
+      "current": "Клиентоориентированность: необходимо учитывать предпочтения и потребности целевой аудитории и исходя из этого правильно подчеркивать особенности продукта.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0031\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0032",
+      "section": "05 · Что такое дизайн упаковки",
+      "type": "ALT изображения",
+      "current": "Package Design 04",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0032\"]@alt",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0033",
+      "section": "06 · Критерии",
+      "type": "ALT изображения",
+      "current": "Image 2024 11 21 17 19 30",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0033\"]@alt",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0034",
+      "section": "06 · Критерии",
+      "type": "H2 · Заголовок",
+      "current": "Критерии эффективного дизайна упаковки товара",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0034\"]@text",
+      "notes": "Вариантов в HTML: 2. Варианты написания: критерии эффективного дизайна упаковки товара",
+      "kind": "page",
+      "targets": 2,
+      "variants": [
+        "критерии эффективного дизайна упаковки товара"
+      ]
+    },
+    {
+      "id": "HEADS-S04-0035",
+      "section": "06 · Критерии",
+      "type": "Абзац",
+      "current": "Дизайн упаковки должен соответствовать определенным критериям, чтобы быть эффективным:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0035\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0036",
+      "section": "06 · Критерии",
+      "type": "Пункт списка",
+      "current": "Привлекательность и заметность на полке: дизайн должен быть ярким и запоминающимся, чтобы выделяться среди конкурентов.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0036\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0037",
+      "section": "06 · Критерии",
+      "type": "Пункт списка",
+      "current": "Четкость и простота восприятия: информация на упаковке должна быть четкой и легко читаемой, чтобы потребитель мог быстро определить основные свойства продукта.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0037\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0038",
+      "section": "06 · Критерии",
+      "type": "Пункт списка",
+      "current": "Соответствие целевой аудитории и рынку: дизайн должен быть согласован с целевой аудиторией и особенностями рынка, на котором продукт будет продаваться.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0038\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0039",
+      "section": "06 · Критерии",
+      "type": "Пункт списка",
+      "current": "Функциональность и удобство использования: упаковка должна быть эргономичной, обеспечивать легкость использования, не пренебрегая безопасностью хранения продукта.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0039\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0040",
+      "section": "06 · Критерии",
+      "type": "Пункт списка",
+      "current": "Соответствие бренду и его ценностям: дизайн упаковки должен отражать ценности и имидж бренда, создавая целостное впечатление о нем.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0040\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0041",
+      "section": "07 · Этапы",
+      "type": "H2 · Заголовок",
+      "current": "Этапы разработки дизайна упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0041\"]@text",
+      "notes": "Вариантов в HTML: 2. Варианты написания: этапы разработки дизайна упаковки",
+      "kind": "page",
+      "targets": 2,
+      "variants": [
+        "этапы разработки дизайна упаковки"
+      ]
+    },
+    {
+      "id": "HEADS-S04-0042",
+      "section": "07 · Этапы",
+      "type": "Абзац",
+      "current": "Мы рады, если вы решили заказать дизайн упаковки у нашего агентства. Данная услуга включает в себя:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0042\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0043",
+      "section": "07 · Этапы",
+      "type": "Подзаголовок",
+      "current": "1. Анализ продукта и целевой аудитории:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0043\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0044",
+      "section": "07 · Этапы",
+      "type": "Абзац",
+      "current": "Исследование характеристик продукта и его конкурентных преимуществ, исследование рынка и конкурентный анализ, а также определение целевой аудитории и ее потребностей.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0044\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0045",
+      "section": "07 · Этапы",
+      "type": "Подзаголовок",
+      "current": "2. Создание концепции и идей:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0045\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0046",
+      "section": "07 · Этапы",
+      "type": "Абзац",
+      "current": "Разработка нескольких концепций дизайна, отражающих основные ценности и идеи бренда.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0046\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0047",
+      "section": "07 · Этапы",
+      "type": "Подзаголовок",
+      "current": "3. Тестирование дизайна:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0047\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0048",
+      "section": "07 · Этапы",
+      "type": "Абзац",
+      "current": "Демонстрация дизайна целевой аудитории и получение обратной связи по ключевым критериям, таким как: “желание купить”.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0048\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0049",
+      "section": "07 · Этапы",
+      "type": "Подзаголовок",
+      "current": "4. Внесение правок:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0049\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0050",
+      "section": "07 · Этапы",
+      "type": "Абзац",
+      "current": "Вносятся необходимые корректировки в дизайн на основе полученной обратной связи от потребителей/команды заказчика и утверждается окончательный вариант дизайна.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0050\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0051",
+      "section": "07 · Этапы",
+      "type": "Подзаголовок",
+      "current": "5. Разработка макетов и прототипов:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0051\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0052",
+      "section": "07 · Этапы",
+      "type": "Абзац",
+      "current": "Создание первоначальных макетов дизайна и их визуализация на мокапах или на реальных образцах упаковки.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0052\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0053",
+      "section": "07 · Этапы",
+      "type": "Подзаголовок",
+      "current": "6. Препресс:",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0053\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0054",
+      "section": "07 · Этапы",
+      "type": "Абзац",
+      "current": "Подготовка технических файлов для печати и производства упаковки.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0054\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0055",
+      "section": "08 · Стоимость",
+      "type": "H2 · Заголовок",
+      "current": "Стоимость разработки дизайна упаковки",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0055\"]@text",
+      "notes": "Вариантов в HTML: 2. Варианты написания: стоимость разработки дизайна упаковки",
+      "kind": "page",
+      "targets": 2,
+      "variants": [
+        "стоимость разработки дизайна упаковки"
+      ]
+    },
+    {
+      "id": "HEADS-S04-0056",
+      "section": "08 · Стоимость",
+      "type": "Абзац",
+      "current": "Цена формируется исходя из категории продукта, количества SKU и итераций правок. Возможны дополнительные услуги по изготовлению прототипов упаковки, проведению фото- и видеосъемки и другим необходимым работам.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0056\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0057",
+      "section": "08 · Стоимость",
+      "type": "Абзац",
+      "current": "Обратитесь к нам, чтобы получить индивидуальную оценку стоимости разработки дизайна упаковки для вашего продукта.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0057\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0058",
+      "section": "08 · Стоимость",
+      "type": "Текст ссылки",
+      "current": "ЦЕНЫ",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0058\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0059",
+      "section": "08 · Стоимость",
+      "type": "ALT изображения",
+      "current": "Img 4 2",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0059\"]@alt",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0060",
+      "section": "09 · FAQ",
+      "type": "H2 · Заголовок",
+      "current": "Часто задаваемые вопросы",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0060\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0061",
+      "section": "09 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Сколько правок мы можем внести?",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0061\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[0].name"
+    },
+    {
+      "id": "HEADS-S04-0062",
+      "section": "09 · FAQ",
+      "type": "Ответ FAQ",
+      "current": "Количество итераций правок мы проговариваем на старте проекта. Обычно их не более трех. По нашему опыту такого количества доработок хватает, чтобы внести все пожелания и согласовать финальный вариант. Если особенности принятия решений в вашей компании предполагают большее количество комментариев, то мы будем рады обсудить индивидуальный подход к этому этапу.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0062\"]@text",
+      "notes": "Абзац 1. JSON-LD: собрать ответ из всех его абзацев в исходном порядке. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[0].acceptedAnswer.text"
+    },
+    {
+      "id": "HEADS-S04-0063",
+      "section": "09 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Как будет строиться работа?",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0063\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[1].name"
+    },
+    {
+      "id": "HEADS-S04-0064",
+      "section": "09 · FAQ",
+      "type": "Ответ FAQ",
+      "current": "В первую очередь мы соберемся на большой брифинг, где обсудим ваше позиционирование, планы по развитию, конкурентное окружение и визуальные пожелания. Далее креативная команда, в состав которой входит арт-директор и не менее двух дизайнеров, начнет разработку концепций.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0064\"]@text",
+      "notes": "Абзац 1. JSON-LD: собрать ответ из всех его абзацев в исходном порядке. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[1].acceptedAnswer.text"
+    },
+    {
+      "id": "HEADS-S04-0065",
+      "section": "09 · FAQ",
+      "type": "Ответ FAQ",
+      "current": "После нескольких внутренних итераций, где команда проекта скрупулезно проверит соответствие разработанных дизайнов согласованному брифу, мы представим вам самые лучшие варианты, которые будем рады обсудить в ходе онлайн или личной встречи.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0065\"]@text",
+      "notes": "Абзац 2. JSON-LD: собрать ответ из всех его абзацев в исходном порядке. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[1].acceptedAnswer.text"
+    },
+    {
+      "id": "HEADS-S04-0066",
+      "section": "09 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Сколько концепций вы предлагаете?",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0066\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[2].name"
+    },
+    {
+      "id": "HEADS-S04-0067",
+      "section": "09 · FAQ",
+      "type": "Ответ FAQ",
+      "current": "Обычно мы разрабатываем не менее трех концепций дизайна, которые демонстрируем на примере 2-3 SKU. Количество SKU и вариантов концепций конкретно для вашей задачи мы сможем обсудить на этапе согласования сметы и дать свои рекомендации в зависимости от категории продуктов и ассортиментной линейки.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0067\"]@text",
+      "notes": "Абзац 1. JSON-LD: собрать ответ из всех его абзацев в исходном порядке. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[2].acceptedAnswer.text"
+    },
+    {
+      "id": "HEADS-S04-0068",
+      "section": "09 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "В каком виде мы получим финальный результат?",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0068\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[3].name"
+    },
+    {
+      "id": "HEADS-S04-0069",
+      "section": "09 · FAQ",
+      "type": "Ответ FAQ",
+      "current": "Концепции будут представлены в виде визуализации упаковки для тех SKU, которые мы обговорим на старте проекта.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0069\"]@text",
+      "notes": "Абзац 1. JSON-LD: собрать ответ из всех его абзацев в исходном порядке. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[3].acceptedAnswer.text"
+    },
+    {
+      "id": "HEADS-S04-0070",
+      "section": "09 · FAQ",
+      "type": "Ответ FAQ",
+      "current": "Финальные версии мы передадим в виде рабочих файлов подготовленных печати.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0070\"]@text",
+      "notes": "Абзац 2. JSON-LD: собрать ответ из всех его абзацев в исходном порядке. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[3].acceptedAnswer.text"
+    },
+    {
+      "id": "HEADS-S04-0071",
+      "section": "09 · FAQ",
+      "type": "Вопрос FAQ",
+      "current": "Сможете ли вы разработать не только дизайн, но и саму конструкцию упаковки?",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0071\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[4].name"
+    },
+    {
+      "id": "HEADS-S04-0072",
+      "section": "09 · FAQ",
+      "type": "Ответ FAQ",
+      "current": "Да, это возможно. Сообщите нам, пожалуйста, если вам нужна помощь с разработкой формы упаковки.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0072\"]@text",
+      "notes": "Абзац 1. JSON-LD: собрать ответ из всех его абзацев в исходном порядке. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2,
+      "sync": "FAQPage.mainEntity[4].acceptedAnswer.text"
+    },
+    {
+      "id": "HEADS-S04-0073",
+      "section": "10 · Форма проекта",
+      "type": "Подпись формы",
+      "current": "Обсудить проект",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0073\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0074",
+      "section": "10 · Форма проекта",
+      "type": "Подпись формы",
+      "current": "Вы можете написать нам на почту или заполнить форму ниже.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0074\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0075",
+      "section": "10 · Форма проекта",
+      "type": "Текст ссылки",
+      "current": "Написать на почту",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0075\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0076",
+      "section": "10 · Форма проекта",
+      "type": "Текст ссылки",
+      "current": "скачать бриф",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0076\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0077",
+      "section": "10 · Форма проекта",
+      "type": "Подпись формы",
+      "current": "Тема",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0077\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0078",
+      "section": "10 · Форма проекта",
+      "type": "Подсказка поля",
+      "current": "Назовите ваш проект*",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0078\"]@placeholder",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0079",
+      "section": "10 · Форма проекта",
+      "type": "Подпись формы",
+      "current": "Какие услуги вы бы хотели у нас заказать",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0079\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0080",
+      "section": "10 · Форма проекта",
+      "type": "Подсказка поля",
+      "current": "Сообщение",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0080\"]@placeholder",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0081",
+      "section": "10 · Форма проекта",
+      "type": "Подпись загрузки файла",
+      "current": "Прикрепить бриф",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0081\"]::before@content",
+      "notes": "Надпись задана в CSS, в свойстве content псевдоэлемента. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0082",
+      "section": "10 · Форма проекта",
+      "type": "Ограничение вложения",
+      "current": "максимум 10 мб",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0082\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0083",
+      "section": "10 · Форма проекта",
+      "type": "Подпись формы",
+      "current": "Контакты",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0083\"]@text",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0084",
+      "section": "10 · Форма проекта",
+      "type": "Подсказка поля",
+      "current": "Имя и фамилия*",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0084\"]@placeholder",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0085",
+      "section": "10 · Форма проекта",
+      "type": "Подсказка поля",
+      "current": "Должность",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0085\"]@placeholder",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0086",
+      "section": "10 · Форма проекта",
+      "type": "Подсказка поля",
+      "current": "Компания*",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0086\"]@placeholder",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0087",
+      "section": "10 · Форма проекта",
+      "type": "Подсказка поля",
+      "current": "Телефон*",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0087\"]@placeholder",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0088",
+      "section": "10 · Форма проекта",
+      "type": "Подсказка поля",
+      "current": "Эл. почта*",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0088\"]@placeholder",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0089",
+      "section": "10 · Форма проекта",
+      "type": "Согласие на обработку данных",
+      "current": "Я даю согласие на обработку моих персональных данных и соглашаюсь с политикой обработки персональных данных компании",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0089\"]@text",
+      "notes": "Сохранить обе ссылки в тексте. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0090",
+      "section": "10 · Форма проекта",
+      "type": "Кнопка формы",
+      "current": "Отправить",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0090\"]@value",
+      "notes": "Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0091",
+      "section": "10 · Форма проекта",
+      "type": "Подпись формы",
+      "current": "Форма успешно отправлена",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0091\"]@text",
+      "notes": "Исходное сообщение WordPress. В предпросмотре после ввода показывается сообщение деморежима. Вариантов в HTML: 2.",
+      "kind": "page",
+      "targets": 2
+    },
+    {
+      "id": "HEADS-S04-0092",
+      "section": "01 · Первый экран",
+      "type": "ALT изображения",
+      "current": "Package Design 01",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0092\"]@alt",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0093",
+      "section": "04 · Преимущества",
+      "type": "ALT изображения",
+      "current": "Photo 2024 11 25 12 31 51",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0093\"]@alt",
+      "notes": "Мобильная подпись внутри изображения. Менять текст в исходном макете.",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0094",
+      "section": "04 · Преимущества",
+      "type": "ALT изображения",
+      "current": "Photo 2024 11 25 12 31 54",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0094\"]@alt",
+      "notes": "Мобильная подпись внутри изображения. Менять текст в исходном макете.",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0095",
+      "section": "04 · Преимущества",
+      "type": "ALT изображения",
+      "current": "Photo 2024 11 25 12 31 57",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0095\"]@alt",
+      "notes": "Мобильная подпись внутри изображения. Менять текст в исходном макете.",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0096",
+      "section": "07 · Этапы",
+      "type": "Абзац",
+      "current": "Вносятся необходимые корректировки в дизайн на основе полученной обратной связи от потребителей команды заказчика и утверждается окончательный вариант дизайна.",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0096\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0097",
+      "section": "11 · Окно презентации",
+      "type": "Текст кнопки",
+      "current": "Закрыть",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0097\"]@aria-label",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0098",
+      "section": "11 · Окно презентации",
+      "type": "Заголовок окна",
+      "current": "Скачать презентацию",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0098\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0099",
+      "section": "11 · Окно презентации",
+      "type": "Подпись формы",
+      "current": "Email",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0099\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0100",
+      "section": "11 · Окно презентации",
+      "type": "Подсказка поля",
+      "current": "Введите свой Email",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0100\"]@placeholder",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0101",
+      "section": "11 · Окно презентации",
+      "type": "Подпись формы",
+      "current": "Я даю согласие на обработку моих персональных данных и соглашаюсь с политикой обработки персональных данных компании",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0101\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    },
+    {
+      "id": "HEADS-S04-0102",
+      "section": "11 · Окно презентации",
+      "type": "Текст кнопки",
+      "current": "Скачать презентацию",
+      "selector": "[data-heads-text-id=\"HEADS-S04-0102\"]@text",
+      "notes": "",
+      "kind": "page",
+      "targets": 1
+    }
+  ]
+}

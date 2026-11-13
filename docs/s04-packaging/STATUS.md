@@ -14,7 +14,7 @@
 | 3–4. Вёрстка и интерфейс | SAVED | Исходная вёрстка обеих ширин, локальные ресурсы и изолированные демоформы. |
 | 5. QA | IN_PROGRESS | Независимый Chrome на 320, 390, 768 и 1440 px. |
 | 6. Pages | TODO | |
-| 7. Лист Аллы | TODO | Подтверждён четвёртый лист. |
+| 7. Лист Аллы | IN_PROGRESS | Карта содержит 106 полей, в том числе четыре SEO, и 189 привязок HTML. Запись в лист после проверки копии. |
 
 Предыдущий коммит: [27a75e1](https://github.com/alexyakovlev79/heads-services-preview/commit/27a75e1e8984baf90ca0b26470db766c10c9dafe).
 Подтверждённый предыдущий SHA: [8f69cef](https://github.com/alexyakovlev79/heads-services-preview/commit/8f69cef9261e72b5d5ed6df7844cd93a1afb0c3c).
