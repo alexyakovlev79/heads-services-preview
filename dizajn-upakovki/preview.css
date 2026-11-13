@@ -1,0 +1,93 @@
+.preview-presentation {
+    border: 0;
+    padding: 0;
+    max-width: calc(100% - 24px);
+    max-height: calc(100% - 24px);
+    overflow: auto;
+}
+.preview-presentation::backdrop {
+    background: rgb(0 0 0 / 80%);
+}
+.preview-presentation .dialog-widget-content {
+    position: relative;
+    width: min(640px, calc(100vw - 24px));
+}
+.preview-presentation .dialog-close-button {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 14px;
+    right: 16px;
+    line-height: 1;
+    font-size: 26px;
+    background: transparent;
+    color: #002b49;
+    padding: 4px;
+}
+.preview-presentation .preview-presentation-content {
+    display: block;
+}
+[data-preview-result][hidden] {
+    display: none !important;
+}
+[data-preview-result] {
+    margin-top: 12px;
+}
+.preview-presentation:not([open]) {
+    display: none;
+}
+.preview-presentation[open] {
+    display: block;
+    position: fixed;
+    margin: auto;
+    width: min(640px, calc(100vw - 24px));
+    height: auto;
+    inset: 0;
+    align-items: initial;
+    justify-content: initial;
+}
+.preview-presentation > .elementor-location-popup {
+    display: block;
+}
+.preview-attachment:empty {
+    display: none;
+}
+.preview-attachment {
+    display: block;
+    overflow-wrap: anywhere;
+}
+
+/* Preserve the responsive type sizes from the original page's WPBakery settings. */
+[data-wpex-rcss*='"d":"30px"'] {
+    font-size: 30px !important;
+}
+[data-wpex-rcss*='"d":"21px"'] {
+    font-size: 21px !important;
+}
+[data-wpex-rcss*='"d":"14px"'] {
+    font-size: 14px !important;
+}
+@media (max-width: 1024px) {
+    [data-wpex-rcss*='"d":"30px"'] {
+        font-size: 25px !important;
+    }
+}
+@media (max-width: 959px) {
+    [data-wpex-rcss*='"d":"30px"'] {
+        font-size: 21px !important;
+    }
+}
+@media (max-width: 767px) {
+    [data-wpex-rcss*='"pl":"19px"'] {
+        font-size: 19px !important;
+    }
+    [data-wpex-rcss*='"pl":"16px"'] {
+        font-size: 16px !important;
+    }
+    [data-wpex-rcss*='"pl":"12px"'] {
+        font-size: 12px !important;
+    }
+    [data-wpex-rcss*='"pl":"10px"'] {
+        font-size: 10px !important;
+    }
+}
