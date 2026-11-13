@@ -29,23 +29,25 @@
       "source": "https://wellhead.ru/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=8.6.1",
       "path": "assets/c9c87c021b-js_composer.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "392381dae6c806664cbaef0100e7e84049fc5a026df46377b9e83cacc21d5fd1",
       "source_size": 465326,
       "content_type": "text/css",
       "sha256": "f45531ad8a75e9b6a929520add87325d7a3791ecbcb86076e4135f60c1aeae46",
-      "size": 466157
+      "size": 466157,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/c9c87c021b-js_composer.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-includes/css/dist/block-library/style.min.css?ver=7.1.4",
       "path": "assets/c0c5679948-style.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "222ca4216c4f17530a03bf9701410b689d7d9c953c8ddcc9d4e8722d69c348aa",
       "source_size": 140829,
       "content_type": "text/css",
       "sha256": "222ca4216c4f17530a03bf9701410b689d7d9c953c8ddcc9d4e8722d69c348aa",
-      "size": 140829
+      "size": 140829,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/c0c5679948-style.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/cookie-ma/public/css/banner.css?ver=3.3.2",
@@ -63,12 +65,13 @@
       "source": "https://wellhead.ru/wp-content/themes/Total/style.css?ver=4.9.9.2",
       "path": "assets/8811af3e52-style.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "96125e9a39191fa7b0d66528a2c8552d92234f6e3f1bb1654f06489b4e14bbd0",
       "source_size": 254762,
       "content_type": "text/css",
       "sha256": "47b13ee72db180d25662a3689007c0d68adebe920d1a54e9e239c1692c76d78a",
-      "size": 254869
+      "size": 254869,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/8811af3e52-style.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/style.css?ver=4.9.9.2",
@@ -309,12 +312,13 @@
       "source": "https://wellhead.ru/wp-content/plugins/royal-elementor-addons/assets/css/frontend.min.css?ver=1.7.1065",
       "path": "assets/1e5e542442-frontend.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "15658cface27a42b8053012b7d225def64c84b35747aa036f4bbd22aa5405f67",
       "source_size": 447770,
       "content_type": "text/css",
       "sha256": "b9eacb638c519de81a81ce979a1b38efea3362df9feee0a70b3068e58e5e95c0",
-      "size": 447767
+      "size": 447767,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/1e5e542442-frontend.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1.7.1065",
@@ -1092,12 +1096,13 @@
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/image_2024-11-02_10-37-33.png",
       "path": "assets/b097067b00-image_2024-11-02_10-37-33.png",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "11d8f3b55b41adacebf2cd905f0eb28adbb0e430b8c13cfbf54e79380ed95ca0",
       "source_size": 154102,
       "content_type": "image/png",
       "sha256": "11d8f3b55b41adacebf2cd905f0eb28adbb0e430b8c13cfbf54e79380ed95ca0",
-      "size": 154102
+      "size": 154102,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/b097067b00-image_2024-11-02_10-37-33.png"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/5345.png",
@@ -1151,12 +1156,13 @@
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/img_2.gif",
       "path": "assets/68b7162f7c-img_2.gif",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "7d068239751af4e8db637e883b16bedf263c2fded54dc10f890a6eca721f114f",
       "source_size": 542019,
       "content_type": "image/gif",
       "sha256": "7d068239751af4e8db637e883b16bedf263c2fded54dc10f890a6eca721f114f",
-      "size": 542019
+      "size": 542019,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/68b7162f7c-img_2.gif"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/image_2024-11-02_14-02-18.png",
@@ -1174,12 +1180,13 @@
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/image_2024-11-02_10-37-33-1.png",
       "path": "assets/ac94357207-image_2024-11-02_10-37-33-1.png",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "11d8f3b55b41adacebf2cd905f0eb28adbb0e430b8c13cfbf54e79380ed95ca0",
       "source_size": 154102,
       "content_type": "image/png",
       "sha256": "11d8f3b55b41adacebf2cd905f0eb28adbb0e430b8c13cfbf54e79380ed95ca0",
-      "size": 154102
+      "size": 154102,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/ac94357207-image_2024-11-02_10-37-33-1.png"
     },
     {
       "source": "https://wellhead.ru/wp-content/uploads/2024/11/image_2024-11-05_13-48-59.png",
@@ -1297,12 +1304,13 @@
       "source": "https://wellhead.ru/wp-content/plugins/js_composer/assets/css/js_composer_tta.min.css?ver=8.6.1",
       "path": "assets/c909891ac4-js_composer_tta.min.css",
       "kind": "css",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "df29ddafa070855d715d4d6da2d20f03db60a948f3450c9ce191f90fe20a1860",
       "source_size": 268285,
       "content_type": "text/css",
       "sha256": "df29ddafa070855d715d4d6da2d20f03db60a948f3450c9ce191f90fe20a1860",
-      "size": 268285
+      "size": 268285,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/c909891ac4-js_composer_tta.min.css"
     },
     {
       "source": "https://wellhead.ru/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.2",
@@ -2196,12 +2204,13 @@
       "source": "https://wellhead.ru/wp-content/themes/Total/assets/lib/ticons/fonts/ticons-webfont.svg?v=4.8",
       "path": "assets/f29ec8d079-ticons-webfont.svg",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4",
       "source_size": 444379,
       "content_type": "image/svg+xml",
       "sha256": "ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4",
-      "size": 444379
+      "size": 444379,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/f29ec8d079-ticons-webfont.svg"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/Total/assets/images/openhand.cur",
@@ -2259,12 +2268,13 @@
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_regular-webfont.woff",
       "path": "assets/95b2b840f1-tt_fors_regular-webfont.woff",
       "kind": "font",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "5644ac16def90d5a8af2cb069ea541cc1854205496cb5975167091a1662c222e",
       "source_size": 30812,
       "content_type": "font/x-woff",
       "sha256": "5644ac16def90d5a8af2cb069ea541cc1854205496cb5975167091a1662c222e",
-      "size": 30812
+      "size": 30812,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/95b2b840f1-tt_fors_regular-webfont.woff"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_regular-webfont.ttf",
@@ -2281,12 +2291,13 @@
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_regular-webfont.svg",
       "path": "assets/19cc57b202-tt_fors_regular-webfont.svg",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "3fea0cf1c5bf67c120ddab3e9d9163ce92e87aae9f5a708b35757fe3b48f48ee",
       "source_size": 143803,
       "content_type": "image/svg+xml",
       "sha256": "3fea0cf1c5bf67c120ddab3e9d9163ce92e87aae9f5a708b35757fe3b48f48ee",
-      "size": 143803
+      "size": 143803,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/19cc57b202-tt_fors_regular-webfont.svg"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_medium-webfont.eot",
@@ -2318,12 +2329,13 @@
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_medium-webfont.woff",
       "path": "assets/5f92ba8d11-tt_fors_medium-webfont.woff",
       "kind": "font",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "bed1150a0d14eb48634582d37345626f9116a55611c42d716b1dd4025c8184eb",
       "source_size": 31452,
       "content_type": "font/x-woff",
       "sha256": "bed1150a0d14eb48634582d37345626f9116a55611c42d716b1dd4025c8184eb",
-      "size": 31452
+      "size": 31452,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/5f92ba8d11-tt_fors_medium-webfont.woff"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_medium-webfont.ttf",
@@ -2340,12 +2352,13 @@
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_medium-webfont.svg",
       "path": "assets/e66cd45967-tt_fors_medium-webfont.svg",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "6aa5967e165e3337450a55b9ab9263460821c8271be36ac8531b9986526a266e",
       "source_size": 143671,
       "content_type": "image/svg+xml",
       "sha256": "6aa5967e165e3337450a55b9ab9263460821c8271be36ac8531b9986526a266e",
-      "size": 143671
+      "size": 143671,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/e66cd45967-tt_fors_medium-webfont.svg"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_bold-webfont.eot",
@@ -2399,12 +2412,13 @@
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_bold-webfont.svg",
       "path": "assets/1f94ce96f9-tt_fors_bold-webfont.svg",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "163d79e7224c3b6abcd2258819718da5bf38d565dc79aaf3f73b3df26093a9f3",
       "source_size": 142157,
       "content_type": "image/svg+xml",
       "sha256": "163d79e7224c3b6abcd2258819718da5bf38d565dc79aaf3f73b3df26093a9f3",
-      "size": 142157
+      "size": 142157,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/1f94ce96f9-tt_fors_bold-webfont.svg"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_extrabold-webfont.eot",
@@ -2458,12 +2472,13 @@
       "source": "https://wellhead.ru/wp-content/themes/total-child-theme/fonts/tt_fors_extrabold-webfont.svg",
       "path": "assets/5a58c1e831-tt_fors_extrabold-webfont.svg",
       "kind": "image",
-      "status": "missing",
+      "status": "downloaded",
       "source_sha256": "fada0dbcbe2c05f853841c4f729d5940eb90f6c9520cedcd13d2295754b2c766",
       "source_size": 139651,
       "content_type": "image/svg+xml",
       "sha256": "fada0dbcbe2c05f853841c4f729d5940eb90f6c9520cedcd13d2295754b2c766",
-      "size": 139651
+      "size": 139651,
+      "commit_history": "https://github.com/alexyakovlev79/heads-services-preview/commits/work/heads-s02-strategy-copy/strategija-i-pozicionirovanie/assets/5a58c1e831-tt_fors_extrabold-webfont.svg"
     },
     {
       "source": "https://wellhead.ru/wp-content/themes/Total/assets/images/check.png",
