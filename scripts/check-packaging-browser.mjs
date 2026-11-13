@@ -15,6 +15,7 @@ const browser = await chromium.launch({
 await fs.mkdir(output, {recursive:true});
 
 async function loadVisibleMedia(page) {
+    await page.waitForLoadState('load', {timeout:30000});
     await page.evaluate(async () => {
         for (const image of document.images) image.loading = 'eager';
         await document.fonts.ready;
@@ -85,14 +86,19 @@ async function checkWidth(width) {
         }
         assert.equal(await page.locator('#single-blocks').count(), 1);
         await loadVisibleMedia(page);
-        const visibleAnimations = await page.locator('#single-blocks img[src$=".gif"]').evaluateAll(images =>
-            images.filter(image => image.getBoundingClientRect().width > 0 && image.naturalWidth > 0)
-                .map(image => new URL(image.src).pathname)
-        );
-        assert.equal(visibleAnimations.length, width < 768 ? 4 : 3,
-            width + ': original visible GIFs: ' + visibleAnimations.join(', '));
-        assert.equal(visibleAnimations.some(src => /-package_design_01\.gif$/.test(src)), width < 768,
-            width + ': original mobile hero animation');
+        const expectedAnimations = ['package_design_02.gif', 'package_design_04.gif', 'img_4_2.gif'];
+        if (width < 768) expectedAnimations.unshift('package_design_01.gif');
+        for (const name of expectedAnimations) {
+            const selector = '#single-blocks img[src$="-' + name + '"]';
+            const animation = page.locator(selector + ':visible');
+            await animation.waitFor({state:'visible',timeout:12000});
+            assert.equal(await animation.count(), 1, width + ': visible ' + name);
+            await page.waitForFunction(locator => [...document.querySelectorAll(locator)].some(image =>
+                image.getBoundingClientRect().width > 0 && image.complete && image.naturalWidth > 0
+            ), selector, {timeout:25000});
+        }
+        const visibleAnimations = await page.locator('#single-blocks img[src$=".gif"]:visible').count();
+        assert.equal(visibleAnimations, expectedAnimations.length, width + ': original GIF count');
         const desktopHero = page.locator('#completed-works img[src$="-gif_package_design_01.gif"]');
         assert.equal(await desktopHero.count(), 1);
         assert.ok(await desktopHero.isHidden(), width + ': original hidden desktop hero column');
