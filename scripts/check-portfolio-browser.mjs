@@ -90,8 +90,15 @@ async function checkWidth(width) {
         await question.press('Space');
         assert.equal(await question.getAttribute('aria-expanded'), 'false');
         assert.equal(await page.locator('.vc_tta-panel.vc_active:visible').count(), 0);
-        const cta = page.locator('a[href^="#discussthetask"]:visible');
-        assert.equal(await cta.count(), 1);
+        // The original CTA remains unique, while the later GEO block has its own CTA.
+        // Test each independently instead of treating both as an accidental duplicate.
+        const cta = page.locator('#single-blocks .vc_btn3-container.toBtn a[href^="#discussthetask"]:visible');
+        assert.equal(await cta.count(), 1, width + ': original CTA');
+        const geoCta = page.locator('#single-blocks .heads-s03-geo-cases:visible .heads-s03-geo-cta a');
+        assert.equal(await geoCta.count(), 1, width + ': GEO CTA');
+        assert.equal(await geoCta.getAttribute('href'),
+            width <= 767 ? '#discussthetask2' : '#discussthetask',
+            width + ': GEO CTA target');
         assert.equal(await page.getByRole('link', {name:'ЦЕНЫ', exact:true}).filter({visible:true}).last().getAttribute('href'),
             'https://wellhead.ru/prices/');
         await cta.click();
