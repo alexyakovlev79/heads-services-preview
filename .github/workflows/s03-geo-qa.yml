@@ -5,6 +5,9 @@ on:
     branches:
       - main
       - work/heads-s03-geo
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
