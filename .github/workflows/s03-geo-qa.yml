@@ -1,0 +1,52 @@
+name: Heads S03 GEO QA
+
+on:
+  push:
+    branches:
+      - main
+      - work/heads-s03-geo
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  geo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out pages
+        uses: actions/checkout@v4
+
+      - name: Verify original S03 and GEO text/schema
+        run: |
+          node scripts/check-portfolio-preview.mjs
+          node scripts/check-portfolio-geo.mjs
+
+      - name: Install browser test driver
+        run: npm install --no-save --no-package-lock --ignore-scripts playwright-core
+
+      - name: Browser check at 320, 390, 768 and 1440 px
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8000 --bind 127.0.0.1 > /tmp/heads-s03-geo.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" || true' EXIT
+          for i in $(seq 1 12); do
+            if curl -fsS -o /dev/null http://127.0.0.1:8000/formirovanie-portfelja-brendov/; then break; fi
+            sleep 1
+          done
+          node scripts/check-portfolio-geo-browser.mjs
+
+      - name: Store GEO screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: heads-s03-geo-screenshots
+          path: qa-artifacts/portfolio-geo/
+          if-no-files-found: ignore
+          retention-days: 30
