@@ -19,4 +19,5 @@
 Предыдущий коммит: [27a75e1](https://github.com/alexyakovlev79/heads-services-preview/commit/27a75e1e8984baf90ca0b26470db766c10c9dafe).
 Подтверждённый предыдущий SHA: [8f69cef](https://github.com/alexyakovlev79/heads-services-preview/commit/8f69cef9261e72b5d5ed6df7844cd93a1afb0c3c).
 Предыдущая рабочая копия: [02df16f](https://github.com/alexyakovlev79/heads-services-preview/commit/02df16fd74d6c8b7188762ea7fa43b3322ac4e5d).
-Следующий шаг — сверить Chrome и полноразмерные снимки оригинала и копии.
+Снимки оригинала на всех четырёх ширинах получены в [первом прогоне](https://github.com/alexyakovlev79/heads-services-preview/actions/runs/43387607377/artifacts/14019461050). Оригинальная десктопная колонка с первым GIF скрыта классом hidden; на телефоне отдельный GIF отображается. Проверка обновлена по фактическому оригиналу.
+Следующий шаг — сверить повторный Chrome QA и визуальные эталоны.

@@ -76,7 +76,13 @@ async function checkWidth(width) {
             return images.filter(image => image.getBoundingClientRect().width > 0 && image.naturalWidth > 0)
                 .map(image => new URL(image.src).pathname);
         });
-        assert.equal(visibleAnimations.length, 4, width + ': visible GIFs: ' + visibleAnimations.join(', '));
+        assert.equal(visibleAnimations.length, width < 768 ? 4 : 3,
+            width + ': original visible GIFs: ' + visibleAnimations.join(', '));
+        assert.equal(visibleAnimations.some(src => /-package_design_01\.gif$/.test(src)), width < 768,
+            width + ': original mobile hero animation');
+        const desktopHero = page.locator('#completed-works img[src$="-gif_package_design_01.gif"]');
+        assert.equal(await desktopHero.count(), 1);
+        assert.ok(await desktopHero.isHidden(), width + ': original hidden desktop hero column');
         assert.equal(await page.locator('[data-preview-form="project"]:visible').count(), 1);
         await screenshots(page,'preview-'+width);
         const faq = page.locator('[data-vc-accordion]:visible');
@@ -168,6 +174,8 @@ async function captureOriginal(width) {
     try {
         await page.goto(original,{waitUntil:'domcontentloaded',timeout:35000});
         await page.locator('#single-blocks').waitFor({state:'visible',timeout:15000});
+        const necessary = page.getByRole('button', {name:'Только необходимые', exact:true});
+        if (await necessary.isVisible()) await necessary.click();
         await screenshots(page,'original-'+width);
     } finally {
         await page.close();
