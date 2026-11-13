@@ -34,7 +34,7 @@ jobs:
           cp index.html preview.js preview.css geo-enhancements.css dist/
           cp -a assets/. dist/assets/
           mkdir -p dist/strategija-i-pozicionirovanie
-          cp -a strategija-i-pozicionirovanie/{index.html,preview.css,preview.js,assets} dist/strategija-i-pozicionirovanie/
+          cp -a strategija-i-pozicionirovanie/{index.html,preview.css,preview.js,geo-s02.css,geo-s02.js,assets} dist/strategija-i-pozicionirovanie/
           test -s dist/strategija-i-pozicionirovanie/index.html
           mkdir -p dist/formirovanie-portfelja-brendov
           cp -a formirovanie-portfelja-brendov/{index.html,preview.css,preview.js,assets} dist/formirovanie-portfelja-brendov/
