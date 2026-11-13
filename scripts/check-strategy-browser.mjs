@@ -50,6 +50,22 @@ async function checkWidth(width) {
         assert.ok(typography.length > 0);
         for (const [actual, expected] of typography) assert.equal(actual, expected, width + ': original font size');
         const text = (await page.locator('#single-blocks').innerText()).replace(/\s+/g, ' ');
+        const geo = page.locator('#heads-s02-geo');
+        assert.equal(await geo.count(),1,'GEO block duplicated in HTML');
+        assert.ok(await geo.isVisible(), width+': GEO copy not visible');
+        assert.equal(await geo.locator('.heads-s02-card').count(),6);
+        assert.equal(await geo.locator('article a[href^="https://wellhead.ru/projects/"]').count(),3);
+        const mobileOriginal = await page.locator('.vc_row.visible-phone').first().isVisible();
+        const geoInsideMobile = await geo.evaluate(el => Boolean(el.closest('.visible-phone')));
+        assert.equal(geoInsideMobile,mobileOriginal,width+': GEO block misplaced on mobile/desktop');
+        assert.equal(await geo.locator('[data-heads-s02-cta]').getAttribute('href'),
+            mobileOriginal?'#discussthetask2':'#discussthetask');
+        const geoText = (await geo.textContent()).replace(/\s+/g,' ');
+        for (const phrase of ['Когда стоит заняться позиционированием','Что получает команда заказчика',
+            'KIX','«Кроха Lab»','Hartens','7 вариантов позиционирования'])
+            assert.ok(geoText.includes(phrase),width+': missing GEO fact '+phrase);
+
+
         const headings = [
             'Суть и позиционирование бренда', 'Стратегия продвижения бренда',
             'Этапы разработки стратегии', 'Критерии оценки позиционирования бренда',
@@ -72,7 +88,7 @@ async function checkWidth(width) {
         await question.press('Space');
         assert.equal(await question.getAttribute('aria-expanded'), 'false');
         assert.equal(await page.locator('.vc_tta-panel.vc_active:visible').count(), 0);
-        const cta = page.locator('a[href^="#discussthetask"]:visible');
+        const cta = page.locator('.toBtn a[href^="#discussthetask"]:visible');
         assert.equal(await cta.count(), 1);
         await cta.click();
         const form = page.locator('[data-preview-form="project"]:visible');
