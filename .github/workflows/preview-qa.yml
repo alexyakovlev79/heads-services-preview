@@ -2,7 +2,7 @@ name: Heads services preview QA
 
 on:
   push:
-    branches: [main, work/heads-s02-strategy-copy]
+    branches: [main, work/heads-s02-strategy-copy, work/heads-s02-geo]
   workflow_dispatch:
 
 permissions:
