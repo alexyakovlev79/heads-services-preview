@@ -16,10 +16,12 @@ await fs.mkdir(output, {recursive:true});
 
 async function screenshots(page, name) {
     await page.evaluate(async () => {
-        await document.fonts.ready;
-        const images = [...document.images].filter(img => img.getClientRects().length);
+        const images = [...document.images].filter(image => image.getBoundingClientRect().width > 0);
         for (const image of images) image.loading = 'eager';
-        await Promise.allSettled(images.map(img => img.decode()));
+        await Promise.race([
+            Promise.allSettled([document.fonts.ready, ...images.map(image => image.decode())]),
+            new Promise(resolve => setTimeout(resolve, 15000))
+        ]);
     });
     await page.screenshot({ path: output + '/' + name + '.png', fullPage:true, timeout:25000 });
 }
@@ -175,7 +177,7 @@ async function captureOriginal(width) {
         await page.goto(original,{waitUntil:'domcontentloaded',timeout:35000});
         await page.locator('#single-blocks').waitFor({state:'visible',timeout:15000});
         const necessary = page.getByRole('button', {name:'Только необходимые', exact:true});
-        if (await necessary.isVisible()) await necessary.click();
+        if (await necessary.isVisible()) await necessary.click({timeout:5000}).catch(() => {});
         await screenshots(page,'original-'+width);
     } finally {
         await page.close();
