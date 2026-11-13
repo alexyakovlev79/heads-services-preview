@@ -64,7 +64,7 @@ async function checkWidth(width) {
                     .find(([limit, key]) => window.innerWidth <= limit && sizes[key]);
                 const compactBenefit = window.innerWidth >= 768 && window.innerWidth <= 959 &&
                     element.classList.contains('packaging-benefit-title');
-                return [getComputedStyle(element).fontSize, compactBenefit ? '15px' : size ? sizes[size[1]] : sizes.d];
+                return [getComputedStyle(element).fontSize, compactBenefit ? '13px' : size ? sizes[size[1]] : sizes.d];
             })
         );
         assert.ok(typography.length > 0);
